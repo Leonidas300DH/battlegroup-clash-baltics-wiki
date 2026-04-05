@@ -1,3 +1,552 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// ============================================================================
+// BATTLEGROUP CLASH: BALTICS — TACTICAL OPERATIONS CENTER THEME
+// Military C2 interface aesthetic: dark, precise, functional
+// ============================================================================
+
+// --- Variables ---
+:root {
+  --tactical-green: #6fa85c;
+  --tactical-green-dim: #4a7a3a;
+  --tactical-green-bright: #8fcc78;
+  --amber: #d4a520;
+  --amber-dim: #9e7a18;
+  --threat-red: #c44030;
+  --threat-red-dim: #8a2a20;
+  --grid-line: rgba(111, 168, 92, 0.06);
+  --grid-line-strong: rgba(111, 168, 92, 0.12);
+  --scanline: rgba(111, 168, 92, 0.02);
+  --surface-0: #111411;
+  --surface-1: #161916;
+  --surface-2: #1b1e1b;
+  --surface-3: #222622;
+  --border-tactical: rgba(111, 168, 92, 0.2);
+  --border-tactical-strong: rgba(111, 168, 92, 0.35);
+  --text-primary: #dce4d6;
+  --text-secondary: #98a890;
+  --text-dim: #5c6858;
+}
+
+// --- Background grid pattern (topographic) ---
+body {
+  background-color: var(--surface-0) !important;
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(var(--grid-line-strong) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line-strong) 1px, transparent 1px);
+  background-size:
+    20px 20px,
+    20px 20px,
+    100px 100px,
+    100px 100px;
+  background-position: center center;
+}
+
+// --- Typography refinements ---
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Rajdhani", sans-serif !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-primary) !important;
+}
+
+h1 {
+  font-size: 2rem !important;
+  border-bottom: 2px solid var(--tactical-green) !important;
+  padding-bottom: 0.5rem !important;
+  margin-bottom: 1.2rem !important;
+  position: relative;
+
+  &::before {
+    content: "▍";
+    color: var(--tactical-green);
+    margin-right: 0.4rem;
+    font-size: 1.2em;
+  }
+}
+
+h2 {
+  font-size: 1.4rem !important;
+  color: var(--tactical-green-bright) !important;
+  border-bottom: 1px solid var(--border-tactical) !important;
+  padding-bottom: 0.35rem !important;
+  margin-top: 2rem !important;
+
+  &::before {
+    content: "// ";
+    color: var(--tactical-green-dim);
+    font-weight: 400;
+  }
+}
+
+h3 {
+  font-size: 1.15rem !important;
+  color: var(--amber) !important;
+  border-bottom: none !important;
+
+  &::before {
+    content: "› ";
+    color: var(--amber-dim);
+  }
+}
+
+h4, h5, h6 {
+  font-size: 1rem !important;
+  color: var(--text-secondary) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+p, li, td, th, .callout-content p {
+  font-family: "Barlow", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-secondary) !important;
+}
+
+strong {
+  color: var(--text-primary) !important;
+  font-weight: 600;
+}
+
+code {
+  font-family: "JetBrains Mono", monospace !important;
+  background: var(--surface-3) !important;
+  border: 1px solid var(--border-tactical) !important;
+  padding: 0.15em 0.4em !important;
+  border-radius: 2px !important;
+  font-size: 0.85em !important;
+  color: var(--tactical-green-bright) !important;
+}
+
+pre {
+  background: var(--surface-1) !important;
+  border: 1px solid var(--border-tactical-strong) !important;
+  border-left: 3px solid var(--tactical-green) !important;
+  border-radius: 0 !important;
+  position: relative;
+
+  &::before {
+    content: "TERMINAL";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--tactical-green-dim);
+    color: var(--surface-0);
+    font-family: "Rajdhani", sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    padding: 0.15rem 0.6rem;
+    text-transform: uppercase;
+  }
+
+  code {
+    border: none !important;
+    background: transparent !important;
+    color: var(--tactical-green-bright) !important;
+  }
+}
+
+// --- Links: tactical green with amber hover ---
+a {
+  color: var(--tactical-green) !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid rgba(111, 168, 92, 0.3);
+  transition: all 0.15s ease;
+
+  &:hover {
+    color: var(--amber) !important;
+    border-bottom-color: var(--amber) !important;
+    text-shadow: 0 0 8px rgba(212, 165, 32, 0.3);
+  }
+}
+
+// --- Page title (site header) ---
+.page-title {
+  font-family: "Rajdhani", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 1.5rem !important;
+  letter-spacing: 0.2em !important;
+  text-transform: uppercase !important;
+  color: var(--tactical-green) !important;
+  padding: 0.8rem 0 !important;
+  border-bottom: 2px solid var(--tactical-green-dim) !important;
+  position: relative;
+  text-shadow: 0 0 20px rgba(111, 168, 92, 0.3);
+
+  &::after {
+    content: "BATTLEGROUP CLASH: BALTICS";
+    display: block;
+    font-size: 0.55rem;
+    letter-spacing: 0.3em;
+    color: var(--text-dim);
+    margin-top: 0.3rem;
+    font-weight: 400;
+  }
+}
+
+// --- Tables: military data display ---
+table {
+  border-collapse: collapse !important;
+  width: 100% !important;
+  font-size: 0.88rem !important;
+  border: 1px solid var(--border-tactical-strong) !important;
+  background: var(--surface-1) !important;
+}
+
+thead {
+  background: var(--surface-3) !important;
+  border-bottom: 2px solid var(--tactical-green-dim) !important;
+}
+
+th {
+  font-family: "Rajdhani", sans-serif !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  font-size: 0.8rem !important;
+  color: var(--tactical-green-bright) !important;
+  padding: 0.6rem 0.8rem !important;
+  text-align: left !important;
+  border-right: 1px solid var(--border-tactical) !important;
+
+  &:last-child {
+    border-right: none !important;
+  }
+}
+
+td {
+  padding: 0.5rem 0.8rem !important;
+  border-bottom: 1px solid var(--grid-line-strong) !important;
+  border-right: 1px solid var(--grid-line) !important;
+  font-size: 0.88rem !important;
+
+  &:last-child {
+    border-right: none !important;
+  }
+}
+
+tr:hover {
+  background: rgba(111, 168, 92, 0.05) !important;
+}
+
+// --- Blockquotes ---
+blockquote {
+  border-left: 3px solid var(--tactical-green-dim) !important;
+  background: var(--surface-2) !important;
+  padding: 0.8rem 1.2rem !important;
+  margin: 1rem 0 !important;
+  border-radius: 0 !important;
+  position: relative;
+
+  p {
+    color: var(--text-secondary) !important;
+    font-style: italic;
+  }
+}
+
+// --- Callouts: military alert style ---
+.callout {
+  border-radius: 0 !important;
+  border: 1px solid var(--border-tactical-strong) !important;
+  border-left: 4px solid var(--tactical-green) !important;
+  background: var(--surface-2) !important;
+
+  &[data-callout="tip"] {
+    border-left-color: var(--tactical-green) !important;
+  }
+
+  &[data-callout="note"] {
+    border-left-color: var(--amber) !important;
+  }
+
+  &[data-callout="warning"] {
+    border-left-color: var(--threat-red) !important;
+    background: rgba(196, 64, 48, 0.06) !important;
+  }
+
+  &[data-callout="important"] {
+    border-left-color: var(--threat-red) !important;
+  }
+
+  .callout-title {
+    font-family: "Rajdhani", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    font-size: 0.85rem;
+  }
+}
+
+// --- Explorer / Sidebar ---
+.explorer {
+  border: 1px solid var(--border-tactical) !important;
+  background: var(--surface-1) !important;
+  padding: 0.5rem !important;
+
+  button, .folder-title {
+    font-family: "Rajdhani", sans-serif !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.06em !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+  }
+}
+
+// --- Search ---
+button#search-button {
+  border: 1px solid var(--border-tactical) !important;
+  border-radius: 0 !important;
+  background: var(--surface-2) !important;
+  transition: border-color 0.15s ease;
+
+  &:hover {
+    border-color: var(--tactical-green) !important;
+  }
+}
+
+#search-container {
+  #search-space {
+    border-radius: 0 !important;
+    border: 1px solid var(--tactical-green-dim) !important;
+    background: var(--surface-0) !important;
+    box-shadow: 0 0 40px rgba(111, 168, 92, 0.1) !important;
+  }
+
+  input {
+    font-family: "JetBrains Mono", monospace !important;
+    border-radius: 0 !important;
+    color: var(--tactical-green-bright) !important;
+  }
+}
+
+// --- Graph ---
+.graph {
+  border: 1px solid var(--border-tactical) !important;
+  border-radius: 0 !important;
+  background: var(--surface-1) !important;
+}
+
+// --- Table of Contents ---
+.toc {
+  border: 1px solid var(--border-tactical) !important;
+  border-radius: 0 !important;
+  background: var(--surface-1) !important;
+  padding: 0.8rem !important;
+
+  & > h3 {
+    font-family: "Rajdhani", sans-serif !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.15em !important;
+    font-size: 0.75rem !important;
+    color: var(--tactical-green-dim) !important;
+
+    &::before {
+      content: none !important;
+    }
+  }
+}
+
+// --- Breadcrumbs ---
+.breadcrumb-container {
+  font-family: "JetBrains Mono", monospace !important;
+  font-size: 0.7rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+}
+
+// --- Tags ---
+a.tag-link {
+  font-family: "JetBrains Mono", monospace !important;
+  font-size: 0.7rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em;
+  border: 1px solid var(--border-tactical) !important;
+  border-bottom: 1px solid var(--border-tactical) !important;
+  border-radius: 0 !important;
+  padding: 0.15rem 0.5rem !important;
+  background: var(--surface-2) !important;
+  color: var(--text-dim) !important;
+
+  &:hover {
+    border-color: var(--amber) !important;
+    color: var(--amber) !important;
+    text-shadow: none !important;
+  }
+}
+
+// --- Content meta ---
+.content-meta {
+  font-family: "JetBrains Mono", monospace !important;
+  font-size: 0.72rem !important;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-dim) !important;
+  border-bottom: 1px solid var(--grid-line-strong);
+  padding-bottom: 0.5rem;
+}
+
+// --- Footer ---
+footer {
+  border-top: 1px solid var(--border-tactical) !important;
+  margin-top: 3rem !important;
+  padding-top: 1rem !important;
+
+  p, a {
+    font-family: "JetBrains Mono", monospace !important;
+    font-size: 0.7rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em;
+  }
+}
+
+// --- Article title ---
+article > h1.article-title {
+  font-size: 2.2rem !important;
+  letter-spacing: 0.08em !important;
+  color: var(--text-primary) !important;
+  border-bottom: 3px solid var(--tactical-green) !important;
+  padding-bottom: 0.6rem !important;
+  margin-bottom: 0.5rem !important;
+  text-shadow: 0 0 30px rgba(111, 168, 92, 0.15);
+
+  &::before {
+    content: none !important;
+  }
+}
+
+// --- Backlinks ---
+.backlinks {
+  border: 1px solid var(--border-tactical) !important;
+  border-radius: 0 !important;
+  background: var(--surface-1) !important;
+  padding: 0.8rem !important;
+
+  & > h3 {
+    font-family: "Rajdhani", sans-serif !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.15em !important;
+    font-size: 0.75rem !important;
+    color: var(--tactical-green-dim) !important;
+
+    &::before {
+      content: none !important;
+    }
+  }
+}
+
+// --- Popover ---
+.popover {
+  border-radius: 0 !important;
+  border: 1px solid var(--tactical-green-dim) !important;
+  background: var(--surface-0) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(111, 168, 92, 0.08) !important;
+}
+
+// --- Horizontal rules ---
+hr {
+  border: none !important;
+  border-top: 1px solid var(--border-tactical) !important;
+  margin: 2rem 0 !important;
+  position: relative;
+
+  &::after {
+    content: "◆";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--surface-0);
+    padding: 0 0.8rem;
+    color: var(--tactical-green-dim);
+    font-size: 0.6rem;
+  }
+}
+
+// --- Lists ---
+ul {
+  list-style-type: none !important;
+  padding-left: 1.2rem !important;
+
+  li {
+    position: relative;
+    padding-left: 0.8rem;
+
+    &::before {
+      content: "▸";
+      position: absolute;
+      left: -0.6rem;
+      color: var(--tactical-green-dim);
+      font-size: 0.8em;
+    }
+  }
+}
+
+ol {
+  padding-left: 1.4rem !important;
+
+  li {
+    padding-left: 0.3rem;
+
+    &::marker {
+      color: var(--tactical-green-dim);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.85em;
+    }
+  }
+}
+
+// --- Selection color ---
+::selection {
+  background: rgba(111, 168, 92, 0.35) !important;
+  color: var(--text-primary) !important;
+}
+
+// --- Scrollbar ---
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface-0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--tactical-green-dim);
+  border-radius: 0;
+
+  &:hover {
+    background: var(--tactical-green);
+  }
+}
+
+// --- Subtle scan-line overlay on the whole page ---
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    var(--scanline) 2px,
+    var(--scanline) 4px
+  );
+  opacity: 0.4;
+}
+
+// --- Dark mode toggle button ---
+.darkmode svg {
+  color: var(--tactical-green-dim) !important;
+}
