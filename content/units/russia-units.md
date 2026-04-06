@@ -124,6 +124,14 @@ The bottom line: Russian and NATO infantry are firing on the same column (3), bu
 
 **Scenario 1 examples:** 1-A-1 F, 2-A-1 F, 1-B-1 F, 2-B-1 F, 3-A-1 F, 3-B-1 F (all carry RPG ATGMs)
 
+### Real-World Context
+
+The Russian motorised rifle platoon is the basic dismounted infantry element of the Battalion Tactical Group (BTG), the dominant organisational unit of Russian ground forces from approximately 2013 onwards. A typical BTG is built around a motorised rifle battalion (3 rifle companies plus battalion HQ, approximately 500--600 personnel) reinforced with an attached tank company, artillery group, air defence, reconnaissance, electronic warfare, and engineer elements -- total strength approximately 700--1,000 personnel.
+
+Russian infantry is equipped with AK-74M or AK-12 assault rifles, PKM/PKP machine guns, and RPG-7 anti-tank weapons as standard issue to every section. The RPG-7 with its PG-7VR tandem HEAT warhead (claimed 600mm RHA penetration behind ERA) gives every Russian infantry squad an organic anti-armour capability, though at very short effective range (200--300m against moving targets, 500m against stationary).
+
+The BTG concept was premised on professional contract soldiers (kontraktniki) in every position, but the February 2022 invasion revealed that many BTGs were composed partly of conscripts despite the design. Critical failures in Ukraine included logistics designed for only a few days' operations, absence of infantry screening alongside road-bound armoured columns, unencrypted communications intercepted by Ukrainian SIGINT, and insufficient junior officer and NCO training for decentralised combined-arms warfare. From late 2022, Russia restructured back toward regimental and divisional formations following the mobilisation of 300,000+ reservists.
+
 ---
 
 ### IFV/APC Tracked Platoon (Mechanised Infantry)
@@ -188,6 +196,18 @@ The Move-Fire penalty is particularly devastating for IFV/APCs, which are often 
 - **Ammo matters (Advanced):** Vehicle PLs carry up to 5 Ammo. Each Direct Fire uses 1 Ammo; each Assault uses 2. With Atk 1 producing inconsistent results, you may fire many times before scoring Hits. Plan A1 Echelon resupply early.
 
 **Scenario 1 examples:** 1-A-1 T, 2-A-1 T, 1-B-1 T, 2-B-1 T, 3-A-1 T, 3-B-1 T (all carry Stabber ATGMs, most Depleted)
+
+### Real-World Context
+
+The Russian IFV/APC counter represents vehicles such as the BMP-2, BMP-3, and BTR-82A -- the armoured vehicle fleet of the Russian motorised rifle battalion.
+
+**BMP-2.** The most numerous Russian IFV, entering service in 1980. Armament: 30mm 2A42 autocannon (dual-feed, 200--550 rpm cyclic), coaxial 7.62mm PKTM, and a 9M113 Konkurs or 9M111 Fagot ATGM launcher on the turret roof. The 2A42 is effective against ground armoured targets (e.g., M113 APC) up to 1,500m with AP rounds. However, the BMP-2's armour is a severe weakness: hull front is only 33mm, protecting against small arms and artillery fragments only. Hull sides resist only 7.62mm -- the 12.7mm DShK heavy machine gun can penetrate the sides at close range. Fuel is carried in sponsons alongside the troop compartment, and ammunition is stored throughout the vehicle, making fires a major risk following any penetrating hit. The Oryx project documented hundreds of confirmed BMP-2 losses in Ukraine 2022--2025, making it the most destroyed armoured vehicle in the conflict. Causes included NLAW/Javelin top-attack, 25mm cannon fire from US-supplied Bradley IFVs (which proved remarkably effective at 500--1,500m, highlighting the lethality of Western IFV autocannons against BMP-series armour), RPG hits, artillery, mines, and FPV drone attacks.
+
+**BMP-3.** A more capable vehicle (service from 1987), used by higher-priority Russian units including Guards regiments near the Baltic approaches from Pskov. Armament: 100mm 2A70 rifled gun/launcher (fires conventional HE and gun-launched ATGMs), 30mm 2A72 autocannon (coaxial), and 7.62mm PKTM. The 100mm gun provides both direct fire and ATGM capability. Protection is similar aluminium-hull construction to BMP-2 with similar vulnerabilities.
+
+**BTR-82A.** Wheeled 8x8 APC (upgrade of BTR-80, service approximately 2009--2013). Armament: 30mm 2A72 autocannon (single-feed, inferior to BMP-2's dual-feed 2A42) plus 7.62mm PKTM. Protection: welded steel hull resistant to small arms and fragments; 14.5mm heavy machine gun can penetrate the hull at typical combat ranges. Losses in Ukraine have been extremely heavy -- thin armour made it vulnerable to 12.7mm gunfire, artillery fragments, and FPV drone attacks.
+
+The game's purple Atk 1 for the Russian IFV/APC accurately reflects the 30mm autocannon's real-world capability: effective against other APCs and IFVs but unable to penetrate NATO MBT composite armour.
 
 ---
 
@@ -271,6 +291,18 @@ This table reveals the full picture: the NATO MBT fires on a higher column (4 vs
 - **Range disadvantage.** NATO MBTs fire Atk at 3,000m; Russian MBTs fire Atk at 2,000m. NATO can engage Russian MBTs (with gold Atk) from beyond Russian Atk range. Close the distance or use terrain to negate this.
 
 **Identified IDs:** 1-A-2 (from rulebook ORBAT examples -- appears in larger scenarios, not Scenario 1)
+
+### Real-World Context
+
+The Russian MBT counter represents tanks from the T-72B3, T-80BVM, and T-90M families -- all derivatives of the Soviet-era design lineage sharing the 125mm 2A46M smoothbore gun and the Korzina carousel autoloader.
+
+**T-72B3.** The most common Russian MBT in service, a heavily upgraded T-72B (service from 2012--2016). Main gun: 125mm 2A46M-5 smoothbore firing 3BM60 Svinets-2 APFSDS (claimed approximately 650mm RHA penetration at 2,000m), HEAT-FS, and 9M119M Refleks gun-launched ATGMs (range up to 5,000m). The carousel autoloader holds 22 rounds in a ring around the hull floor and cycles at 7--8 rounds per minute. This carousel is a documented fatal vulnerability: penetrating hits (and even some non-penetrating hits) detonate the stored ammunition, causing catastrophic "jack-in-the-box" turret blow-off events where the turret is typically blown 50--100 metres from the hull. This has been the most distinctive and photographed signature of Russian tank losses in Ukraine. ERA: Kontakt-5 second-generation on hull and turret front, effective against HEAT shaped charges and providing approximately 20--25% reduction against long-rod APFSDS penetrators. Fire control: Sosna-U gunner's sight with thermal channel, a major improvement over the original T-72's poor night-fighting capability. Combat weight: approximately 44--48 tonnes. Oryx documented over 1,200 confirmed T-72 variant losses in Ukraine by mid-2025 -- destroyed, captured, or abandoned.
+
+**T-80BVM.** Modernisation of the T-80BV (service approximately 2017--2018). Same 125mm gun and ammunition family. Powered by a GTD-1250 gas turbine (1,250hp), giving exceptional cold-weather performance (no warm-up required -- important in Baltic winters) and high power-to-weight, with speeds of 70--80 km/h on roads. The gas turbine consumes significantly more fuel than diesel equivalents; this proved problematic during the 2022 Ukraine invasion when fuel resupply failed and some T-80s were abandoned. ERA: Kontakt-5, with some BVM vehicles retrofitted with Relikt.
+
+**T-90M Proryv.** Russia's most capable production MBT (significant service from 2019--2020). ERA: Relikt (4S24) third-generation, a major advancement over Kontakt-5. Relikt contains reactive elements responding to both HEAT and APFSDS threats, claimed to reduce APFSDS penetration by up to 50% in ideal geometry. It is more effective against tandem warheads than Kontakt-5, making the T-90M significantly harder to defeat with NLAW, Javelin, and older ATGMs. Fire control: Kalina FCS approaching Western standards. Engine: V-92S2F diesel, 1,130hp. Combat weight: approximately 48--50 tonnes. Oryx documented approximately 20--30 confirmed T-90M losses by mid-2025 -- relatively few compared to T-72B3, reflecting both smaller fleet size and deployment to priority areas. However, confirmed losses include vehicles destroyed by Javelin top-attack, FPV drones on the rear and top, and precision artillery strikes. The Relikt ERA has not made the T-90M immune to top-attack.
+
+The common vulnerability across all Russian MBTs is the thin armour on the hull roof (20--50mm) and turret roof, combined with the carousel autoloader's ammunition cook-off risk. The game's gold armour with purple Atk reflects the real asymmetry: these tanks are heavily armoured (effective against most weapons) but their 125mm guns, while powerful, face difficulties penetrating the frontal composite armour of Challenger 2 and Leopard 2A6/A7 at combat ranges.
 
 ---
 
@@ -597,6 +629,14 @@ Russia's artillery advantage is one of its most important asymmetric strengths. 
 - **Combo with FPV.** Use artillery to Suppress a target, then follow up with an FPV Double-Tap to finish it. The Suppression from artillery degrades the target's ability to Rally and fight back.
 - **Protect your ISTAR chain.** If NATO eliminates all your ISTAR Assets, your artillery goes silent. Ensure you have redundant observation: HQ (Embedded), Recce, FST, and UAS should cover different parts of the battlefield.
 
+### Real-World Context
+
+**2S19 Msta-S.** The standard Russian self-propelled artillery howitzer (entered service 1989), the backbone of divisional and army-level artillery. Calibre: 152mm/47. Range: approximately 24.7 km with standard OF-29 HE, approximately 28.9 km with rocket-assisted projectile, up to 25 km with Krasnopol laser-guided round (requires a laser designator on target). Rate of fire: 7--8 rounds per minute maximum (1--2 minute burst), 2--3 sustained. Ammunition: 50 rounds carried internally. Combat weight: 42 tonnes. The 2S19's range at standard ammunition is shorter than PzH 2000 or M777 with extended-range munitions, creating a Russian disadvantage in counter-battery duels when NATO forces can engage at ranges Russian guns cannot effectively respond to. Russia subsequently increased use of Krasnopol precision rounds to improve accuracy and reduce ammunition expenditure. Oryx documented dozens of confirmed 2S19 losses to Ukrainian counter-battery fire.
+
+**2A65 Msta-B (Towed).** Towed version of the same 152mm/47 gun. Lighter, providing greater tactical positioning flexibility but less survivable due to slower displacement time.
+
+**Russian fires doctrine.** Russian military doctrine heavily emphasises artillery as the primary means of combat. The principle of "fire destruction" (ognevoe porazhenie) envisages artillery destroying 50% or more of enemy forces before assault. In practice in Ukraine, Russian artillery fired an estimated 6,000--10,000 rounds per day at peak (2022--2023), compared to 1,000--2,000 for Ukraine. This quantitative superiority has been a consistent tactical advantage even when individual Russian platforms were inferior. Russian doctrine calls for massed fires with battalion and regimental fire groups coordinated to deliver simultaneous effects across the depth of the battlefield. The game's higher Russian artillery Fire Mission allocation directly reflects this doctrinal emphasis.
+
 ---
 
 ### FPV Drone Support Asset
@@ -637,6 +677,14 @@ The FPV's unique ability is the **Double-Tap**: after resolving the first FPV fi
 
 **Scenario 1:** FPV A, 4+2 = **6** Fire Missions
 
+### Real-World Context
+
+**Lancet loitering munition (ZALA Lancet-3).** The primary Russian loitering munition, developed by ZALA Aero (Kalashnikov Group subsidiary), entering widespread combat use from mid-2022. The Lancet-3 has a distinctive X-wing planform, is electrically powered (low acoustic signature), carries an approximately 3 kg high-explosive or thermobaric warhead, and has an operational radius of approximately 40 km. Guidance: initial GPS navigation with electro-optical (camera) terminal guidance under operator control. Lancet has been the primary Russian weapon responsible for dozens of confirmed artillery kills including M777, PzH 2000, FH-70, and AS90 howitzers, as well as counter-battery radar systems (AN/TPQ-36/37), air defence systems (Buk-M1), and armoured vehicles. The typical engagement pattern: a Russian Orlan-10 reconnaissance drone identifies a target, then a Lancet is launched for terminal attack. The Lancet's warhead, while small, is sufficient to destroy gun tubes, optics, and electronics on artillery systems -- a hit on the barrel or breech renders a howitzer immediately non-operational.
+
+**Commercial FPV drones.** From late 2022, both sides adapted commercial FPV racing drone frames (typically 5-inch or 7-inch) as single-use attack munitions. These became the dominant direct-attack weapon at platoon and company level by 2023--2024. Custom explosive payloads of 0.3--2 kg (repurposed RKG-3 anti-tank grenades, PG-7 warheads, MON-50 mines, custom shaped charges). Speed: up to 150--200 km/h. Range: approximately 3--8 km. Cost: approximately $300--700 per unit -- compared to a Javelin at approximately $80,000 or Kornet at approximately $30,000, representing a fundamentally different economic calculus. Russian FPV production scaled massively to an estimated 300,000--500,000 units in 2024. Russian FPV attacks destroyed hundreds of Ukrainian vehicles, primarily targeting engine decks and turret roofs. Tactics evolved to use swarms of 3--5 FPVs simultaneously to overwhelm targets. Countermeasures include vehicle-mounted jammers (Russia's Volnorez system), cage/slat "turtle" armour welded to tank tops, and escort drones.
+
+The game's FPV Support Asset with its unlimited range, no Danger Close, Double-Tap capability, and Russia's higher FM allocation reflects the reality that FPV drone warfare has fundamentally changed modern combined-arms combat.
+
 ---
 
 ### UAS Drone Support Asset
@@ -661,6 +709,12 @@ The FPV's unique ability is the **Double-Tap**: after resolving the first FPV fi
 
 **Scenario 1:** UAS A
 
+### Real-World Context
+
+**Orlan-10.** Russia's primary tactical reconnaissance UAV, manufactured by Special Technology Center (STC) in St. Petersburg. Fixed-wing, gasoline-engine, catapult-launched. Wingspan approximately 3.1m. Endurance: up to 18 hours. Operational radius: approximately 120 km. Payload includes EO/IR camera (daylight/thermal) and SIGINT antenna package (intercepts mobile phone signals and radio). The Orlan-10's primary role in Ukraine has been artillery fire adjustment -- forward observer teams using Orlan-10 adjusted 2S19 artillery fire in real time with 50--200m accuracy corrections. Ukraine shot down hundreds of Orlan-10s using small arms, Stinger MANPADS, and Gepard SPAAGs; the drone flies at 1,000--3,000m altitude. Captured Orlan-10 drones have been found to contain commercially available Japanese cameras, Chinese electronics, and Western microcontrollers.
+
+**Russian Electronic Warfare.** At BTG and battalion level, Russia fields several EW systems that the game's EW Chit advantage reflects: the Leer-3 drone-based jamming/SIGINT platform, the R-330Zh Zhitel GPS/SATCOM jammer, and various vehicle-mounted tactical jammers. At corps/army level, the Krasukha-4 ground-based EW complex suppresses airborne radar and surveillance systems (designed to counter JSTARS, AWACS, UAVs) at claimed ranges of 150--300 km. The strategic-level Murmansk-BN HF radio jamming system claims ranges up to 5,000 km, designed to disrupt NATO HF military communications across Europe. In Ukraine, Russian EW disrupted Ukrainian drone operations, GPS-guided munitions (including reducing Excalibur effectiveness in some regions), and communications in certain areas. However, Ukrainian and Western adaptation partially countered Russian EW -- particularly through Starlink terminals (operating on frequencies Russian tactical EW does not primarily target) and drone swarms that overwhelm jamming capacity. The game's mechanic of Russia drawing 2 EW Chits and keeping 1 reflects this doctrinal emphasis on electronic warfare as a core capability.
+
 ---
 
 ## Russian Anti-Tank Guided Missiles (ATGMs)
@@ -682,6 +736,12 @@ Both ATGMs function as **gold Atk** when fired -- they can target any vehicle ty
 - Fires on the RPG column of the ATGM table.
 - Practical use: last-ditch anti-armour for infantry in close terrain (Urban, Dense Wood). The short range means infantry must be dangerously close to use it. Best used against APCs/IFVs rather than wasted on MBTs (the ATGM table odds are not great at the best of times).
 
+#### Real-World Context
+
+**RPG-7.** Entered Soviet service in 1961 and remains one of the most produced anti-tank weapons in history. The launcher tube is 40mm; rockets vary in diameter. Key warheads include: PG-7VR tandem HEAT (64/105mm, designed to defeat ERA with a precursor charge, claimed 600mm RHA penetration behind ERA -- sufficient against T-64/T-72-era composite but marginal against modern NATO composite frontally); TBG-7V thermobaric (very effective against bunkers, buildings, and light vehicles in urban operations); and OG-7V fragmentation for use against personnel. Effective anti-armour range is approximately 200--300m against moving targets, 500m against stationary, with self-destruct at 920m. RPG-7 is standard issue to every Russian infantry section -- a typical motorised rifle squad will have multiple RPG-7 operators. It requires a 2-metre backblast clearance zone and cannot be fired from enclosed spaces without serious risk of injury.
+
+**RPG-29 Vampir.** Entered service in 1989, representing a significant capability increase over RPG-7. Calibre: 105mm warhead. PG-29V tandem HEAT warhead with claimed approximately 750mm RHA penetration behind ERA -- assessed as capable of defeating Challenger 2 and Leopard 2 composite armour from certain angles, particularly the side or underbelly. Notably, a single RPG-29 round disabled a Challenger 2 in Basra, Iraq in 2007 by penetrating below the frontal armour, injuring the driver -- the first known penetration of a Challenger 2 by a Russian-designed weapon. The vehicle was put out of action but not destroyed. RPG-29 is heavier than RPG-7 (approximately 18 kg loaded) and not as widely distributed due to bulk and cost; it is primarily issued to more experienced units.
+
 ### Stabber (Russian ATGM -- catch-all term)
 
 - Can **only** be carried by Russian Tracked FEs (IFV/APCs and MBTs, or Atk SECTs).
@@ -692,6 +752,18 @@ Both ATGMs function as **gold Atk** when fired -- they can target any vehicle ty
 
 > [!tip] Stabbers are irreplaceable
 > In most scenarios, the total number of Stabber shots available to Russia is fixed and small (typically 5-6 across the entire force). Each shot that misses is a permanent loss of anti-MBT capability. Each shot that hits can neutralise a NATO MBT worth significantly more than the Stabber. This one-shot-one-kill dynamic makes Stabber fire the highest-stakes action in the game for the Russian player.
+
+#### Real-World Context
+
+The "Stabber" is a catch-all game term representing Russia's family of vehicle-mounted and man-portable ATGMs, primarily the Kornet, Konkurs, and Metis-M.
+
+**9M133 Kornet (NATO: AT-14 Spriggan).** Russia's most capable ATGM in widespread service (entered service 1998). Guidance: laser beam-riding -- the operator tracks the target and the missile automatically rides the laser beam. This is more resistant to jamming than wire-guided systems but requires the operator to remain exposed during the approximately 8--17 second flight time. Range: 5,000m standard, extended to 8,000m in the Kornet-EM variant. Warhead: 9M133-1 tandem HEAT with 1,000--1,200mm penetration behind ERA -- defeats virtually all known ERA configurations including Kontakt-5 and reportedly Relikt. A thermobaric variant (9M133-2) exists for use against personnel and fortifications. Kornet can be tripod-mounted (dismounted) or vehicle-mounted (e.g., on Tigr vehicle or BMP-3). Documented kills include Merkava 4 tanks in Lebanon 2006 (Hezbollah use), M1 Abrams in Iraq, and numerous vehicles in Ukraine including confirmed kills on Leopard 2A4/A5 tanks.
+
+**9M113 Konkurs (NATO: AT-5 Spandrel).** Older wire-guided ATGM with SACLOS guidance. Range: 4,000m. Tandem HEAT warhead. Widely used but inferior to Kornet in all categories. Mounted on BMP-1P, BMP-2, and various vehicles.
+
+**9M131 Metis-M (NATO: AT-13 Saxhorn).** Lightweight man-portable ATGM. Range: 1,500m. Wire-guided SACLOS. Tandem warhead and thermobaric options. Lighter and more portable than Kornet at squad/platoon level but limited by range.
+
+The game's Stabber at 3,000m range with gold Atk abstracts this family of ATGMs. The real-world Kornet's 5,000m range and devastating penetration make it the primary means by which Russian ground forces can engage Western MBTs -- exactly the role the Stabber fills in the game.
 
 ---
 

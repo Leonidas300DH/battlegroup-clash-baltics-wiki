@@ -149,6 +149,14 @@ Platoons are the main combat units in the game. They have the highest Resilience
 
 **Scenario 1 examples:** 1-A-1 F, 2-A-1 F, 1-B-1 F, 2-B-1 F, 3-A-1 F (all start at Resilience 3 in Scenario 1, not the standard 4)
 
+### Real-World Context
+
+The NATO mechanised infantry platoon in Estonia is part of the UK-led Enhanced Forward Presence (eFP) battlegroup based at Tapa, Lääne-Viru County. A typical platoon consists of approximately 25--30 soldiers from the British Army's armoured infantry battalions (drawn from 12th Armoured Infantry Brigade, 1st Armoured Division), equipped with SA80 rifles, L7A2 GPMGs, 40mm underslung grenade launchers, and organic anti-tank weapons -- primarily NLAW and Javelin. Contributing nations (France, Denmark) rotate companies through the battlegroup; Danish troops deploy with CV9035DK IFVs, while French contributions have included VBCI-mounted infantry.
+
+The eFP is explicitly a "tripwire" force of approximately 1,000--1,400 personnel at any given time. Its purpose is deterrence -- ensuring any Russian attack would immediately constitute an attack on multiple NATO nations' troops, triggering Article 5. The Estonian Defence Forces 1st Infantry Brigade (approximately 3,000--5,000 active troops, with mobilisation capacity to 25,000--35,000 through conscription and Kaitseliit reserves) constitutes the primary Estonian defence force that the eFP would fight alongside.
+
+Estonian terrain -- forests, bogs, and villages -- suits dismounted infantry ambush tactics. The Ukrainian experience in February--March 2022 demonstrated the effectiveness of small infantry teams (2--5 soldiers) with NLAW and Javelin ambushing Russian armoured columns advancing in road march formation without adequate infantry screening. Defenders in Kyiv suburbs engaged Russian armour at ranges of 100--400m, exactly the close-terrain environments for which NATO infantry in Estonia would train.
+
 ---
 
 ### IFV/APC Tracked Platoon (Mechanised Infantry Vehicle)
@@ -210,6 +218,16 @@ Platoons are the main combat units in the game. They have the highest Resilience
 
 **Scenario 1 example:** 3-A-1 T (the only NATO Tracked [[force-elements|Platoon (PL)]] in Scenario 1, typically carrying a [[stacking|Mounted]] Foot [[force-elements|PL]] and the [[stacking|Embedded]] Tac [[force-elements|HQ]])
 
+### Real-World Context
+
+The IFV/APC counter in BC:B represents vehicles such as the FV510 Warrior IFV and the CV90 series, the primary mechanised infantry platforms of NATO's eFP battlegroup in Estonia.
+
+**Warrior IFV (United Kingdom).** The Warrior entered service in 1987 and has been the backbone of British armoured infantry, seeing combat in the Gulf War 1991, Bosnia, Kosovo, Iraq 2003, and Afghanistan. Primary armament is the L21A1 Rarden 30mm cannon, a magazine-fed system using three-round clips with a practical rate of fire of approximately 6 rounds per minute. The Rarden fires APDS rounds capable of penetrating BMP-series side armour at ranges up to 1,500m. Secondary armament is a coaxial 7.62mm Hughes Chain Gun. The Warrior's protection includes Chobham-derived composite armour (designated Dorchester) providing protection against 14.5mm AP frontally. Combat weight is approximately 28--30 tonnes depending on armour fit. Troop capacity: 7 dismounted infantry. A known limitation is the Rarden's single-feed mechanism, making it less effective against multiple fast-moving targets compared to belt-fed autocannons. The Warrior CSP upgrade programme (which would have fitted a 40mm CTA cannon) was cancelled in 2021 due to cost overruns, so UK Warriors in Estonia operate with the original Rarden.
+
+**CV90 (CV9040).** Several NATO eFP nations and partners use the CV90 series, designed by BAE Systems Hagglunds (Sweden). The Swedish CV9040 variant mounts a 40mm Bofors autocannon with a cyclic rate of 300 rounds per minute, capable of penetrating BMP-2 frontal armour at combat ranges. The CV9030 variant (Norway, Finland) mounts a 30mm Bushmaster II. Denmark operates the CV9035DK with a 35mm Bushmaster III. Both are generally regarded as superior to Warrior in firepower and mobility. Troop capacity: 6--8 dismounts. Combat weight: 22--35 tonnes depending on variant and armour kit.
+
+The game's IFV/APC counter with purple Atk 1 abstracts the autocannon armament of these platforms -- effective against other IFVs and APCs but unable to penetrate MBT armour, consistent with the real-world capabilities of 30--40mm cannon fire against composite or ERA-equipped tanks.
+
 ---
 
 ### Main Battle Tank Platoon (MBT)
@@ -269,6 +287,18 @@ Platoons are the main combat units in the game. They have the highest Resilience
 - **Common mistake: ignoring Indirect Fire.** Players sometimes believe the [[force-elements|MBT]] is invincible because of its gold [[force-elements|FE]] Type. It is not. Artillery, Mortars, and FPV drones bypass the colour system entirely. A Russian 152mm Artillery barrage can damage the [[force-elements|MBT]] just as easily as it can damage infantry (though DRMs for targeting vehicles with Indirect Fire are unfavourable for the attacker).
 
 **Identified IDs:** 1-A-2 (referenced in rulebook examples for larger scenarios)
+
+### Real-World Context
+
+The NATO MBT counter primarily represents the FV4034 Challenger 2, fielded by the UK eFP battlegroup in Estonia (typically a squadron of 12--14 tanks), and the Leopard 2 series operated by Germany (eFP Lithuania), the Netherlands, Denmark, Finland, Poland, and others contributing to Baltic defence.
+
+**Challenger 2 (United Kingdom).** The Challenger 2 entered service in 1998 and is one of the most heavily armoured Western tanks. Its main gun is the L30A1 120mm rifled gun -- the only rifled 120mm in NATO service. All other NATO MBTs use the Rheinmetall 120mm smoothbore. The rifled barrel fires HESH rounds (effective against structures and older Soviet armour) and the L27A1 CHARM 3 APFSDS kinetic energy penetrator, with performance assessed as capable of defeating T-72/T-80 series frontally at ranges exceeding 3,000m. A significant logistics complication is that Challenger 2 cannot fire the standard NATO DM-series smoothbore ammunition used by Leopard 2 and Abrams. Ammunition load: 52 rounds. Crew: 4 (commander, gunner, loader, driver) -- the human loader allows faster sustained fire but adds a crew member compared to autoloader-equipped tanks. Combat weight: approximately 62--65 tonnes with full armour package. Engine: Perkins CV12 diesel, 1,200hp.
+
+Protection is Dorchester (Chobham 2) composite armour, assessed as defeating all known Russian tank gun rounds on the frontal arc at combat ranges. The Challenger 2 had never had a crew member killed by enemy fire in combat -- including extensive operations in Iraq 2003 -- until 2023, when the UK donated approximately 14 Challenger 2 tanks to Ukraine. At least one was destroyed in the Zaporizhzhia area in September 2023, attributed to an FPV drone or RPG attack on the engine deck/rear followed by fire. This was the first combat loss of a Challenger 2 to enemy action, confirming that top-attack and rear-arc attacks are the primary threat rather than direct frontal penetration. An RPG-29 round disabled a Challenger 2 in Basra, Iraq in 2007 by penetrating below the frontal armour, injuring the driver -- the first known penetration by a Russian-designed weapon.
+
+**Leopard 2 (Germany and others).** The dominant NATO MBT. The Leopard 2A6/A7 mounts a Rheinmetall 120mm L/55 smoothbore providing higher muzzle velocity and improved penetration with DM63/DM73 APFSDS rounds, estimated at 600--700mm RHA equivalent at 2,000m. The Leopard 2A5/A6 turret features modular composite armour with a distinctive wedge shape, assessed as proof against most Russian APFSDS at combat range. Several Leopard 2A4 and 2A5 tanks were lost during Ukraine's Zaporizhzhia offensive in summer 2023, primarily to minefields (immobilisation followed by artillery or FPV attack), Kornet ATGM hits, and artillery strikes.
+
+The game's gold Atk 4 at 3,000m range with TQ 6 accurately reflects the assessed superiority of NATO MBTs over Russian counterparts in fire control, protection, and crew training.
 
 ---
 
@@ -385,6 +415,14 @@ Sections are smaller, specialised units. They have lower Resilience (typically 1
 - **Use the 500m ISTAR exception aggressively.** Moving the Recce within 500m of Urban or Dense Wood positions allows Artillery or FPV strikes on targets that are otherwise invisible. This is one of NATO's most powerful capabilities.
 - **Can [[stacking|Embed]] for safety.** If the Recce is in danger, it can [[stacking|Embed]] in a friendly Tracked [[force-elements|PL]] in the same [[task-groups|TGp]]. While [[stacking|Embedded]], it still provides [[force-elements|ISTAR]] [[line-of-sight|LoS]] from the vehicle's position.
 - **Common mistake: using Recce as a fighting unit.** New players sometimes see the Anti-Tank (Atk) 2 and think the Recce can contribute to a firefight. It can, technically, but losing it removes your ability to direct Indirect Fire effectively. The observation capability is worth far more than the meagre combat contribution.
+
+### Real-World Context
+
+NATO reconnaissance in the Baltics is layered across multiple platforms. The British Army's armoured reconnaissance capability in Estonia includes the CVRT (Combat Vehicle Reconnaissance Tracked) series -- specifically the Scimitar, which mounts the same 30mm Rarden cannon as the Warrior in a two-man turret on a lightweight tracked hull weighing approximately 8 tonnes. The Scimitar's low ground pressure improves cross-country mobility in soft Estonian terrain (forests, bogs). Speed: up to 80 km/h on roads. The Jackal 2 (MWMIK) wheeled patrol vehicle is used for mounted reconnaissance in less contested zones. The UK is transitioning toward Ajax for the reconnaissance role, though the programme has experienced extensive development delays.
+
+At platoon and company level, NATO forces use the Black Hornet 3 nano-UAV -- a 33-gram drone with a 2 km range, used for situational awareness in urban areas, observation around corners, and short-range ISR. Its extremely low acoustic and visual signature makes it nearly undetectable. Larger tactical UAVs include the Desert Hawk III (hand-launched fixed-wing, approximately 15 km range, 90-minute endurance) at battlegroup level, and the RQ-11B Raven (hand-launched, approximately 10 km range) at platoon level in US-equipped forces.
+
+The game's Recce SECT with its 4,000m LoS, 500m ISTAR exception in Dense Wood/Urban, and reduced Danger Close distance abstracts this multi-layered reconnaissance capability -- combining vehicle-mounted observation, advanced optics, and organic drone surveillance into a single game element.
 
 ---
 
@@ -510,6 +548,18 @@ The FST has almost no independent combat value. Its TQ provides a marginal DRM i
 
 **Scenario 1:** Mor-1 ([[task-groups|TGp]] 4), 5 [[indirect-fire|Fire Missions (FM)]], starts at Grid Square (GS) E202/N235
 
+### Real-World Context
+
+The 120mm mortar is the standard NATO heavy mortar calibre, largely replacing the British 81mm L16 at battalion level. The shift to 120mm reflects US doctrine (M120 mortar) and the desire for greater firepower.
+
+**M120 Mortar (US).** Rifled 120mm mortar in towed configuration. Range: approximately 7,200m with standard round, up to 8,000m with extended-range rounds. Rate of fire: 4 rounds per minute sustained, 16 rounds per minute for short bursts. Weight: approximately 144 kg. Towed behind HMMWV.
+
+**AMOS (Automatic Mortar System).** Finland and Sweden use the 120mm AMOS -- a twin-barrelled 120mm mortar in a turret mounted on CV90 or Patria AMV chassis. Fully automated, firing up to 14 rounds per minute (twin barrels), with crew protected in the armoured vehicle.
+
+The 120mm calibre also benefits from GPS-guided precision rounds -- the US M395 Precision Guided Mortar Munition provides a CEP under 10 metres at maximum range.
+
+Estonian terrain -- forests, bogs, urban areas -- makes indirect fire from concealed positions critical. The 120mm mortar provides battalion-organic fire support independent of artillery, with a heavier shell (6--7 kg) delivering significantly more blast-fragmentation effect than an 81mm round, making it more effective against fortified positions and light vehicles.
+
 ---
 
 ## Support Assets (Off-Map -- Cannot Be Targeted)
@@ -544,6 +594,18 @@ The FST has almost no independent combat value. Its TQ provides a marginal DRM i
 **500m Danger Close:** NATO cannot fire Artillery at an enemy target if any friendly [[force-elements|FE]] is within 500m of that target. This is a significant restriction in close engagements. The exception is Recce, which only has a 250m Danger Close -- this makes the Recce [[force-elements|SECT]]'s ability to get close to targets and still allow Artillery fire particularly valuable.
 
 **Note:** NATO does **not** have Artillery in Scenario 1 (it is deployed elsewhere per the scenario briefing). This is a significant disadvantage.
+
+### Real-World Context
+
+The 155mm calibre is the NATO standard for heavy artillery, with three principal platforms relevant to the Baltic battlegroup:
+
+**M777 155mm Lightweight Howitzer.** A joint US/UK programme manufactured by BAE Systems. Weight: approximately 4,218 kg -- significantly lighter than comparable systems through titanium and aluminium construction, allowing helicopter sling-load and air transport. Calibre: 155mm/39. Range: approximately 24.7 km with standard HE, up to approximately 40 km with Excalibur GPS-guided munitions. Rate of fire: 5 rounds per minute maximum (2-minute burst), approximately 2 rounds per minute sustained. Crew: 8--9. The US provided approximately 190 M777s to Ukraine from May 2022; they proved effective at extended ranges with Excalibur but their fixed firing positions and relatively light construction made them vulnerable to Russian counter-battery fire and Lancet loitering munitions.
+
+**PzH 2000 (Panzerhaubitze 2000).** German self-propelled howitzer, widely considered the most capable in the world at introduction. Calibre: 155mm/52 (longer barrel than the L/39 systems, providing higher muzzle velocity). Range: approximately 30 km with standard HE, approximately 56 km with Excalibur. The automated loading system holds 60 ready rounds and enables a burst rate of up to 10 rounds per minute (3 rounds in under 10 seconds from halt). Combat weight: approximately 55.6 tonnes. Crew: 5. Netherlands and Germany provided PzH 2000 to Ukraine from 2022; combat reports praised rate of fire and range but noted barrel wear exceeding expectations under intensive use -- Ukrainian crews firing up to 100 rounds per day per gun significantly exceeded the designed sustained rate.
+
+**AS90 155mm Self-Propelled Howitzer.** British Army SPH. Calibre: 155mm/39 barrel. Range: approximately 24.7 km standard, approximately 30 km with ERFB. Rate of fire: 6 rounds per minute burst, 3 sustained. Weight: approximately 45 tonnes. The UK donated approximately 20 AS90s to Ukraine in 2023. The shorter 39-calibre barrel is a limitation compared to PzH 2000.
+
+**Excalibur M982** GPS/INS-guided shell provides a CEP of approximately 5--20 metres, used extensively in Ukraine for precision strikes at extended ranges. Russia has reportedly developed GPS jamming countermeasures that reduce Excalibur effectiveness over some Ukrainian battlefields.
 
 ---
 
@@ -619,11 +681,43 @@ ATGMs function as **gold Anti-Tank (Atk)** when fired, meaning they can target a
 
 **Range: 1,000m.** The NLAW is a short-range anti-tank weapon designed for infantry use at close quarters. Its 1,000m range means it can only engage targets within the same or adjacent Grid Squares. This is effective in defensive positions (especially in Dense Wood or Urban terrain where vehicles must approach closely) but limits its use in open engagements. The NLAW uses its own column on the ATGM Fire Results Table.
 
+#### Real-World Context
+
+The NLAW (Next generation Light Anti-tank Weapon, formally MBT LAW) is a joint UK-Swedish programme manufactured by Thales (UK) and Saab (Sweden), entering British Army service in 2009. It is a single-shot disposable weapon fired from the shoulder, weighing approximately 12.5 kg.
+
+NLAW's key technological innovation is its Predicted Line Of Sight (PLOS) guidance. The firer tracks the target for approximately 3 seconds, during which the weapon's inertial measurement unit records the angular rate of change. The missile then flies a predicted intercept path autonomously -- true fire-and-forget after the brief tracking phase. No wire guidance or laser designation is required.
+
+The primary attack mode is Overfly Top Attack (OTA): the missile flies approximately 1 metre above the target's predicted path and detonates a downward-firing shaped charge against the thin top armour of the tank (typically 20--50mm, compared to 500--700mm effective RHA on the frontal arc). A direct attack mode is available for use against lighter vehicles, buildings, and bunkers.
+
+Real-world range: minimum 20m, maximum 600m (the game's 1,000m range is a gameplay abstraction that includes the engagement envelope plus some margin). The 600m maximum is an acknowledged limitation -- NLAW is designed specifically for close-range ambush scenarios in complex terrain (villages, forests), not open-country engagements.
+
+The warhead is tandem HEAT: the first charge defeats ERA (Explosive Reactive Armour), the main charge then penetrates the underlying armour. It is effective against Kontakt-5 ERA but may be marginal against Relikt ERA in some hit configurations.
+
+The UK supplied approximately 5,000 NLAW systems to Ukraine before and immediately after the February 2022 invasion. NLAW became one of the most visible anti-tank weapons of the early war. Open-source analysis of Ukrainian combat footage from the Kyiv, Chernihiv, and Sumy directions confirmed multiple NLAW kills against T-72B3 and BMP-2/3 vehicles, with characteristic top-attack detonation patterns visible on burnt-out hulls. The weapon performed particularly well in northern Ukraine's forests and villages -- exactly the environments for which it was designed. Ukrainian territorial defence troops with minimal training could achieve kills due to the weapon's simplicity (no complex guidance parameters to set, no wire to manage). The combination of NLAW and Javelin effectively halted the Russian armoured advance on Kyiv in February--March 2022.
+
 ### Javelin
 
 **Range: 3,000m.** The Javelin is NATO's signature long-range anti-tank weapon. Its 3,000m range matches the [[force-elements|Main Battle Tank (MBT)]]'s gun range, meaning a Foot [[force-elements|Platoon (PL)]] with a Javelin can engage enemy tanks before they can close to Direct Fire range (most vehicles have only 2,000m Anti-Tank (Atk) range). The Javelin's fire-and-forget capability is abstracted in the game through its dedicated ATGM column and its gold targeting.
 
 **The Javelin is one of NATO's most important weapons.** In the Example of Play, the NATO player's Javelin Reactive Fire from 1-B-1 against the advancing Russian 2-A-1 Stack scores 2 Hits on the Tracked [[force-elements|FE]] and 1 Hit on the [[stacking|Mounted]] Foot [[force-elements|PL]], crippling an entire Russian [[force-elements|Platoon (PL)]] in a single shot. The 3,000m range means NATO can threaten approaching Russian armour long before they close to engagement distance.
+
+#### Real-World Context
+
+The FGM-148 Javelin is a joint US programme by Raytheon and Lockheed Martin, entering service in 1996. It is the primary anti-tank guided missile of US forces and has been widely exported to NATO allies.
+
+Javelin uses an uncooled infrared imaging seeker. The operator acquires the target on the Command Launch Unit (CLU) thermal sight, locks the seeker onto the target's heat signature, and fires. After launch, the missile is completely autonomous -- true fire-and-forget. The operator can immediately take cover or engage another target. The CLU's dual-field thermal imager can also be used dismounted as a standalone surveillance device.
+
+Javelin uses a soft-launch ("pop-out") mechanism: the initial motor pushes the missile out of the tube, then the main motor ignites at a safe distance. This allows firing from inside buildings or near cover -- a significant tactical advantage over harder-backblast weapons such as RPG-7.
+
+In top-attack mode, the missile climbs to approximately 150m altitude then dives onto the target from above, striking the thin roof armour and defeating all known ERA configurations on the frontal/side arcs. Direct-attack mode provides a flatter trajectory for use against fortifications, light vehicles, and helicopters.
+
+Real-world range: minimum approximately 75m, maximum 2,500m in earlier Block 0/I variants, extended to approximately 4,750m in Block II variants. The game's 3,000m is realistic for the Block I/II range envelope used by most NATO nations.
+
+The warhead is tandem HEAT with assessed penetration of 600--800mm RHA equivalent after ERA defeat -- sufficient to defeat T-72B3, T-80BVM, and T-90M frontally in most configurations.
+
+Weight: missile plus CLU approximately 22 kg total (heavier than NLAW, typically requiring two-man operation). The CLU requires a Battery Coolant Unit lasting approximately 4 hours.
+
+Javelin saw first combat use in Iraq 2003, with confirmed kills against T-72 tanks, BMPs, and bunker positions. In Ukraine from 2022, documented kills confirmed by Oryx and video analysis include T-72B3, T-80BVM, T-80U, BMP-2, BMP-3, BTR-82A, and the T-90M. Top-attack mode proved highly effective against T-72B3 and T-80BVM. Against T-90M with Relikt ERA, results were more mixed -- some Relikt bricks disrupted the precursor charge, but penetrations were confirmed in multiple cases. The T-90M hull roof and engine deck remain vulnerable to top-attack even with Relikt.
 
 ### ATGM Interactions
 
