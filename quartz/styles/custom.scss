@@ -35,8 +35,12 @@
 }
 
 // ============================================================================
-// BASE
+// BASE — force consistent sizing across all browsers
 // ============================================================================
+
+html {
+  font-size: 14px !important;
+}
 
 body {
   background: var(--surface) !important;
