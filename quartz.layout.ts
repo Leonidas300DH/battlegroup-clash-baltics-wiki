@@ -4,7 +4,9 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [
+    Component.Backlinks(),
+  ],
   footer: Component.Footer({
     links: {
       "GitHub": "https://github.com/Leonidas300DH/battlegroup-clash-baltics-wiki",
@@ -13,7 +15,7 @@ export const sharedPageComponents: SharedLayout = {
   }),
 }
 
-// Content pages: clean wiki layout — explorer left, backlinks right, no graph/TOC clutter
+// Wiki layout: everything navigable from the left, content takes full width
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
     Component.ConditionalRender({
@@ -37,10 +39,9 @@ export const defaultContentPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer(),
+    Component.Graph(),
   ],
-  right: [
-    Component.Backlinks(),
-  ],
+  right: [],
 }
 
 export const defaultListPageLayout: PageLayout = {
@@ -58,6 +59,7 @@ export const defaultListPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer(),
+    Component.Graph(),
   ],
   right: [],
 }

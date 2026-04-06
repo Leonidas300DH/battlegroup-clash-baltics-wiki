@@ -1,4 +1,5 @@
 @use "./base.scss";
+@use "./variables.scss" as *;
 
 // ============================================================================
 // BATTLEGROUP CLASH: BALTICS — TACTICAL OPERATIONS CENTER THEME
@@ -549,4 +550,67 @@ body::after {
 // --- Dark mode toggle button ---
 .darkmode svg {
   color: var(--tactical-green-dim) !important;
+}
+
+// ============================================================================
+// LAYOUT: No right column, full-width content, compact header
+// ============================================================================
+
+// Kill the right sidebar entirely — content takes full remaining width
+.page > #quartz-body {
+  grid-template-columns: #{$sidePanelWidth} 1fr !important;
+  grid-template-areas:
+    "grid-sidebar-left grid-header"
+    "grid-sidebar-left grid-center"
+    "grid-sidebar-left grid-footer" !important;
+
+  @media all and (max-width: 800px) {
+    grid-template-columns: 1fr !important;
+    grid-template-areas:
+      "grid-sidebar-left"
+      "grid-header"
+      "grid-center"
+      "grid-footer" !important;
+  }
+}
+
+.sidebar.right {
+  display: none !important;
+}
+
+// Reduce excessive top spacing on the left sidebar
+.page > #quartz-body > .sidebar.left {
+  padding-top: 1rem !important;
+}
+
+// Page title: compact, no wasted space
+.page-title {
+  margin-top: 0 !important;
+  padding-top: 0.4rem !important;
+  padding-bottom: 0.6rem !important;
+  font-size: 1.3rem !important;
+
+  &::before {
+    content: "// ";
+    color: var(--tactical-green-dim);
+  }
+}
+
+// Graph in left sidebar: compact
+.sidebar.left .graph {
+  border: 1px solid var(--border-tactical) !important;
+  border-radius: 0 !important;
+  background: var(--surface-1) !important;
+  margin-top: 0.5rem !important;
+}
+
+// Backlinks at bottom of article (afterBody), styled as section
+.backlinks {
+  margin-top: 2rem !important;
+  border-top: 2px solid var(--tactical-green-dim) !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+  background: transparent !important;
+  padding: 1rem 0 !important;
 }
