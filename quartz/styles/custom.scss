@@ -289,18 +289,6 @@ blockquote {
   background: var(--surface-1) !important;
   padding: 0.5rem !important;
 
-  // Hide the collapse arrow next to Explorer title — always show explorer
-  .desktop-explorer > svg.fold {
-    display: none !important;
-  }
-
-  // No height limit on explorer content
-  .explorer-content,
-  .explorer-ul {
-    max-height: none !important;
-    overflow: visible !important;
-  }
-
   button, .folder-title {
     font-family: "Rajdhani", sans-serif !important;
     text-transform: uppercase !important;

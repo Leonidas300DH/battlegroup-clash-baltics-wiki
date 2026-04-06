@@ -30,10 +30,10 @@
 .explorer {
   display: flex;
   flex-direction: column;
-  overflow-y: hidden;
+  overflow-y: visible;
 
   min-height: 1.2rem;
-  flex: 0 1 auto;
+  flex: 1 1 auto;
 
   &.collapsed {
     flex: 0 1 1.2rem;
@@ -44,9 +44,7 @@
   }
 
   & .fold {
-    margin-left: 0.5rem;
-    transition: transform 0.3s ease;
-    opacity: 0.8;
+    display: none;
   }
 
   @media all and ($mobile) {
@@ -113,8 +111,7 @@ button.desktop-explorer {
 
 .explorer-content {
   list-style: none;
-  overflow: hidden;
-  overflow-y: auto;
+  overflow: visible;
   margin-top: 0.5rem;
 
   & ul {
