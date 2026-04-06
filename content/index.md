@@ -59,6 +59,7 @@ updated: 2026-04-06
 - [[line-of-sight]] — LoS rules, obstructions, cover, ISTAR
 - [[terrain]] — Terrain types, movement, No-Go, roads, rivers
 - [[atgm]] — Anti-Tank Guided Missiles: NLAW, Javelin, RPG, Stabber
+- [[drones]] — UAS (reconnaissance) and FPV (attack): how drones define the modern battlefield in BC:B
 - [[command-activation]] — HQ Command Activation for multiple TGps
 - [[mission-command]] — NATO's doctrinal flexibility (Advanced mode)
 - [[red-doctrine]] — Russia's doctrinal rigidity (Advanced mode)
