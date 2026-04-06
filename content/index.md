@@ -34,8 +34,9 @@ updated: 2026-04-06
 - [[russia]] — More numbers/fires, EW advantage, Red Doctrine rigidity
 
 ## Units
-- [[nato-units]] — All NATO unit types with stats, targeting, and tactical notes
-- [[russia-units]] — All Russian unit types with stats, targeting, and force comparison
+- [[units]] — **Start here**: how to read a counter, targeting colours, TQ/DRM system, Resilience, Stacking, ATGMs
+- [[nato-units]] — All NATO unit types with stats, real-world equipment, and gameplay analysis
+- [[russia-units]] — All Russian unit types with stats, real-world equipment, and force comparison
 
 ## Scenarios
 - [[scenario-1-bump-in-the-road]] — A Bump In The Road: Russia attacks Sindi Bridge (Map C, 5 turns)
