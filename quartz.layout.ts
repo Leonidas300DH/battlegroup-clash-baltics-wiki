@@ -13,6 +13,7 @@ export const sharedPageComponents: SharedLayout = {
   }),
 }
 
+// Content pages: clean wiki layout — explorer left, backlinks right, no graph/TOC clutter
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
     Component.ConditionalRender({
@@ -38,8 +39,6 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
-    Component.Graph(),
-    Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
 }
