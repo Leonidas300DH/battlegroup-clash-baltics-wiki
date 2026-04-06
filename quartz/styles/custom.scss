@@ -601,8 +601,8 @@ body::after {
   display: none !important;
 }
 
-// Graph page: only the graph, nothing else
-.page[data-slug="graph"] {
+// Graph page: only the graph, fullscreen
+body[data-slug="graph"] {
   .article-title,
   .content-meta,
   .tag-list,
@@ -610,16 +610,21 @@ body::after {
   .popover-hint,
   .backlinks,
   footer,
-  article > hr {
+  hr,
+  .page-header {
     display: none !important;
   }
 
-  // Style the full-page graph
   .page-footer > .graph {
     border: none !important;
     background: transparent !important;
 
+    & > h3 {
+      display: none !important;
+    }
+
     & > .graph-outer {
+      height: calc(100vh - 20px) !important;
       border: 1px solid var(--border-tactical-strong) !important;
       border-radius: 0 !important;
       background: var(--surface-1) !important;
