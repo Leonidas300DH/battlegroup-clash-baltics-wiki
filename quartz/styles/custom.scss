@@ -601,9 +601,8 @@ body::after {
   display: none !important;
 }
 
-// Graph page: show global graph inline (not as overlay), fullscreen
+// Graph page: hide chrome, the JS auto-opens the global graph modal
 body[data-slug="graph"] {
-  // Hide everything except the graph
   .article-title,
   .content-meta,
   .tag-list,
@@ -616,34 +615,17 @@ body[data-slug="graph"] {
     display: none !important;
   }
 
-  .page-footer > .graph {
-    // Hide the small local graph
-    & > h3,
-    & > .graph-outer {
-      display: none !important;
-    }
+  .page-footer > .graph > h3 {
+    display: none !important;
+  }
 
-    // Show the global graph inline instead of as a fixed overlay
-    & > .global-graph-outer {
-      display: block !important;
-      position: relative !important;
-      width: 100% !important;
-      height: auto !important;
-      backdrop-filter: none !important;
-      z-index: auto !important;
-
-      & > .global-graph-container {
-        position: relative !important;
-        top: auto !important;
-        left: auto !important;
-        transform: none !important;
-        width: 100% !important;
-        height: calc(100vh - 20px) !important;
-        border: 1px solid var(--border-tactical-strong) !important;
-        border-radius: 0 !important;
-        background: var(--surface-1) !important;
-      }
-    }
+  // Make the global graph modal even bigger on this page
+  .global-graph-outer.active > .global-graph-container {
+    height: 95vh !important;
+    width: 95vw !important;
+    border-radius: 0 !important;
+    border: 1px solid var(--border-tactical-strong) !important;
+    background: var(--surface-1) !important;
   }
 }
 

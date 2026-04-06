@@ -646,4 +646,9 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
     cleanupLocalGraphs()
     cleanupGlobalGraphs()
   })
+
+  // Auto-open global graph on the /graph page
+  if (document.body.dataset.slug === "graph") {
+    setTimeout(() => renderGlobalGraph(), 200)
+  }
 })
