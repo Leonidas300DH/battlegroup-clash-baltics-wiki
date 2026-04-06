@@ -289,6 +289,24 @@ blockquote {
   background: var(--surface-1) !important;
   padding: 0.5rem !important;
 
+  // Hide the collapse arrow next to Explorer title — always show explorer
+  .desktop-explorer > svg.fold {
+    display: none !important;
+  }
+
+  // Force explorer content always open on desktop
+  .explorer-content {
+    aria-expanded: true;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  // Explorer list takes available height
+  .explorer-ul {
+    max-height: calc(100vh - 280px) !important;
+    overflow-y: auto !important;
+  }
+
   button, .folder-title {
     font-family: "Rajdhani", sans-serif !important;
     text-transform: uppercase !important;

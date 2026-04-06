@@ -40,6 +40,7 @@ updated: 2026-04-05
 - [[game-overview]] — What BC:B is, scope, scale, design origins
 - [[game-modes]] — Basic, Standard, Advanced mode differences
 - [[sequence-of-play]] — Three phases: Preparation, Command, Execution
+- [[game-turn]] — Detailed turn structure: Command Phase, Execution Phase, Clean-up
 - [[preparation-phase]] — Phase 1: scenario setup and Sync Matrix
 - [[command-phase]] — Phase 2: Rally, New Orders, EW Activity
 - [[execution-phase]] — Phase 3: Initiative, Action Round, Clean-up
