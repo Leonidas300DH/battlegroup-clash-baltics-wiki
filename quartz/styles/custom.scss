@@ -2,260 +2,337 @@
 @use "./variables.scss" as *;
 
 // ============================================================================
-// BC:B WIKI — OPERATIONAL COMMAND INTERFACE
-// Design system: "The Tactical Intelligence Feed"
-// Ref: vanguard_tactical_hud/DESIGN.md
+// BC:B WIKI — TACTICAL INTELLIGENCE FEED
+// Design: dense, precise, functional — classified documentation aesthetic
+// Palette: Primary #FFB800 | Secondary #334155 | Tertiary #00D7FE | Black
+// Zero border-radius. Ghost borders. Glass surfaces. Restrained typography.
 // ============================================================================
 
-// --- Design Tokens: Vanguard Tactical HUD ---
-// Primary #FFB800 | Secondary #334155 | Tertiary #00D7FE | Neutral #000000
 :root {
   --surface: #0a0a0a;
-  --surface-container-lowest: #050505;
-  --surface-container-low: #141414;
-  --surface-container: #1a1a1a;
-  --surface-container-high: #242424;
-  --surface-container-highest: #2e2e2e;
-  --surface-tint: #ffba20;
+  --surface-low: #111111;
+  --surface-mid: #171717;
+  --surface-high: #1e1e1e;
+  --surface-highest: #282828;
 
   --primary: #FFB800;
-  --primary-dim: rgba(255, 184, 0, 0.4);
-  --primary-container: #ffb800;
-  --on-primary: #412d00;
+  --primary-20: rgba(255, 184, 0, 0.20);
+  --primary-10: rgba(255, 184, 0, 0.10);
+  --primary-06: rgba(255, 184, 0, 0.06);
 
   --secondary: #334155;
-  --secondary-dim: rgba(51, 65, 85, 0.5);
-
   --tertiary: #00D7FE;
-  --tertiary-dim: rgba(0, 215, 254, 0.4);
+  --tertiary-40: rgba(0, 215, 254, 0.40);
+  --danger: #FF3B30;
 
-  --threat-red: #FF3B30;
+  --ghost: rgba(255, 184, 0, 0.10);
+  --ghost-strong: rgba(255, 184, 0, 0.18);
 
-  --outline: #9e8f78;
-  --outline-variant: rgba(81, 69, 50, 0.15);
-  --ghost-border: rgba(255, 184, 0, 0.12);
-
-  --text-primary: #E6EDF3;
-  --text-secondary: #d5c4ab;
-  --text-dim: #525964;
-  --text-on-surface: #e2e2e2;
+  --text-0: #e8e8e8;
+  --text-1: #b0a898;
+  --text-2: #706860;
+  --text-3: #484040;
 }
 
-// --- Base: absolute darkness with subtle grid ---
+// ============================================================================
+// BASE
+// ============================================================================
+
 body {
-  background-color: var(--surface) !important;
+  background: var(--surface) !important;
   background-image:
-    linear-gradient(rgba(255, 184, 0, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 184, 0, 0.03) 1px, transparent 1px);
-  background-size: 80px 80px;
+    linear-gradient(var(--primary-06) 1px, transparent 1px),
+    linear-gradient(90deg, var(--primary-06) 1px, transparent 1px);
+  background-size: 60px 60px;
 }
 
-// --- Typography: Space Grotesk (precision) + Inter (clarity) ---
+// ============================================================================
+// TYPOGRAPHY — compact, restrained, information-dense
+// ============================================================================
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--headerFont) !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.02em;
-  color: var(--text-primary) !important;
+  font-weight: 600 !important;
+  color: var(--text-0) !important;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 h1 {
-  font-size: 2rem !important;
-  border-bottom: 2px solid var(--primary) !important;
-  padding-bottom: 0.6rem !important;
-  margin-bottom: 1.2rem !important;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  font-size: 1.25rem !important;
+  border-bottom: 1px solid var(--primary) !important;
+  padding-bottom: 0.35rem !important;
+  margin-bottom: 0.7rem !important;
+  margin-top: 0 !important;
 }
 
 h2 {
-  font-size: 1.3rem !important;
+  font-size: 0.88rem !important;
   color: var(--primary) !important;
   border: none !important;
-  margin-top: 2.5rem !important;
-  margin-bottom: 0.6rem !important;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+  margin-top: 1.6rem !important;
+  margin-bottom: 0.3rem !important;
+  letter-spacing: 0.05em;
 
   &::before {
     content: "// ";
-    color: var(--primary-dim);
+    color: var(--primary-20);
     font-weight: 400;
   }
 }
 
 h3 {
-  font-size: 1.1rem !important;
-  color: var(--primary) !important;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  opacity: 0.85;
+  font-size: 0.8rem !important;
+  color: var(--text-1) !important;
+  margin-top: 1.2rem !important;
+  margin-bottom: 0.2rem !important;
 }
 
 h4, h5, h6 {
-  font-size: 0.9rem !important;
-  color: var(--text-secondary) !important;
-  text-transform: uppercase;
+  font-size: 0.72rem !important;
+  color: var(--text-2) !important;
   letter-spacing: 0.08em;
 }
 
 p, li, td, .callout-content p {
   font-family: var(--bodyFont) !important;
-  font-size: 0.95rem;
-  line-height: 1.75;
-  color: var(--text-on-surface) !important;
+  font-size: 0.82rem !important;
+  line-height: 1.6 !important;
+  color: var(--text-1) !important;
 }
 
 strong {
-  color: var(--text-primary) !important;
+  color: var(--text-0) !important;
   font-weight: 600;
 }
 
+// ============================================================================
+// LINKS — text color only, no background, no blocks
+// ============================================================================
+
+a {
+  color: var(--primary) !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid var(--primary-10) !important;
+  background: transparent !important;
+  transition: border-color 0.15s ease;
+
+  &:hover {
+    border-bottom-color: var(--primary) !important;
+  }
+}
+
+a.internal {
+  background: transparent !important;
+}
+
+// Links in headings: seamless
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  border-bottom: none !important;
+  color: inherit !important;
+}
+
+// ============================================================================
+// CODE
+// ============================================================================
+
 code {
   font-family: var(--codeFont) !important;
-  background: var(--surface-container-high) !important;
+  background: var(--surface-high) !important;
   border: none !important;
-  padding: 0.15em 0.45em !important;
+  padding: 0.1em 0.35em !important;
   border-radius: 0 !important;
-  font-size: 0.85em !important;
-  color: var(--tertiary) !important;  // cyan
+  font-size: 0.78em !important;
+  color: var(--tertiary) !important;
 }
 
 pre {
-  background: var(--surface-container-low) !important;
+  background: var(--surface-low) !important;
   border: none !important;
-  border-left: 2px solid var(--primary) !important;
+  border-left: 2px solid var(--primary-20) !important;
   border-radius: 0 !important;
+  padding: 0.8rem 1rem !important;
+  font-size: 0.78rem !important;
 
   code {
     border: none !important;
     background: transparent !important;
-    color: var(--tertiary) !important;  // cyan
+    padding: 0 !important;
   }
 }
 
-// --- Links: amber with glow hover ---
-a {
-  color: var(--primary) !important;
-  text-decoration: none !important;
-  border-bottom: 1px solid rgba(255, 184, 0, 0.2);
-  transition: all 0.15s ease;
+// ============================================================================
+// ARTICLE TITLE — the main page heading
+// ============================================================================
 
-  &:hover {
-    color: var(--primary) !important;
-    border-bottom-color: var(--primary) !important;
-    text-shadow: 0 0 12px rgba(255, 184, 0, 0.5);
-  }
+article > h1.article-title {
+  font-size: 1.3rem !important;
+  letter-spacing: 0.05em !important;
+  color: var(--text-0) !important;
+  border-bottom: 2px solid var(--primary) !important;
+  padding-bottom: 0.4rem !important;
+  margin-bottom: 0.3rem !important;
+
+  &::before { content: none !important; }
 }
 
-// --- Page title ---
+// ============================================================================
+// PAGE TITLE (sidebar header)
+// ============================================================================
+
 .page-title {
   font-family: var(--headerFont) !important;
   font-weight: 700 !important;
-  font-size: 1.4rem !important;
-  letter-spacing: 0.08em !important;
+  font-size: 1rem !important;
+  letter-spacing: 0.1em !important;
   text-transform: uppercase !important;
   color: var(--primary) !important;
-  padding: 0.4rem 0 0.6rem 0 !important;
-  margin-top: 0 !important;
-  border-bottom: 2px solid var(--primary-dim) !important;
-  text-shadow: 0 0 24px rgba(255, 184, 0, 0.35);
+  padding: 0 0 0.4rem 0 !important;
+  margin: 0 !important;
+  border-bottom: 1px solid var(--primary-20) !important;
+  text-shadow: 0 0 16px rgba(255, 184, 0, 0.25);
 
   &::after {
     content: "BATTLEGROUP CLASH: BALTICS";
     display: block;
-    font-size: 0.6rem;
-    letter-spacing: 0.12em;
-    color: var(--text-dim);
-    margin-top: 0.25rem;
+    font-size: 0.55rem;
+    letter-spacing: 0.08em;
+    color: var(--text-3);
+    margin-top: 0.2rem;
     font-weight: 400;
   }
 }
 
-// --- Tables: glass panels ---
+// ============================================================================
+// META, BREADCRUMBS, TAGS — tiny labels
+// ============================================================================
+
+.content-meta {
+  font-family: var(--headerFont) !important;
+  font-size: 0.62rem !important;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-3) !important;
+  border-bottom: 1px solid var(--ghost);
+  padding-bottom: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.breadcrumb-container {
+  font-family: var(--headerFont) !important;
+  font-size: 0.6rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.06em;
+  color: var(--text-3) !important;
+  opacity: 0.7;
+  margin-bottom: 0.2rem !important;
+}
+
+a.tag-link {
+  font-family: var(--headerFont) !important;
+  font-size: 0.58rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.04em;
+  border: 1px solid var(--ghost) !important;
+  border-bottom: 1px solid var(--ghost) !important;
+  border-radius: 0 !important;
+  padding: 0.12rem 0.4rem !important;
+  background: var(--surface-mid) !important;
+  color: var(--text-2) !important;
+
+  &:hover {
+    border-color: var(--primary-20) !important;
+    color: var(--primary) !important;
+    text-shadow: none !important;
+  }
+}
+
+// ============================================================================
+// TABLES — glass panels, tight spacing
+// ============================================================================
+
 table {
   border-collapse: collapse !important;
   width: 100% !important;
-  font-size: 0.88rem !important;
-  background: var(--surface-container-low) !important;
-  backdrop-filter: blur(12px);
+  font-size: 0.78rem !important;
+  background: var(--surface-low) !important;
+  backdrop-filter: blur(8px);
   border: none !important;
 }
 
 thead {
-  background: var(--surface-container-high) !important;
-  border-bottom: 2px solid var(--primary-dim) !important;
+  background: var(--surface-high) !important;
+  border-bottom: 1px solid var(--primary-20) !important;
 }
 
 th {
   font-family: var(--headerFont) !important;
   font-weight: 600 !important;
   text-transform: uppercase !important;
-  letter-spacing: 0.06em !important;
-  font-size: 0.8rem !important;
+  letter-spacing: 0.04em !important;
+  font-size: 0.68rem !important;
   color: var(--primary) !important;
-  padding: 0.7rem 0.8rem !important;
+  padding: 0.45rem 0.6rem !important;
   text-align: left !important;
-  border-right: 1px solid var(--ghost-border) !important;
-
+  border-right: 1px solid var(--ghost) !important;
   &:last-child { border-right: none !important; }
 }
 
 td {
-  padding: 0.55rem 0.8rem !important;
-  border-bottom: 1px solid var(--ghost-border) !important;
-  border-right: 1px solid var(--outline-variant) !important;
-
+  padding: 0.35rem 0.6rem !important;
+  border-bottom: 1px solid var(--ghost) !important;
+  border-right: 1px solid rgba(255,255,255,0.03) !important;
+  font-size: 0.78rem !important;
   &:last-child { border-right: none !important; }
 }
 
-tr:hover {
-  background: rgba(255, 184, 0, 0.04) !important;
-}
+tr:hover { background: var(--primary-06) !important; }
 
-// --- Blockquotes: recessed glass ---
+// ============================================================================
+// BLOCKQUOTES & CALLOUTS
+// ============================================================================
+
 blockquote {
-  border-left: 2px solid var(--primary-dim) !important;
-  background: var(--surface-container-low) !important;
-  backdrop-filter: blur(8px);
-  padding: 1rem 1.2rem !important;
-  margin: 1.2rem 0 !important;
+  border-left: 2px solid var(--primary-20) !important;
+  background: var(--surface-low) !important;
+  padding: 0.6rem 0.9rem !important;
+  margin: 0.8rem 0 !important;
   border-radius: 0 !important;
-
-  p { color: var(--text-secondary) !important; font-style: italic; }
+  p { font-style: italic; }
 }
 
-// --- Callouts: intel modules ---
 .callout {
   border-radius: 0 !important;
   border: none !important;
-  border-left: 3px solid var(--primary) !important;
-  background: var(--surface-container-low) !important;
-  backdrop-filter: blur(8px);
+  border-left: 2px solid var(--primary) !important;
+  background: var(--surface-low) !important;
+  font-size: 0.8rem !important;
 
-  &[data-callout="tip"] { border-left-color: var(--tertiary) !important; }  // cyan
+  &[data-callout="tip"] { border-left-color: var(--tertiary) !important; }
   &[data-callout="note"] { border-left-color: var(--primary) !important; }
-  &[data-callout="warning"] {
-    border-left-color: var(--threat-red) !important;
-    background: rgba(255, 59, 48, 0.05) !important;
+  &[data-callout="warning"], &[data-callout="important"] {
+    border-left-color: var(--danger) !important;
+    background: rgba(255, 59, 48, 0.04) !important;
   }
-  &[data-callout="important"] { border-left-color: var(--threat-red) !important; }
 
   .callout-title {
     font-family: var(--headerFont);
     text-transform: uppercase;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.05em;
     font-weight: 600;
-    font-size: 0.85rem;
+    font-size: 0.72rem;
   }
 }
 
-// --- Explorer: glass docked panel ---
+// ============================================================================
+// EXPLORER — the nav sidebar
+// ============================================================================
+
 .explorer {
-  background: var(--surface-container-low) !important;
-  backdrop-filter: blur(12px) !important;
-  border: 1px solid var(--ghost-border) !important;
+  background: var(--surface-low) !important;
+  border: 1px solid var(--ghost) !important;
   border-radius: 0 !important;
-  padding: 0.8rem !important;
+  padding: 0.5rem !important;
   overflow: visible !important;
   flex: 1 1 auto !important;
 
@@ -267,190 +344,143 @@ blockquote {
   button, .folder-title {
     font-family: var(--headerFont) !important;
     text-transform: uppercase !important;
-    letter-spacing: 0.04em !important;
+    letter-spacing: 0.03em !important;
     font-weight: 600 !important;
-    font-size: 0.85rem !important;
+    font-size: 0.75rem !important;
+  }
+
+  // File links in explorer
+  li > a {
+    font-size: 0.75rem !important;
+    line-height: 1.4 !important;
   }
 }
 
-// --- Search ---
-button#search-button {
-  border: 1px solid var(--ghost-border) !important;
-  border-radius: 0 !important;
-  background: var(--surface-container-low) !important;
-  transition: all 0.15s ease;
+// ============================================================================
+// SEARCH
+// ============================================================================
 
-  &:hover {
-    border-color: var(--primary) !important;
-    box-shadow: 0 0 8px rgba(255, 184, 0, 0.15);
-  }
+button#search-button {
+  border: 1px solid var(--ghost) !important;
+  border-radius: 0 !important;
+  background: var(--surface-low) !important;
+  font-size: 0.78rem !important;
+  &:hover { border-color: var(--primary-20) !important; }
 }
 
 #search-container #search-space {
   border-radius: 0 !important;
-  border: 1px solid var(--primary-dim) !important;
+  border: 1px solid var(--primary-20) !important;
   background: var(--surface) !important;
-  box-shadow: 0 0 40px rgba(255, 184, 0, 0.08) !important;
-
   input {
     font-family: var(--codeFont) !important;
     border-radius: 0 !important;
     color: var(--primary) !important;
+    font-size: 0.82rem !important;
   }
 }
 
-// --- Tags: tactical chips ---
-a.tag-link {
-  font-family: var(--headerFont) !important;
-  font-size: 0.7rem !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.06em;
-  border: 1px solid var(--ghost-border) !important;
-  border-bottom: 1px solid var(--ghost-border) !important;
-  border-radius: 0 !important;
-  padding: 0.2rem 0.5rem !important;
-  background: var(--surface-container) !important;
-  color: var(--text-dim) !important;
+// ============================================================================
+// FOOTER, BACKLINKS, HR, POPOVER
+// ============================================================================
 
-  &:hover {
-    border-color: var(--primary) !important;
-    color: var(--primary) !important;
-    text-shadow: none !important;
-    box-shadow: 0 0 6px rgba(255, 184, 0, 0.2);
-  }
-}
-
-// --- Content meta: label style ---
-.content-meta {
-  font-family: var(--headerFont) !important;
-  font-size: 0.72rem !important;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--text-dim) !important;
-  border-bottom: 1px solid var(--outline-variant);
-  padding-bottom: 0.5rem;
-}
-
-// --- Breadcrumbs ---
-.breadcrumb-container {
-  font-family: var(--headerFont) !important;
-  font-size: 0.7rem !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.08em;
-  opacity: 0.5;
-}
-
-// --- Article title ---
-article > h1.article-title {
-  font-size: 2.2rem !important;
-  letter-spacing: 0.06em !important;
-  color: var(--text-primary) !important;
-  border-bottom: 3px solid var(--primary) !important;
-  padding-bottom: 0.5rem !important;
-  margin-bottom: 0.5rem !important;
-  text-transform: uppercase;
-
-  &::before { content: none !important; }
-}
-
-// --- Footer ---
 footer {
-  border-top: 1px solid var(--ghost-border) !important;
-  margin-top: 3rem !important;
-  padding-top: 1rem !important;
-
+  border-top: 1px solid var(--ghost) !important;
+  margin-top: 2rem !important;
+  padding-top: 0.6rem !important;
   p, a {
     font-family: var(--headerFont) !important;
-    font-size: 0.7rem !important;
+    font-size: 0.6rem !important;
     text-transform: uppercase !important;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.06em;
   }
 }
 
-// --- Backlinks (afterBody) ---
 .backlinks {
-  margin-top: 2rem !important;
-  border-top: 1px solid var(--ghost-border) !important;
+  margin-top: 1.5rem !important;
+  border-top: 1px solid var(--ghost) !important;
   border-left: none !important;
   border-right: none !important;
   border-bottom: none !important;
   background: transparent !important;
-  padding: 1rem 0 !important;
+  padding: 0.6rem 0 !important;
   border-radius: 0 !important;
-
   & > h3 {
-    font-family: var(--headerFont) !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.1em !important;
-    font-size: 0.75rem !important;
-    color: var(--text-dim) !important;
+    font-size: 0.65rem !important;
+    color: var(--text-3) !important;
     &::before { content: none !important; }
   }
 }
 
-// --- Popover ---
-.popover {
-  border-radius: 0 !important;
-  border: 1px solid var(--primary-dim) !important;
-  background: var(--surface) !important;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 184, 0, 0.06) !important;
-}
-
-// --- HR: ghost divider ---
 hr {
   border: none !important;
-  border-top: 1px solid var(--outline-variant) !important;
-  margin: 2rem 0 !important;
+  border-top: 1px solid var(--ghost) !important;
+  margin: 1.4rem 0 !important;
 }
 
-// --- Lists ---
+.popover {
+  border-radius: 0 !important;
+  border: 1px solid var(--primary-20) !important;
+  background: var(--surface) !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6) !important;
+}
+
+// ============================================================================
+// LISTS — compact
+// ============================================================================
+
 ul {
   list-style-type: none !important;
-  padding-left: 1.2rem !important;
-
+  padding-left: 1rem !important;
   li {
     position: relative;
-    padding-left: 0.8rem;
-
+    padding-left: 0.6rem;
+    margin-bottom: 0.15rem;
     &::before {
       content: "▸";
       position: absolute;
-      left: -0.6rem;
-      color: var(--primary-dim);
-      font-size: 0.8em;
+      left: -0.5rem;
+      color: var(--primary-20);
+      font-size: 0.75em;
     }
   }
 }
 
 ol {
-  padding-left: 1.4rem !important;
-
+  padding-left: 1.2rem !important;
   li {
-    padding-left: 0.3rem;
+    padding-left: 0.2rem;
+    margin-bottom: 0.15rem;
     &::marker {
-      color: var(--primary-dim);
+      color: var(--primary-20);
       font-family: var(--codeFont);
-      font-size: 0.85em;
+      font-size: 0.78em;
     }
   }
 }
 
-// --- Selection ---
+// ============================================================================
+// MISC
+// ============================================================================
+
 ::selection {
-  background: rgba(255, 184, 0, 0.3) !important;
-  color: var(--text-primary) !important;
+  background: rgba(255, 184, 0, 0.25) !important;
+  color: var(--text-0) !important;
 }
 
-// --- Scrollbar ---
-::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar { width: 3px; height: 3px; }
 ::-webkit-scrollbar-track { background: var(--surface); }
-::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 0; }
+::-webkit-scrollbar-thumb { background: var(--primary-20); }
 
-// --- Dark mode toggle ---
-.darkmode svg { color: var(--text-dim) !important; }
+.darkmode svg { color: var(--text-3) !important; }
+
+.text-highlight {
+  background-color: var(--primary-10) !important;
+  padding: 0 0.1rem;
+}
 
 // ============================================================================
-// LAYOUT
+// LAYOUT — no right sidebar, full width content
 // ============================================================================
 
 .page > #quartz-body {
@@ -471,13 +501,15 @@ ol {
 }
 
 .sidebar.right { display: none !important; }
+.sidebar .graph { display: none !important; }
 
 .page > #quartz-body > .sidebar.left {
-  padding-top: 1rem !important;
+  padding-top: 0.6rem !important;
 }
 
-// Graph: only on /graph page
-.sidebar .graph { display: none !important; }
+// ============================================================================
+// GRAPH PAGE
+// ============================================================================
 
 body[data-slug="graph"] {
   .page-header, .popover-hint, article.popover-hint, hr, .backlinks {
@@ -485,8 +517,8 @@ body[data-slug="graph"] {
   }
   .page-footer { margin-top: 0 !important; padding-top: 0 !important; }
   .page-footer > .graph > .graph-outer {
-    border: 1px solid var(--ghost-border) !important;
+    border: 1px solid var(--ghost) !important;
     border-radius: 0 !important;
-    background: var(--surface-container-low) !important;
+    background: var(--surface-low) !important;
   }
 }
