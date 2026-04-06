@@ -601,8 +601,9 @@ body::after {
   display: none !important;
 }
 
-// Graph page: only the graph, fullscreen
+// Graph page: show global graph inline (not as overlay), fullscreen
 body[data-slug="graph"] {
+  // Hide everything except the graph
   .article-title,
   .content-meta,
   .tag-list,
@@ -616,18 +617,32 @@ body[data-slug="graph"] {
   }
 
   .page-footer > .graph {
-    border: none !important;
-    background: transparent !important;
-
-    & > h3 {
+    // Hide the small local graph
+    & > h3,
+    & > .graph-outer {
       display: none !important;
     }
 
-    & > .graph-outer {
-      height: calc(100vh - 20px) !important;
-      border: 1px solid var(--border-tactical-strong) !important;
-      border-radius: 0 !important;
-      background: var(--surface-1) !important;
+    // Show the global graph inline instead of as a fixed overlay
+    & > .global-graph-outer {
+      display: block !important;
+      position: relative !important;
+      width: 100% !important;
+      height: auto !important;
+      backdrop-filter: none !important;
+      z-index: auto !important;
+
+      & > .global-graph-container {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        width: 100% !important;
+        height: calc(100vh - 20px) !important;
+        border: 1px solid var(--border-tactical-strong) !important;
+        border-radius: 0 !important;
+        background: var(--surface-1) !important;
+      }
     }
   }
 }
