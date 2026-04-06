@@ -49,31 +49,31 @@ A **Force Element** is a military unit in the game. Its position on the map is r
 ## Special FE Types
 
 ### HQs
-Each side has two [[force-elements|Headquarters (HQ)]] FE counters: **Main** and **Tac (Tactical)**. HQs have a **[[glossary|C2]] Rating** that provides:
+Each side has two [[force-elements|Headquarters (HQ)]] [[force-elements|FE]] counters: **Main** and **Tac (Tactical)**. [[force-elements|HQs]] have a **[[glossary|C2]] Rating** that provides:
 - [[glossary|DRM]] for [[initiative|Initiative]] tests
 - [[glossary|DRM]] for [[assault|Assaults]]
 - [[glossary|DRM]] for [[morale#Rally Tests|Rally tests]] (if within 250m)
 - Enables [[command-activation|Command Activations]] (Standard/Advanced)
 
 ### A1 Echelons
-Logistical units (trucks) used in **Advanced mode only**. Each side gets 1-2 A1 Echelon Task Groups containing 1-3 FEs. Russian equivalent is called "Sect" (not to be confused with SECT size).
+Logistical units (trucks) used in **Advanced mode only**. Each side gets 1-2 A1 Echelon Task Groups containing 1-3 [[force-elements|FEs]]. Russian equivalent is called "Sect" (not to be confused with [[force-elements|SECT]] size).
 - Can take Move, Hold, or [[replendem|REPLENDEM]] Actions
 - Transport Ammo and [[atgm|ATGMs]] for resupply
-- Targetable like any other FE — if Eliminated, all carried supplies are lost
+- Targetable like any other [[force-elements|FE]] — if Eliminated, all carried supplies are lost
 
 ### ISTAR Assets
-FEs marked with a star (★) are [[force-elements|ISTAR]] Assets. These provide [[line-of-sight|LoS]] for [[indirect-fire|Indirect Fire]]. ISTAR Assets include:
+[[force-elements|FEs]] marked with a star (★) are [[force-elements|ISTAR]] Assets. These provide [[line-of-sight|LoS]] for [[indirect-fire|Indirect Fire]]. [[force-elements|ISTAR]] Assets include:
 - **Recce** (Reconnaissance) [[force-elements|SECTs]] — 4,000m [[line-of-sight|LoS]] range (vs standard 3,000m)
 - **FST** (Fire Support Team) [[force-elements|SECTs]]
 - **[[force-elements|HQ]]** [[force-elements|SECTs]]
-- **[[support-assets|Unmanned Aerial Support drone (UAS)]]** (technically a [[support-assets|Support Asset]], not an FE)
+- **[[support-assets|Unmanned Aerial Support drone (UAS)]]** (technically a [[support-assets|Support Asset]], not an [[force-elements|FE]])
 
 > [!tip]
-> ISTAR can be provided by [[force-elements|SECTs]] that are [[stacking|Embedded]] in a Stack — the Embedded [[force-elements|SECT]] is considered to occupy the same position as the Tracked FE.
+> ISTAR can be provided by [[force-elements|SECTs]] that are [[stacking|Embedded]] in a Stack — the Embedded [[force-elements|SECT]] is considered to occupy the same position as the Tracked [[force-elements|FE]].
 
 ## Hits and Elimination
 
-Each Hit reduces Resilience by 1. [[force-elements|PL]]-sized FEs use two counters (front: 4/3 Resilience, back: 3/2; second counter: 2/1 Resilience). When Resilience drops past half, [[force-elements|TQ]] is reduced (already shown on the counter).
+Each Hit reduces Resilience by 1. [[force-elements|PL]]-sized [[force-elements|FEs]] use two counters (front: 4/3 Resilience, back: 3/2; second counter: 2/1 Resilience). When Resilience drops past half, [[force-elements|TQ]] is reduced (already shown on the counter).
 
 At Resilience 0 → **Eliminated** (removed from game permanently).
 
@@ -81,4 +81,4 @@ See [[combat-effectiveness]] for full details.
 
 ## Counter Flipping
 
-FE counters are double-sided. The front shows full Resilience, the back shows Resilience minus 1 (with potentially reduced TQ). PLs need a second counter for Resilience values 2 and 1.
+[[force-elements|FE]] counters are double-sided. The front shows full Resilience, the back shows Resilience minus 1 (with potentially reduced [[force-elements|TQ]]). [[force-elements|PLs]] need a second counter for Resilience values 2 and 1.
