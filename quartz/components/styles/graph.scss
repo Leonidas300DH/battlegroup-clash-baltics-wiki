@@ -71,3 +71,16 @@
     }
   }
 }
+
+// Full-page graph when rendered in .page-footer (afterBody on /graph page)
+.page-footer > .graph {
+  & > h3 {
+    display: none;
+  }
+
+  & > .graph-outer {
+    height: calc(100vh - 80px);
+    width: 100%;
+    border-radius: 0;
+  }
+}
