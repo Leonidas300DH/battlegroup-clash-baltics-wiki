@@ -503,6 +503,26 @@ ol {
 .sidebar.right { display: none !important; }
 .sidebar .graph { display: none !important; }
 
+// Prevent content overflow — keep everything inside viewport
+.center {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  padding-right: 1.5rem !important;
+  box-sizing: border-box !important;
+}
+
+// Tables can overflow — wrap them
+table {
+  table-layout: auto !important;
+  word-break: break-word;
+}
+
+// Pre blocks don't overflow
+pre {
+  overflow-x: auto !important;
+  max-width: 100% !important;
+}
+
 .page > #quartz-body > .sidebar.left {
   padding-top: 0.6rem !important;
 }
