@@ -9,15 +9,17 @@ updated: 2026-04-05
 
 # Russia
 
-Russia represents a **Russian Motorised Rifle** force in BC:B, with characteristics reflecting post-2022 Russian military doctrine and the attritional effects of recent operations.
+In BC:B, Russia represents the **Russian armed forces** operating in the Baltic states in a hypothetical near-future invasion of Estonia. Russian forces field mechanised infantry, main battle tanks, reconnaissance, artillery, and drones — typically organised around Motorised Rifle structures at battalion level (the largest scenario pits a Russian Motorised Rifle Battalion against a NATO Battlegroup).
+
+Compared to [[nato|NATO]], Russian units are **more numerous** but individually **less well trained, motivated, and equipped**. They compensate with **superior numbers, more artillery and drone fire missions, and stronger electronic warfare capabilities**. Their lower [[force-elements|Troop Quality (TQ)]] and [[combat-effectiveness|Resilience]] reflect both smaller unit sizes within similar formations and the attritional effects of the ongoing invasion being simulated.
 
 ## Faction Characteristics
 
 | Attribute | Value | Notes |
 |-----------|-------|-------|
 | Counter color | **Red** | |
-| Typical [[force-elements|Platoon (PL)]] Resilience | **3** | Lower than NATO (4) — reflects attrition |
-| Typical [[force-elements|Troop Quality (TQ)]] | **Lower** | Less training, lower cohesion |
+| Typical [[force-elements|Platoon (PL)]] Resilience | **3** | Lower than NATO (4) — fewer troops per unit + attrition from the invasion |
+| Typical [[force-elements|Troop Quality (TQ)]] | **Lower** | Less well trained, motivated, and equipped than NATO |
 | Move-Fire penalty | **-2 [[glossary|Dice Roll Modifier (DRM)]]** | Worse fire-on-the-move |
 | Artillery | **152mm** | |
 | [[atgm|Anti-Tank Guided Missiles (ATGMs)]] | **RPG** (short range), **Stabber** (up to 3,000m) | Red font on markers |
