@@ -291,6 +291,23 @@ blockquote {
   backdrop-filter: blur(12px) !important;
   border-radius: 8px !important;
   padding: 0.8rem !important;
+  overflow: visible !important;
+  flex: 1 1 auto !important;
+
+  // No fold arrow, no collapse
+  .fold {
+    display: none !important;
+  }
+
+  .explorer-content {
+    overflow: visible !important;
+    max-height: none !important;
+  }
+
+  .explorer-ul {
+    overflow: visible !important;
+    max-height: none !important;
+  }
 
   button, .folder-title {
     font-family: var(--headerFont) !important;
@@ -299,6 +316,11 @@ blockquote {
     font-weight: 600 !important;
     font-size: 0.9rem !important;
   }
+}
+
+// Hide empty explorer entries
+.explorer li.overflow-end {
+  display: none !important;
 }
 
 // --- Search ---
