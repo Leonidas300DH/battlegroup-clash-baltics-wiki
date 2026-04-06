@@ -8,25 +8,25 @@
 
 // --- Variables ---
 :root {
-  --tactical-green: #6fa85c;
-  --tactical-green-dim: #4a7a3a;
-  --tactical-green-bright: #8fcc78;
-  --amber: #d4a520;
-  --amber-dim: #9e7a18;
-  --threat-red: #c44030;
-  --threat-red-dim: #8a2a20;
-  --grid-line: rgba(111, 168, 92, 0.06);
-  --grid-line-strong: rgba(111, 168, 92, 0.12);
-  --scanline: rgba(111, 168, 92, 0.02);
-  --surface-0: #111411;
-  --surface-1: #161916;
-  --surface-2: #1b1e1b;
-  --surface-3: #222622;
-  --border-tactical: rgba(111, 168, 92, 0.2);
-  --border-tactical-strong: rgba(111, 168, 92, 0.35);
-  --text-primary: #dce4d6;
-  --text-secondary: #98a890;
-  --text-dim: #5c6858;
+  --tactical-green: #30D158;
+  --tactical-green-dim: rgba(48, 209, 88, 0.4);
+  --tactical-green-bright: #4FE171;
+  --amber: #FFB800;
+  --amber-dim: rgba(255, 184, 0, 0.4);
+  --threat-red: #FF3B30;
+  --threat-red-dim: rgba(255, 59, 48, 0.4);
+  --grid-line: rgba(255, 184, 0, 0.05);
+  --grid-line-strong: rgba(255, 184, 0, 0.1);
+  --scanline: rgba(255, 184, 0, 0.02);
+  --surface-0: #080A0C;
+  --surface-1: rgba(26, 29, 33, 0.6);
+  --surface-2: rgba(36, 40, 46, 0.65);
+  --surface-3: rgba(46, 52, 60, 0.7);
+  --border-tactical: rgba(255, 184, 0, 0.2);
+  --border-tactical-strong: rgba(255, 184, 0, 0.4);
+  --text-primary: #E6EDF3;
+  --text-secondary: #A1A9B3;
+  --text-dim: #525964;
 }
 
 // --- Background grid pattern (topographic) ---
@@ -47,16 +47,15 @@ body {
 
 // --- Typography refinements ---
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Rajdhani", sans-serif !important;
+  font-family: var(--headerFont) !important;
   font-weight: 700 !important;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.02em;
   color: var(--text-primary) !important;
 }
 
 h1 {
-  font-size: 2rem !important;
-  border-bottom: 2px solid var(--tactical-green) !important;
+  font-size: 2.2rem !important;
+  border-bottom: 2px solid var(--amber) !important;
   padding-bottom: 0.5rem !important;
   margin-bottom: 1.2rem !important;
   position: relative;
@@ -152,38 +151,38 @@ pre {
   }
 }
 
-// --- Links: tactical green with amber hover ---
+// --- Links: tactical amber with bright hover ---
 a {
-  color: var(--tactical-green) !important;
+  color: var(--amber) !important;
   text-decoration: none !important;
-  border-bottom: 1px solid rgba(111, 168, 92, 0.3);
+  border-bottom: 1px solid rgba(255, 184, 0, 0.3);
   transition: all 0.15s ease;
 
   &:hover {
     color: var(--amber) !important;
     border-bottom-color: var(--amber) !important;
-    text-shadow: 0 0 8px rgba(212, 165, 32, 0.3);
+    text-shadow: 0 0 8px rgba(255, 184, 0, 0.5);
   }
 }
 
 // --- Page title (site header) ---
 .page-title {
-  font-family: "Rajdhani", sans-serif !important;
+  font-family: var(--headerFont) !important;
   font-weight: 700 !important;
   font-size: 1.5rem !important;
-  letter-spacing: 0.2em !important;
+  letter-spacing: 0.05em !important;
   text-transform: uppercase !important;
-  color: var(--tactical-green) !important;
+  color: var(--amber) !important;
   padding: 0.8rem 0 !important;
-  border-bottom: 2px solid var(--tactical-green-dim) !important;
+  border-bottom: 2px solid var(--amber-dim) !important;
   position: relative;
-  text-shadow: 0 0 20px rgba(111, 168, 92, 0.3);
+  text-shadow: 0 0 20px rgba(255, 184, 0, 0.4);
 
   &::after {
     content: "BATTLEGROUP CLASH: BALTICS";
     display: block;
-    font-size: 0.55rem;
-    letter-spacing: 0.3em;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
     color: var(--text-dim);
     margin-top: 0.3rem;
     font-weight: 400;
@@ -194,24 +193,25 @@ a {
 table {
   border-collapse: collapse !important;
   width: 100% !important;
-  font-size: 0.88rem !important;
+  font-size: 0.9rem !important;
   border: 1px solid var(--border-tactical-strong) !important;
   background: var(--surface-1) !important;
+  backdrop-filter: blur(8px);
 }
 
 thead {
   background: var(--surface-3) !important;
-  border-bottom: 2px solid var(--tactical-green-dim) !important;
+  border-bottom: 2px solid var(--amber-dim) !important;
 }
 
 th {
-  font-family: "Rajdhani", sans-serif !important;
+  font-family: var(--headerFont) !important;
   font-weight: 700 !important;
   text-transform: uppercase !important;
-  letter-spacing: 0.08em !important;
-  font-size: 0.8rem !important;
-  color: var(--tactical-green-bright) !important;
-  padding: 0.6rem 0.8rem !important;
+  letter-spacing: 0.05em !important;
+  font-size: 0.85rem !important;
+  color: var(--amber) !important;
+  padding: 0.8rem !important;
   text-align: left !important;
   border-right: 1px solid var(--border-tactical) !important;
 
@@ -221,10 +221,10 @@ th {
 }
 
 td {
-  padding: 0.5rem 0.8rem !important;
+  padding: 0.6rem 0.8rem !important;
   border-bottom: 1px solid var(--grid-line-strong) !important;
   border-right: 1px solid var(--grid-line) !important;
-  font-size: 0.88rem !important;
+  font-size: 0.9rem !important;
 
   &:last-child {
     border-right: none !important;
@@ -232,16 +232,17 @@ td {
 }
 
 tr:hover {
-  background: rgba(111, 168, 92, 0.05) !important;
+  background: rgba(255, 184, 0, 0.05) !important;
 }
 
 // --- Blockquotes ---
 blockquote {
-  border-left: 3px solid var(--tactical-green-dim) !important;
+  border-left: 3px solid var(--amber-dim) !important;
   background: var(--surface-2) !important;
-  padding: 0.8rem 1.2rem !important;
-  margin: 1rem 0 !important;
-  border-radius: 0 !important;
+  backdrop-filter: blur(4px);
+  padding: 1rem 1.2rem !important;
+  margin: 1.2rem 0 !important;
+  border-radius: 4px !important;
   position: relative;
 
   p {
@@ -275,11 +276,11 @@ blockquote {
   }
 
   .callout-title {
-    font-family: "Rajdhani", sans-serif;
+    font-family: var(--headerFont);
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
     font-weight: 700;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -287,26 +288,29 @@ blockquote {
 .explorer {
   border: 1px solid var(--border-tactical) !important;
   background: var(--surface-1) !important;
-  padding: 0.5rem !important;
+  backdrop-filter: blur(12px) !important;
+  border-radius: 8px !important;
+  padding: 0.8rem !important;
 
   button, .folder-title {
-    font-family: "Rajdhani", sans-serif !important;
+    font-family: var(--headerFont) !important;
     text-transform: uppercase !important;
-    letter-spacing: 0.06em !important;
+    letter-spacing: 0.02em !important;
     font-weight: 600 !important;
-    font-size: 0.85rem !important;
+    font-size: 0.9rem !important;
   }
 }
 
 // --- Search ---
 button#search-button {
   border: 1px solid var(--border-tactical) !important;
-  border-radius: 0 !important;
+  border-radius: 4px !important;
   background: var(--surface-2) !important;
-  transition: border-color 0.15s ease;
+  transition: border-color 0.15s ease, background 0.15s ease;
 
   &:hover {
-    border-color: var(--tactical-green) !important;
+    border-color: var(--amber) !important;
+    background: var(--surface-3) !important;
   }
 }
 
