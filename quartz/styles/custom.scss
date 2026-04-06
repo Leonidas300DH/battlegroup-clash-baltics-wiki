@@ -7,14 +7,15 @@
 // Ref: vanguard_tactical_hud/DESIGN.md
 // ============================================================================
 
-// --- Design Tokens (from Stitch mockup) ---
+// --- Design Tokens: Vanguard Tactical HUD ---
+// Primary #FFB800 | Secondary #334155 | Tertiary #00D7FE | Neutral #000000
 :root {
-  --surface: #131313;
-  --surface-container-lowest: #0e0e0e;
-  --surface-container-low: #1b1b1b;
-  --surface-container: #1f1f1f;
-  --surface-container-high: #2a2a2a;
-  --surface-container-highest: #353535;
+  --surface: #0a0a0a;
+  --surface-container-lowest: #050505;
+  --surface-container-low: #141414;
+  --surface-container: #1a1a1a;
+  --surface-container-high: #242424;
+  --surface-container-highest: #2e2e2e;
   --surface-tint: #ffba20;
 
   --primary: #FFB800;
@@ -22,8 +23,11 @@
   --primary-container: #ffb800;
   --on-primary: #412d00;
 
-  --tertiary: #30D158;
-  --tertiary-dim: rgba(48, 209, 88, 0.4);
+  --secondary: #334155;
+  --secondary-dim: rgba(51, 65, 85, 0.5);
+
+  --tertiary: #00D7FE;
+  --tertiary-dim: rgba(0, 215, 254, 0.4);
 
   --threat-red: #FF3B30;
 
@@ -81,9 +85,10 @@ h2 {
 
 h3 {
   font-size: 1.1rem !important;
-  color: var(--tertiary) !important;
+  color: var(--primary) !important;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+  opacity: 0.85;
 }
 
 h4, h5, h6 {
@@ -112,7 +117,7 @@ code {
   padding: 0.15em 0.45em !important;
   border-radius: 0 !important;
   font-size: 0.85em !important;
-  color: var(--tertiary) !important;
+  color: var(--tertiary) !important;  // cyan
 }
 
 pre {
@@ -124,7 +129,7 @@ pre {
   code {
     border: none !important;
     background: transparent !important;
-    color: var(--tertiary) !important;
+    color: var(--tertiary) !important;  // cyan
   }
 }
 
@@ -227,7 +232,7 @@ blockquote {
   background: var(--surface-container-low) !important;
   backdrop-filter: blur(8px);
 
-  &[data-callout="tip"] { border-left-color: var(--tertiary) !important; }
+  &[data-callout="tip"] { border-left-color: var(--tertiary) !important; }  // cyan
   &[data-callout="note"] { border-left-color: var(--primary) !important; }
   &[data-callout="warning"] {
     border-left-color: var(--threat-red) !important;
