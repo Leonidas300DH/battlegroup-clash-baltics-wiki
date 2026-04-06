@@ -584,28 +584,22 @@ video {
 }
 
 div:has(> .overflow) {
-  max-height: 100%;
-  overflow-y: hidden;
+  max-height: none;
+  overflow-y: visible;
 }
 
 ul.overflow,
 ol.overflow {
-  max-height: 100%;
-  overflow-y: auto;
+  max-height: none;
+  overflow-y: visible;
   width: 100%;
   margin-bottom: 0;
 
-  // clearfix
   content: "";
   clear: both;
 
   & > li.overflow-end {
-    height: 0.5rem;
-    margin: 0;
-  }
-
-  &.gradient-active {
-    mask-image: linear-gradient(to bottom, black calc(100% - 50px), transparent 100%);
+    display: none;
   }
 }
 
