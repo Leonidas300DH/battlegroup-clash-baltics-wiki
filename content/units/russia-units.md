@@ -11,33 +11,20 @@ updated: 2026-04-05
 
 This page is the comprehensive reference for all [[russia|Russian]] [[force-elements|Force Element (FE)]] and [[support-assets|Support Asset (SA)]] types in Battlegroup Clash: Baltics (BC:B). Russian counters are **red/salmon** in colour.
 
-Russia fields a combined arms force of mechanised infantry, main battle tanks, reconnaissance, artillery, and drones -- broadly modelled on the Russian **Motorised Rifle Battalion** structure. Compared to [[nato|NATO]], Russian units are **more numerous** but individually **worse** in almost every measurable stat: lower [[morale|Troop Quality (TQ)]], lower [[combat-effectiveness|Resilience]], worse [[move-fire|Move-Fire]] accuracy, and -- critically -- their [[force-elements|Main Battle Tanks (MBTs)]] carry only purple [[glossary|Anti-Tank (Atk)]] firepower, meaning they **cannot penetrate NATO MBT armour** with their main gun. Understanding these asymmetries, and how to fight despite them, is essential to playing Russia effectively.
+> [!info] Common mechanics
+> For how to read a counter, the colour targeting system, TQ and DRM tables, the two-counter Resilience system, unit sizes, unit types, stacking, ATGMs overview, support assets overview, and the firepower column system, see **[[units]]**. This page covers only Russia-specific content.
 
-**Acronym key (first use on this page):** All acronyms are expanded on first use and linked. Key terms: [[force-elements|Force Element (FE)]], [[support-assets|Support Asset (SA)]], [[glossary|Anti-Personnel (Apers)]], [[glossary|Anti-Tank (Atk)]], [[force-elements|Troop Quality (TQ)]], [[force-elements|Platoon (PL)]], [[force-elements|Section (SECT)]], [[force-elements|Headquarters (HQ)]], [[force-elements|Main Battle Tank (MBT)]], [[force-elements|Infantry Fighting Vehicle (IFV)]], [[force-elements|Armoured Personnel Carrier (APC)]], [[force-elements|Intelligence, Surveillance, Target Acquisition & Reconnaissance (ISTAR)]], [[glossary|Dice Roll Modifier (DRM)]], [[atgm|Anti-Tank Guided Missile (ATGM)]], [[line-of-sight|Line of Sight (LoS)]], [[glossary|Electronic Transmission (ETX)]], [[electronic-warfare|Electronic Warfare (EW)]], [[glossary|Command & Control (C2)]], [[glossary|Order of Battle (ORBAT)]], [[task-groups|Task Group (TGp)]], [[support-assets|First Person View drone (FPV)]], [[support-assets|Unmanned Aerial Support drone (UAS)]], [[indirect-fire|Fire Mission (FM)]].
+Russia fields a combined arms force of mechanised infantry, main battle tanks, reconnaissance, artillery, and drones -- broadly modelled on the Russian **Motorised Rifle Battalion** structure. Compared to [[nato|NATO]], Russian units are **more numerous** but individually **worse** in almost every measurable stat: lower [[morale|Troop Quality (TQ)]], lower [[combat-effectiveness|Resilience]], worse [[move-fire|Move-Fire]] accuracy, and -- critically -- their [[force-elements|Main Battle Tanks (MBTs)]] carry only purple [[glossary|Anti-Tank (Atk)]] firepower, meaning they **cannot penetrate NATO MBT armour** with their main gun. Understanding these asymmetries, and how to fight despite them, is essential to playing Russia effectively.
 
 ---
 
-## Understanding Russian Stats: The Systemic Disadvantage
+## The Russian Systemic Disadvantage
 
-Before diving into individual units, it is critical to understand how Russia's baseline stats translate into gameplay. Every Russian unit shares a set of structural disadvantages compared to its NATO counterpart. These compound across every engagement and every turn.
+Every Russian unit shares a set of structural disadvantages compared to its NATO counterpart. These compound across every engagement and every turn. For the full TQ/DRM table and general mechanics, see [[units]].
 
-### Troop Quality (TQ): The Invisible Penalty
+### TQ 4 vs NATO's TQ 6: The Invisible Penalty
 
-TQ is the single most important stat in BC:B. It applies as a DRM to:
-- **Direct Fire rolls** (the main way to deal damage)
-- **Assault rolls** (close-quarters combat resolution)
-- **Rally tests** (recovering from Suppressed/Disrupted status)
-
-The TQ DRM is calculated relative to a baseline of 4:
-
-| TQ Value | DRM Effect | Who Has It |
-|----------|------------|------------|
-| **3** | **-1** (penalty) | Russian PLs at half Resilience |
-| **4** | **0** (neutral, no modifier) | Russian PLs at full Resilience |
-| **5** | **+1** (bonus) | NATO PLs at half Resilience; some Russian HQs |
-| **6** | **+2** (bonus) | NATO PLs at full Resilience |
-
-What this means in practice: a full-strength Russian PL firing at an enemy gets **no TQ bonus** (TQ 4 = 0 DRM). A full-strength NATO PL firing at the same target gets **+2 DRM** from TQ alone. That is a massive difference on a 2D6 roll -- it shifts the average result by two full columns on the Direct Fire Results Table. Russian units and NATO units may have the same printed Firepower Values (e.g. both have Apers 3 on infantry), but Russian shots consistently produce worse results because TQ drags their modified roll downward.
+A full-strength Russian PL fires with **0 DRM** (TQ 4), while a full-strength NATO PL fires with **+2 DRM** (TQ 6). That is a massive difference on a 2D6 roll -- it shifts the average result by two full columns on the Direct Fire Results Table. Russian units and NATO units may have the same printed Firepower Values (e.g. both have Apers 3 on infantry), but Russian shots consistently produce worse results because TQ drags their modified roll downward.
 
 It gets worse: once a Russian PL takes enough Hits to flip to its half-Resilience side, its TQ drops to **3**, imposing a **-1 DRM**. A damaged Russian PL is rolling at -1 while a damaged NATO PL (TQ 5) is still rolling at +1. That is a three-point swing on every single die roll.
 

@@ -9,79 +9,12 @@ updated: 2026-04-05
 
 # NATO Unit Catalog
 
-This page is a comprehensive reference for every [[nato|NATO]] unit type available in Battlegroup Clash: Baltics (BC:B). It covers the physical counters, the stats printed on them, what those stats mean in gameplay, and tactical advice for how to use each unit effectively.
+This page is the comprehensive reference for every [[nato|NATO]] unit type in Battlegroup Clash: Baltics (BC:B), covering specific stats, real-world equipment, and tactical advice.
 
 All NATO counters are **grey**. Russian counters are red. For the Russian equivalents, see [[russia-units|Russian Unit Catalog]].
 
----
-
-## Understanding the Counter System
-
-Before diving into individual units, it is essential to understand what a player physically sees and handles when playing NATO forces.
-
-### What Is on a Counter
-
-Every [[force-elements|Force Element (FE)]] counter contains the following information, printed directly on its face:
-
-- **Anti-Personnel (Apers) Value** -- top-left, in a green box. The column used on the Direct Fire Results Table when firing at Foot or Wheeled targets.
-- **Anti-Tank (Atk) Value** -- top-centre, in a purple or gold box. The column used when firing at Tracked targets. The colour determines which vehicle types can be engaged (see the [[#Colour Targeting System]] section below).
-- **Assault Value** -- top-right, in a white box. Used to calculate the ratio in close-quarters [[assault|Assaults]], not for Direct Fire.
-- **[[force-elements|Troop Quality (TQ)]]** -- a white number inside a black circle. Determines the [[glossary|Dice Roll Modifier (DRM)]] applied to Direct Fire rolls, [[assault|Assault]] rolls, and [[morale|Rally tests]].
-- **Resilience** -- a black number inside a white hexagon. The number of Hits the [[force-elements|Force Element (FE)]] can absorb before being Eliminated.
-- **[[force-elements|Force Element (FE)]] Type icon** -- bottom-right. A diamond (Foot / F), circle (Wheeled / W), or square (Tracked / T). The background colour (green, grey, purple, or gold) determines what weapons can target this unit.
-- **NATO symbol** -- an icon identifying the unit type (crossed rifles for infantry, rectangle with diagonal line for armour, etc.). Its only game effect is that the Armoured Personnel Carrier / Infantry Fighting Vehicle icon shows which Tracked [[force-elements|Force Elements (FEs)]] can carry [[stacking|Mounted]] Foot units.
-- **[[force-elements|Force Element (FE)]] Size** -- dots below the NATO symbol. Three dots = [[force-elements|Platoon (PL)]]. One dot = [[force-elements|Section (SECT)]].
-- **[[force-elements|Force Element (FE)]] ID** -- text identifying the specific unit (e.g. "1-A-1" translates roughly to Platoon-Company-Battalion).
-- **[[force-elements|Intelligence, Surveillance, Target Acquisition & Reconnaissance (ISTAR)]] star** -- a coloured star, present only on certain [[force-elements|Sections (SECTs)]] (Recce, [[force-elements|Headquarters (HQ)]], Fire Support Team (FST)). Marks the unit as an [[force-elements|ISTAR]] Asset capable of providing [[line-of-sight|Line of Sight (LoS)]] for [[indirect-fire|Indirect Fire]].
-- **[[glossary|Command & Control (C2)]] Rating** -- a black number in a yellow circle, present only on [[force-elements|Headquarters (HQ)]] counters. Used as a [[glossary|Dice Roll Modifier (DRM)]] for [[initiative|Initiative]] rolls, [[assault|Assault]] rolls, [[morale|Rally tests]], and [[command-activation|Command Activations]].
-
-Some counters also have a small "1" or "3" next to their Anti-Personnel (Apers) or Anti-Tank (Atk) value, indicating a non-standard range of 1,000m or 3,000m instead of the default 2,000m.
-
-### The Two-Counter System for Platoons
-
-[[force-elements|Platoon (PL)]]-sized [[force-elements|Force Elements (FEs)]] have a starting Resilience of 3 or 4. Because a single counter can only show two Resilience values (front and back), each [[force-elements|Platoon (PL)]] requires **two physical counters** to represent its full Resilience track:
-
-1. **Counter 1 (full strength):** Front shows Resilience 4 (or 3). Back shows Resilience 3 (or 2).
-2. **Counter 2 (reduced strength):** Front shows Resilience 2 (or 1). Back shows Resilience 1.
-
-When a [[force-elements|Platoon (PL)]] takes its first Hit, flip Counter 1 to its reverse side. When it takes a second Hit, **swap Counter 1 for Counter 2** (front side up). A third Hit flips Counter 2 to its reverse. A fourth Hit Eliminates the unit.
-
-The second counter has a **lower [[force-elements|Troop Quality (TQ)]]** printed on it (typically TQ 5 instead of TQ 6 for NATO). This means that as a [[force-elements|Platoon (PL)]] takes losses and moves to its second counter, its combat effectiveness degrades -- it fires less accurately, is harder to rally, and contributes less to assaults.
-
-[[force-elements|Sections (SECTs)]] only need one counter (Resilience 2/1 or just 1), so they use a single counter with a flip.
-
-> [!tip] Keep the second counters organised
-> During play, keep each [[force-elements|Platoon (PL)]]'s second counter in your play area, sorted by [[force-elements|Force Element (FE)]] ID. When a [[force-elements|Platoon (PL)]] takes its second Hit, you will need to swap counters quickly. Do not stack unused counters randomly -- you will lose time hunting for the right one.
-
-### The Colour Targeting System
-
-The colour of the Anti-Tank (Atk) box on the firing unit's counter must match or exceed the colour of the target's [[force-elements|Force Element (FE)]] Type icon. This is the core of the weapons-targeting system:
-
-| Target FE Type colour | What it represents | Can be targeted by |
-|---|---|---|
-| **Green** (F diamond) | Dismounted infantry | Anti-Personnel (Apers) -- green column only |
-| **Grey** (W circle) | Wheeled vehicles (trucks, supply) | Any weapon -- Anti-Personnel (Apers) or Anti-Tank (Atk) |
-| **Purple** (T square) | Armoured Personnel Carriers (APCs), Infantry Fighting Vehicles (IFVs) | Any Anti-Tank (Atk) -- purple or gold |
-| **Gold** (T square) | Main Battle Tanks (MBTs) with reactive armour | **Gold Anti-Tank (Atk) only** -- or [[atgm|Anti-Tank Guided Missiles (ATGMs)]] |
-
-This hierarchy means that a unit with only a green Anti-Personnel (Apers) value (like a Foot [[force-elements|Platoon (PL)]]) literally **cannot shoot at** a purple or gold Tracked vehicle using its inherent weapons. It needs an [[atgm|Anti-Tank Guided Missile (ATGM)]] to engage armour.
-
-Conversely, a [[force-elements|Main Battle Tank (MBT)]] with gold Anti-Tank (Atk) can shoot at anything on the battlefield -- Foot, Wheeled, purple Tracked, or gold Tracked.
-
-### Troop Quality and the DRM
-
-[[force-elements|Troop Quality (TQ)]] is one of the most important numbers in the game. It applies as a [[glossary|Dice Roll Modifier (DRM)]] to Direct Fire rolls, [[assault|Assault]] rolls, and [[morale|Rally tests]]. The DRM is calculated relative to TQ 4, which is the baseline (zero modifier):
-
-| TQ Value | DRM | Typical units |
-|---|---|---|
-| **6** | **+2** | Most NATO [[force-elements|Platoons (PLs)]] and [[force-elements|Sections (SECTs)]] at full strength |
-| **5** | **+1** | NATO [[force-elements|Platoons (PLs)]] at reduced strength; some Russian units at full strength |
-| **4** | **0** | Russian [[force-elements|Platoons (PLs)]] at full strength (baseline) |
-| **3** | **-1** | Russian [[force-elements|Platoons (PLs)]] at reduced strength |
-
-This means a full-strength NATO [[force-elements|Platoon (PL)]] (TQ 6) fires with a **+2 advantage** over a full-strength Russian [[force-elements|Platoon (PL)]] (TQ 4). That is a massive swing on 2D6 -- it shifts the bell curve significantly in NATO's favour. Even at reduced strength (TQ 5), NATO still has a +1 edge.
-
-However, [[morale|Suppression]] and [[morale|Disruption]] markers apply negative modifiers to TQ: Suppressed gives -1, Disrupted gives -2. So a Suppressed NATO unit at TQ 6 effectively fires at TQ 5 (+1 DRM), while a Disrupted one fires at TQ 4 (0 DRM) -- equivalent to a fresh Russian unit. **Keeping NATO units in good morale is critical to preserving this quality advantage.**
+> [!info] Common mechanics
+> For how to read a counter, the colour targeting system, TQ and DRM tables, the two-counter Resilience system, unit sizes, unit types, stacking, ATGMs overview, support assets overview, and the firepower column system, see **[[units]]**. This page covers only NATO-specific content.
 
 ---
 

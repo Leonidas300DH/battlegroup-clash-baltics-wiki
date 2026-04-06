@@ -44,6 +44,8 @@ Every [[force-elements|Force Element (FE)]] counter contains the following infor
 | **[[glossary|Command & Control (C2)]] Rating** | Yellow circle (HQ only) | [[force-elements|Headquarters (HQ)]] command capability. |
 | **[[force-elements|ISTAR]] star** | Red/blue star | Marks the unit as an [[force-elements|Intelligence, Surveillance, Target Acquisition & Reconnaissance (ISTAR)]] Asset for [[indirect-fire|Indirect Fire]] targeting. |
 
+Some counters also have a small "1" or "3" next to their Anti-Personnel (Apers) or Anti-Tank (Atk) value, indicating a non-standard range of 1,000m or 3,000m instead of the default 2,000m.
+
 ---
 
 ## Unit Types
@@ -73,7 +75,14 @@ Every [[force-elements|FE]] has a type that determines what can target it and wh
 - **Counter 1** front: full Resilience → flip to back: Resilience - 1
 - **Counter 2** front: Resilience - 2 (with reduced [[force-elements|TQ]]) → flip to back: Resilience - 3
 
-When a [[force-elements|PL]] loses over half its Resilience, its [[force-elements|TQ]] drops — this is already printed on the second counter.
+When a [[force-elements|PL]] takes its first Hit, flip Counter 1 to its reverse side. When it takes a second Hit, **swap Counter 1 for Counter 2** (front side up). A third Hit flips Counter 2 to its reverse. A fourth Hit (or third, for Resilience 3 units) Eliminates the unit.
+
+The second counter has a **lower [[force-elements|TQ]]** printed on it (typically TQ 5 instead of TQ 6 for NATO, or TQ 3 instead of TQ 4 for Russia). This means that as a [[force-elements|PL]] takes losses and moves to its second counter, its combat effectiveness degrades -- it fires less accurately, is harder to rally, and contributes less to assaults.
+
+[[force-elements|Sections (SECTs)]] only need one counter (Resilience 2/1 or just 1), so they use a single counter with a flip.
+
+> [!tip] Keep the second counters organised
+> During play, keep each [[force-elements|PL]]'s second counter in your play area, sorted by [[force-elements|FE]] ID. When a [[force-elements|PL]] takes its second Hit, you will need to swap counters quickly. Do not stack unused counters randomly -- you will lose time hunting for the right one.
 
 ---
 
