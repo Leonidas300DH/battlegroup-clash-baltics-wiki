@@ -294,17 +294,11 @@ blockquote {
     display: none !important;
   }
 
-  // Force explorer content always open on desktop
-  .explorer-content {
-    aria-expanded: true;
+  // No height limit on explorer content
+  .explorer-content,
+  .explorer-ul {
     max-height: none !important;
     overflow: visible !important;
-  }
-
-  // Explorer list takes available height
-  .explorer-ul {
-    max-height: calc(100vh - 280px) !important;
-    overflow-y: auto !important;
   }
 
   button, .folder-title {
