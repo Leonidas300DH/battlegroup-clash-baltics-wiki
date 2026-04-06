@@ -24,6 +24,7 @@ updated: 2026-04-06
 - [[russia-scenario-1]] — Russia Scenario Booklet: Scenario 1 — A Bump In The Road
 - [[ew-adv-supp-rules]] — Advanced Rules Supplement: Orders & Electronic Warfare (6 pages)
 - [[ew-adv-supp-player-aids]] — Player Aids 7 & 8 for the Supplement
+- [[video-resources]] — 15 YouTube videos: reviews, playthroughs, designer interviews, demos
 
 ## Reference
 - [[glossary]] — **All acronyms and key terms defined** with links to relevant pages
