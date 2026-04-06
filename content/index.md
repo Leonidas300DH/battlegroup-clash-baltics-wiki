@@ -1,18 +1,21 @@
 ---
 title: Wiki Index
 type: index
-updated: 2026-04-05
+updated: 2026-04-06
 ---
 
 # Battlegroup Clash: Baltics — Wiki Index
 
-**Pages**: 51 | **Sources ingested**: 6
+**Pages**: 52 | **Sources ingested**: 6
 
 > [!tip] New to BC:B?
 > Start with [[game-overview]], then [[glossary]] for acronym definitions. Follow links to dig deeper.
 > **[[graph|Graph View]]** — interactive map of all wiki page connections.
 
 ---
+
+## Game Turn
+- [[game-turn]] — Detailed turn structure: Command Phase, Execution Phase, Clean-up
 
 ## Sources
 - [[rulebook-final]] — Core 32-page rulebook by James Buckley / Sapper Studio
@@ -40,7 +43,6 @@ updated: 2026-04-05
 - [[game-overview]] — What BC:B is, scope, scale, design origins
 - [[game-modes]] — Basic, Standard, Advanced mode differences
 - [[sequence-of-play]] — Three phases: Preparation, Command, Execution
-- [[game-turn]] — Detailed turn structure: Command Phase, Execution Phase, Clean-up
 - [[preparation-phase]] — Phase 1: scenario setup and Sync Matrix
 - [[command-phase]] — Phase 2: Rally, New Orders, EW Activity
 - [[execution-phase]] — Phase 3: Initiative, Action Round, Clean-up
