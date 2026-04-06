@@ -10,6 +10,7 @@ updated: 2026-04-05
 
 > [!tip] New to BC:B?
 > Start with [[game-overview]], then [[glossary]] for acronym definitions. Follow links to dig deeper.
+> **[[graph|Vue Graphique]]** — visualiser les connexions entre toutes les pages du wiki.
 
 ---
 

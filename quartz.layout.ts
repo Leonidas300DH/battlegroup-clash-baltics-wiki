@@ -5,6 +5,10 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
   afterBody: [
+    Component.ConditionalRender({
+      component: Component.Graph({ localGraph: { depth: 3 }, globalGraph: { depth: -1 } }),
+      condition: (page) => page.fileData.slug === "graph",
+    }),
     Component.Backlinks(),
   ],
   footer: Component.Footer({
@@ -15,7 +19,6 @@ export const sharedPageComponents: SharedLayout = {
   }),
 }
 
-// Wiki layout: everything navigable from the left, content takes full width
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
     Component.ConditionalRender({
@@ -39,7 +42,6 @@ export const defaultContentPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer(),
-    Component.Graph(),
   ],
   right: [],
 }
@@ -59,7 +61,6 @@ export const defaultListPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer(),
-    Component.Graph(),
   ],
   right: [],
 }

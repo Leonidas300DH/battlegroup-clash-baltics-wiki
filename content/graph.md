@@ -1,16 +1,9 @@
 ---
-title: Graph View
+title: Vue Graphique
+tags: []
 ---
 
-# Graph View
+Le graphe interactif complet des connexions entre toutes les pages du wiki est visible ci-dessous. Cliquez sur un nœud pour naviguer vers la page.
 
-Visualisation des connexions entre toutes les pages du wiki. Cliquez sur un nœud pour naviguer vers la page correspondante.
-
-```mermaid
-graph LR
-    A[Ouvrir le Graph dans Obsidian] --> B[Menu latéral > Graph view]
-    A --> C[Ctrl/Cmd + G]
-```
-
-> [!note]
-> Le graph interactif complet est disponible dans **Obsidian** (Ctrl+G). Sur le web, utilisez la **recherche** et les **backlinks** pour naviguer entre les pages.
+> [!tip] Navigation
+> Utilisez la **recherche** (barre latérale) ou l'**explorateur** pour naviguer. Le graphe donne une vue d'ensemble des connexions entre concepts.
