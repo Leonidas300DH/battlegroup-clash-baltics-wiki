@@ -161,8 +161,8 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       })),
   }
 
-  const width = graph.offsetWidth
-  const height = Math.max(graph.offsetHeight, 250)
+  const width = graph.offsetWidth || graph.parentElement?.offsetWidth || 800
+  const height = Math.max(graph.parentElement?.offsetHeight || graph.offsetHeight, 250)
 
   // we virtualize the simulation and use pixi to actually render it
   const simulation: Simulation<NodeData, LinkData> = forceSimulation<NodeData>(graphData.nodes)
@@ -647,8 +647,4 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
     cleanupGlobalGraphs()
   })
 
-  // Auto-open global graph on the /graph page
-  if (document.body.dataset.slug === "graph") {
-    setTimeout(() => renderGlobalGraph(), 200)
-  }
 })

@@ -601,30 +601,25 @@ body::after {
   display: none !important;
 }
 
-// Graph page: hide chrome, the JS auto-opens the global graph modal
+// Graph page: sidebar stays, graph fills the content area
 body[data-slug="graph"] {
-  .article-title,
-  .content-meta,
-  .tag-list,
-  .breadcrumb-container,
+  // Hide article text and chrome — only the graph remains in page-footer
+  .page-header,
   .popover-hint,
-  .backlinks,
-  footer,
+  article.popover-hint,
   hr,
-  .page-header {
+  .backlinks {
     display: none !important;
   }
 
-  .page-footer > .graph > h3 {
-    display: none !important;
+  .page-footer {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
   }
 
-  // Make the global graph modal even bigger on this page
-  .global-graph-outer.active > .global-graph-container {
-    height: 95vh !important;
-    width: 95vw !important;
-    border-radius: 0 !important;
+  .page-footer > .graph > .graph-outer {
     border: 1px solid var(--border-tactical-strong) !important;
+    border-radius: 0 !important;
     background: var(--surface-1) !important;
   }
 }
