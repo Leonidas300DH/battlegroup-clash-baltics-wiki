@@ -9,7 +9,7 @@ updated: 2026-04-05
 
 # Advanced Electronic Warfare (replaces rule 2.3)
 
-From the [[ew-adv-supp-rules|Advanced Rules Supplement]]. This **completely replaces** the base game's [[electronic-warfare|EW Chit]] system. There are no EW Chits. Instead, each side allocates **Electronic Warfare Points (EWP)** across 4 EW Types in a strategic plan decided during the [[preparation-phase|Preparation Phase]].
+From the [[ew-adv-supp-rules|Advanced Rules Supplement]]. This **completely replaces** the base game's [[electronic-warfare|Electronic Warfare (EW) Chit]] system. There are no [[electronic-warfare|EW]] Chits. Instead, each side allocates **Electronic Warfare Points (EWP)** across 4 [[electronic-warfare|EW]] Types in a strategic plan decided during the [[preparation-phase|Preparation Phase]].
 
 > [!important]
 > [[electronic-warfare|Electronic Transmission (ETX)]] is still generated as in the base game. What changes is how ETX and [[electronic-warfare|Electronic Warfare (EW)]] are resolved.
@@ -31,7 +31,7 @@ Each Turn Command Phase: EW Activity
 
 Each side rolls for EWP in the [[preparation-phase|Preparation Phase]]:
 
-| Scenario | [[nato|NATO]] EWP | [[russia|Russia]] EWP | Special Rules |
+| Scenario | [[nato|NATO]] Electronic Warfare Points (EWP) | [[russia|Russia]] Electronic Warfare Points (EWP) | Special Rules |
 |----------|---------|------------|---------------|
 | 1 | 2D6+3 | 3D6+6 | — |
 | 2 | 3D6+3 | 4D6+6 | — |
@@ -44,7 +44,7 @@ Each side rolls for EWP in the [[preparation-phase|Preparation Phase]]:
 
 ## The 4 EW Types
 
-Each EW Type has an **Attack (A)** and **Defend (D)** allocation. EWP can be assigned to both or just one per Turn.
+Each [[electronic-warfare|EW]] Type has an **Attack (A)** and **Defend (D)** allocation. EWP can be assigned to both or just one per Turn.
 
 ### 1. SIGINT (Signals Intelligence)
 
@@ -61,11 +61,11 @@ Each EW Type has an **Attack (A)** and **Defend (D)** allocation. EWP can be ass
 3. If result < 1: no effect
 4. Else: roll 1D6. If roll ≤ modified SIGINT (A) value → success
 
-**Effect:** Place Target markers equal to the 1D6 result on any **identified** enemy [[force-elements|Headquarters (HQ)]] / [[force-elements|ISTAR]] [[force-elements|Force Element (FE)]].
+**Effect:** Place Target markers equal to the 1D6 result on any **identified** enemy [[force-elements|Headquarters (HQ)]] / [[force-elements|Intelligence, Surveillance, Target Acquisition & Reconnaissance (ISTAR)]] [[force-elements|Force Element (FE)]].
 
 **How [[force-elements|HQ]]/[[force-elements|ISTAR]] [[force-elements|FEs]] become "identified":**
 - Provided [[force-elements|ISTAR]] [[line-of-sight|Line of Sight (LoS)]] for [[indirect-fire|Indirect Fire]] on the previous Turn
-- [[force-elements|HQ]] is also identified if (previous Turn): [[support-assets|Unmanned Aerial Support drone (UAS)]] provided ISTAR LoS, or [[force-elements|HQ]] made a [[command-activation|Command Activation]], or a friendly [[force-elements|FE]] crossed a [[boundary-lines|Boundary Line]]
+- [[force-elements|HQ]] is also identified if (previous Turn): [[support-assets|Unmanned Aerial Support drone (UAS)]] provided [[force-elements|ISTAR]] [[line-of-sight|LoS]], or [[force-elements|HQ]] made a [[command-activation|Command Activation]], or a friendly [[force-elements|FE]] crossed a [[boundary-lines|Boundary Line]]
 - [[force-elements|HQ]] is also identified (current Turn) if [[orders#New Orders|New Orders]] were issued
 
 ---
@@ -134,13 +134,13 @@ This effect persists **through to the New Orders step of the next Command Phase*
 
 In this supplement, Target markers work **differently** from the base game:
 
-| Aspect | Base Game | Advanced EW Supplement |
+| Aspect | Base Game | Advanced Electronic Warfare (EW) Supplement |
 |--------|-----------|----------------------|
 | Source | From revealed [[electronic-warfare|ETX]] markers | From successful SIGINT rolls only |
 | Placement | In player's area | On specific identified enemy [[force-elements|HQ]]/[[force-elements|ISTAR]] [[force-elements|FEs]] |
 | Usable for | [[direct-fire|Direct Fire]] and [[indirect-fire|Indirect Fire]] [[glossary|Dice Roll Modifier (DRM)]] | [[indirect-fire|Indirect Fire]] [[glossary|DRM]] only (not Direct Fire) |
 | Duration | Single use, removed after use | **Whole Turn** — usable on multiple Indirect Fires |
-| ISTAR bypass | No | 3+ markers on a target allows Indirect Fire **without [[force-elements|ISTAR]] [[line-of-sight|LoS]]** (but no [[glossary|DRM]] bonus) |
+| Intelligence, Surveillance, Target Acquisition & Reconnaissance (ISTAR) bypass | No | 3+ markers on a target allows Indirect Fire **without [[force-elements|ISTAR]] [[line-of-sight|LoS]]** (but no [[glossary|DRM]] bonus) |
 | In [[stacking|Stack]] | N/A | Placed on [[stacking|Stack]] if [[force-elements|HQ]]/[[force-elements|ISTAR]] is [[stacking|Embedded]]; stays with [[stacking|Stack]] if [[force-elements|FE]] leaves |
 
 ### ISTAR Bypass (3+ Target Markers)

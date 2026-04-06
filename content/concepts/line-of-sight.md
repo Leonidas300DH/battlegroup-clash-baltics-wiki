@@ -28,11 +28,11 @@ For LoS to exist, **all** of the following must be true:
 | [[force-elements|FE]] counter | Any friendly or enemy counter on the same elevation |
 
 > [!tip]
-> If there's doubt about whether LoS exists: assume it **does** if the target is a **[[force-elements|PL]]** (3 dots), and **doesn't** if the target is a **[[force-elements|SECT]]** (1 dot).
+> If there's doubt about whether LoS exists: assume it **does** if the target is a **[[force-elements|Platoon (PL)]]** (3 dots), and **doesn't** if the target is a **[[force-elements|Section (SECT)]]** (1 dot).
 
-## Partial Obstructions (DRM penalty, 2 max)
+## Partial Obstructions (Dice Roll Modifier (DRM) penalty, 2 max)
 
-| Partial Obstruction | [[glossary|Dice Roll Modifier (DRM)]] Penalty |
+| Partial Obstruction | Dice Roll Modifier (DRM) Penalty |
 |---------------------|-------------|
 | Light Wood | -2 [[glossary|DRM]] |
 | Light Urban | -2 [[glossary|DRM]] |
@@ -62,7 +62,7 @@ This is critical for:
 
 A **Foot [[force-elements|FE]]** is in Cover if more than 50% of its counter is in non-Open [[terrain|Terrain]]:
 
-| Cover Type | [[glossary|DRM]] |
+| Cover Type | DRM |
 |------------|-----|
 | Light Wood | -1 |
 | Light Urban | -1 |

@@ -12,7 +12,7 @@ updated: 2026-04-05
 Anti-Tank Guided Missiles provide [[force-elements|Force Elements (FEs)]] with enhanced anti-armour capability, particularly against gold-type ([[force-elements|Main Battle Tank (MBT)]]) [[force-elements|Tracked FEs]] that most Firepower Values cannot target.
 
 > [!note] Design note
-> The term "ATGM" is used loosely in BC:B — RPGs are classified as ATGMs. "Stabber" is a catch-all name for various Russian ATGMs.
+> The term "ATGM" is used loosely in Battlegroup Clash: Baltics (BC:B) — RPGs are classified as ATGMs. "Stabber" is a catch-all name for various Russian ATGMs.
 
 ## ATGM Types
 
@@ -21,12 +21,12 @@ Anti-Tank Guided Missiles provide [[force-elements|Force Elements (FEs)]] with e
 | **NLAW** | [[nato\|NATO]] | 1,000m | Blue | Short range, infantry-carried |
 | **Javelin** | [[nato\|NATO]] | 3,000m | Blue | Long range, devastating |
 | **RPG** | [[russia\|Russia]] | Varies | Red | Short range |
-| **Stabber** | [[russia\|Russia]] | 3,000m | Red | **Only** taken by Russian Tracked FEs |
+| **Stabber** | [[russia\|Russia]] | 3,000m | Red | **Only** taken by Russian Tracked [[force-elements\|FEs]] |
 
 ## Mechanics
 
 ### Firing
-- An [[force-elements|FE]] with an ATGM fires it as if it had a **gold Atk Value** (regardless of the [[force-elements|FE]]'s printed Atk Value)
+- An [[force-elements|FE]] with an ATGM fires it as if it had a **gold Anti-Tank (Atk) Value** (regardless of the [[force-elements|FE]]'s printed Atk Value)
 - Uses a dedicated column on the **ATGM Fire Results Table** (not the standard Direct Fire Results Table column)
 - Range is shown on the ATGM marker (number × 1,000m)
 - Does **not** consume [[ammo|Ammo]] (Advanced mode)
@@ -53,7 +53,7 @@ ATGM markers are placed on top of or adjacent to the FE's counter. In a [[stacki
 ## FAQ Clarifications
 
 > [!note] ATGM = entire Direct Fire action
-> An FE **cannot** fire an ATGM and simultaneously make a standard Direct Fire using its printed Apers/Atk value. Firing the ATGM counts as the FE's Direct Fire action for the turn.
+> An [[force-elements|FE]] **cannot** fire an ATGM and simultaneously make a standard Direct Fire using its printed Anti-Personnel (Apers)/Atk value. Firing the ATGM counts as the [[force-elements|FE]]'s Direct Fire action for the turn.
 
 > [!note] A1 Echelons cannot fire ATGMs
 > An A1 Echelon carrying ATGMs for resupply **cannot fire them**. A1 Echelons represent transport vehicles, not combat units.

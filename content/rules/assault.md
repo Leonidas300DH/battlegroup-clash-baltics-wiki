@@ -22,56 +22,56 @@ An Assault is close-quarters combat between infantry, potentially supported by v
 ## Resolution Sequence
 
 ### 1. Declare Assault Location and Attackers
-- Place Attacking FEs at the Assault Location (enemy FEs en route do **not** block this placement)
+- Place Attacking [[force-elements|FEs]] at the Assault Location (enemy [[force-elements|FEs]] en route do **not** block this placement)
 - Multiple [[force-elements|FEs]] in the same [[task-groups|Task Group]] can Assault simultaneously
 - If a [[command-activation|Command Activation]] is active, [[force-elements|FEs]] from different Task Groups can join the same Assault
 
 ### 2. Reactive Fire
-- Non-activating side FEs with [[overwatch|Overwatch]] markers may [[overwatch#Reactive Fire|Reactive Fire]] against any Attacker
-- If this Disrupts or Eliminates the **only attacking Foot PL**, the Assault ends — Attackers Pull Back
+- Non-activating side [[force-elements|FEs]] with [[overwatch|Overwatch]] markers may [[overwatch#Reactive Fire|Reactive Fire]] against any Attacker
+- If this Disrupts or Eliminates the **only attacking Foot [[force-elements|Platoon (PL)]]**, the Assault ends — Attackers Pull Back
 
 ### 3. Pull Back or Engage
 The non-activating side decides:
 - **Must Pull Back** if it has **no Foot [[force-elements|FE]]** (Mounted or Dismounted) within 250m of the Assault Location
-- **May choose** Pull Back or Engage if a Foot FE is present
+- **May choose** Pull Back or Engage if a Foot [[force-elements|FE]] is present
 
 **If Pull Back:**
-- All non-activating FEs within 250m Pull Back (see [[#Pull Back]] below)
+- All non-activating [[force-elements|FEs]] within 250m Pull Back (see [[#Pull Back]] below)
 - Attackers may Reposition up to 250m
-- All FEs receive Moved + **Reorg** markers (not Assault Reorg — no engagement occurred)
+- All [[force-elements|FEs]] receive Moved + **Reorg** markers (not Assault Reorg — no engagement occurred)
 - Assault ends here
 
 **If Engage:** proceed to step 4.
 
 > [!note]
-> Exception: FEs within 250m but on the **other side of a River** do not need to Pull Back or Engage (though they may).
+> Exception: [[force-elements|FEs]] within 250m but on the **other side of a River** do not need to Pull Back or Engage (though they may).
 
 ### 4. Dismount Foot FEs
-Any Mounted Foot FE from either side must now Dismount and become Attackers or Defenders.
+Any Mounted Foot [[force-elements|FE]] from either side must now Dismount and become Attackers or Defenders.
 
 ### 5. Determine Result
 
 1. **Combine Assault Values** of all Attackers, and separately of all Defenders
    - If a [[force-elements|Platoon (PL)]]-sized [[force-elements|FE]] has **less than 2 [[ammo|Ammo]]** (Advanced), its Assault Value = 1
 2. **Calculate ratio**: Attackers' Value ÷ Defenders' Value, **rounded down**
-3. **Roll 2D6**, apply DRMs from the Assault DRM Table (Player Aid 5)
+3. **Roll 2D6**, apply [[glossary|Dice Roll Modifiers (DRMs)]] from the Assault DRM Table (Player Aid 5)
 4. Cross-reference on the **Assault Results Table** (Player Aid 5)
 
 > Example: Attackers' Value = 23, Defenders' = 11 → ratio 2.09:1, rounded to **2:1** row.
 
 ### Key Assault DRMs
 
-| Modifier | [[glossary|Dice Roll Modifier (DRM)]] | Notes |
+| Modifier | Dice Roll Modifier (DRM) | Notes |
 |----------|-----|-------|
 | Attacking/Defending [[force-elements|Headquarters (HQ)]] [[glossary|Command & Control (C2)]] Rating | +/- [[glossary|C2]] value | Embedded [[force-elements|HQ]] [[force-elements|Section (SECT)]] also provides this |
 | Attacking/Defending [[force-elements|Troop Quality (TQ)]] | Per [[force-elements|TQ]] modifier | If applies to at least one Attacker/Defender |
-| Defender in Urban/Dense Wood | Negative DRM | Defensive terrain advantage |
+| Defender in Urban/Dense Wood | Negative [[glossary\|DRM]] | Defensive terrain advantage |
 | Defender has Shell Scrape/Digging | -1/-2 | Per Dig Shell Scrape markers |
-| Smoke at Assault Location | Positive DRM | Favors the Attacker |
-| Defender has Reorg marker | Positive DRM | More vulnerable |
+| Smoke at Assault Location | Positive [[glossary\|DRM]] | Favors the Attacker |
+| Defender has Reorg marker | Positive [[glossary\|DRM]] | More vulnerable |
 
 > [!note]
-> If a DRM applies to **at least one** Attacker or Defender, it applies to the roll.
+> If a [[glossary|DRM]] applies to **at least one** Attacker or Defender, it applies to the roll.
 
 ### 6. Apply Result
 
@@ -82,33 +82,33 @@ The result shows two numbers (e.g. **1:1**) in a colored box:
 - Remaining Hits distributed as evenly as possible
 
 > [!important]
-> Hits from Assaults apply to **all FE Types/colors** (unlike Direct Fire targeting restrictions). Hits from Assaults **do not have a Morale effect**.
+> Hits from Assaults apply to **all [[force-elements|FE]] Types/colors** (unlike Direct Fire targeting restrictions). Hits from Assaults **do not have a Morale effect**.
 
 **Box color determines winner:**
 - **Green box** → Defenders Pull Back; Attackers may Reposition 250m; Digging/Shell Scrape markers removed
-- **Pink box** → Attackers Pull Back; Defenders may Reposition 250m; Digging/Shell Scrape markers stay (unless the FE Repositions)
+- **Pink box** → Attackers Pull Back; Defenders may Reposition 250m; Digging/Shell Scrape markers stay (unless the [[force-elements|FE]] Repositions)
 
 > [!warning] Errata 1.2 Addition
-> If **all FEs from one side** were Eliminated in the Assault, ignore the box color. Treat it as green if only Attackers remain, pink if only Defenders remain.
+> If **all [[force-elements|FEs]] from one side** were Eliminated in the Assault, ignore the box color. Treat it as green if only Attackers remain, pink if only Defenders remain.
 
 ### 7. Reorg
-All participating FEs receive:
+All participating [[force-elements|FEs]] receive:
 - **Moved marker**
 - **Reorg marker** (Basic) or **Assault Reorg marker** (Standard/Advanced)
 
 ### 8. Reduce Ammo (Advanced)
-All participating PL-sized FEs reduce Ammo by **2**.
+All participating [[force-elements|PL]]-sized [[force-elements|FEs]] reduce Ammo by **2**.
 
 ## Pull Back
 
-FEs that Pull Back must:
+[[force-elements|FEs]] that Pull Back must:
 - Move **500m to 1,000m** away (ignoring all terrain and movement penalties)
 - Meet Movement Restrictions (4.1): no overlapping, 250m from enemies
 - Fulfil priorities in order:
   1. In [[line-of-sight#Cover|Cover]] (if Foot [[force-elements|FE]])
   2. Out of [[line-of-sight|LoS]] of all enemy [[force-elements|FEs]]
   3. Towards their entry point on the map
-- Must meet **at least one** priority plus all Movement Restrictions — if not, the FE is **Eliminated**
+- Must meet **at least one** priority plus all Movement Restrictions — if not, the [[force-elements|FE]] is **Eliminated**
 - [[force-elements|FEs]] that Pull Back after Engaging receive a **Disrupted marker**
 - [[force-elements|FEs]] that Pull Back before Engagement (step 3) do **not** receive Disrupted
 
@@ -120,15 +120,15 @@ FEs that Pull Back must:
 
 ## Mounted FEs in Assaults
 
-- Attacking Mounted FEs can remain Mounted at the start
+- Attacking Mounted [[force-elements|FEs]] can remain Mounted at the start
 - They automatically Dismount after Reactive Fire is resolved (step 4)
-- If the Activating side doesn't want Mounted FEs involved, they must Dismount **before** the Assault
-- Dismounted FEs **cannot re-Mount** at the end of an Assault (Mounting only occurs at the end of Move or Move-Fire Actions)
+- If the Activating side doesn't want Mounted [[force-elements|FEs]] involved, they must Dismount **before** the Assault
+- Dismounted [[force-elements|FEs]] **cannot re-Mount** at the end of an Assault (Mounting only occurs at the end of Move or Move-Fire Actions)
 
 ## FAQ Clarifications
 
 > [!note] Assault is NOT movement
-> Attacking FEs are **placed** at the Assault Location — normal Movement rules do not apply. The Assault Location can be within 250m of enemy FEs. Morale effects from Reactive Fire do not affect this placement (except if the only attacking Foot FE becomes Disrupted, ending the Assault).
+> Attacking [[force-elements|FEs]] are **placed** at the Assault Location — normal Movement rules do not apply. The Assault Location can be within 250m of enemy [[force-elements|FEs]]. Morale effects from Reactive Fire do not affect this placement (except if the only attacking Foot [[force-elements|FE]] becomes Disrupted, ending the Assault).
 
 > [!note] Reactive Fire during Assaults
 > Reactive Fire follows normal rules: the reacting [[force-elements|FE]] must have an [[overwatch|Overwatch]] marker **and** [[line-of-sight|LoS]] to the declared firing point.
@@ -140,4 +140,4 @@ FEs that Pull Back must:
 > [[force-elements|FEs]] with a Reorg marker **can Pull Back** from an Assault (Pull Back is not an Activation). If they choose to Engage instead, the Attacker gains a **+2 [[glossary|DRM]]** as the Reorg'd [[force-elements|FEs]] are disorganized and unprepared.
 
 > [!note] Assault Hits and Morale
-> Hits from the Assault result itself do **not** cause Suppression/Morale effects. However, all participating FEs on the losing side receive a **Disrupted marker** when they Pull Back after Engaging.
+> Hits from the Assault result itself do **not** cause Suppression/Morale effects. However, all participating [[force-elements|FEs]] on the losing side receive a **Disrupted marker** when they Pull Back after Engaging.

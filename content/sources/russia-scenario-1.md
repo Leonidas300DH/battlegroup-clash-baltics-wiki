@@ -28,7 +28,7 @@ See [[scenario-1-bump-in-the-road#Russia ORBAT]] for the formatted [[glossary|OR
 
 Key features:
 - 3 mechanised infantry [[task-groups|Task Groups (TGps)]] ([[task-groups|TGp]] 1-3), each with 2 Tracked [[force-elements|Platoons (PLs)]] + 2 Mounted Foot [[force-elements|PLs]]
-- 1 Recce [[task-groups|Task Group (TGp)]] ([[task-groups|TGp]] 4) with single Recce [[force-elements|Section (SECT)]]
+- 1 Reconnaissance (Recce) [[task-groups|Task Group (TGp)]] ([[task-groups|TGp]] 4) with single Recce [[force-elements|Section (SECT)]]
 - All Tracked [[force-elements|PLs]] have **Stabber (depleted)** [[atgm|Anti-Tank Guided Missiles (ATGMs)]], all Foot [[force-elements|PLs]] have **RPGs**
 - 152mm Artillery with **4+1 = 5 Fire Missions**
 - [[support-assets|First Person View drone (FPV)]] with **4+2 = 6 Fire Missions**

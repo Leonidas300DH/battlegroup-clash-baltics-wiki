@@ -53,7 +53,7 @@ Occurs at the **start of each turn**:
 |------|------|-------------|
 | 2.1 Rally | Standard/Advanced | Both sides simultaneously take [[morale#Rally Tests\|Rally tests]] for Suppressed/Disrupted [[force-elements\|FEs]] |
 | 2.2 New Orders | Standard/Advanced | Both sides may issue [[orders#New Orders\|New Orders]], changing the Sync Matrix |
-| 2.3 [[electronic-warfare\|EW]] Activity | All modes | Reveal [[electronic-warfare\|ETX markers]], gain Target markers, draw [[electronic-warfare\|EW]] Chits |
+| 2.3 Electronic Warfare (EW) Activity | All modes | Reveal [[electronic-warfare\|Electronic Transmission (ETX)]] markers, gain Target markers, draw [[electronic-warfare\|EW]] Chits |
 
 ## 3. Execution Phase
 
@@ -65,9 +65,9 @@ The **heart of the game**:
 |------|-------------|
 | 3.1 Determine Initiative | Both sides roll 1D6 + modifiers; highest wins [[initiative\|Initiative]] |
 | 3.2 Action Round | Sides alternate activating [[task-groups\|Task Groups]]/[[support-assets\|SAs]]; each [[force-elements\|FE]] takes an [[actions-overview\|Action]] |
-| 3.3 Clean-up | Remove Smoke/Moved/Activated/Reorg markers; test Assault Reorg; flip [[task-groups\|TGp]] markers; return [[electronic-warfare\|EW]] Chits/Targets; advance Turn die |
+| 3.3 Clean-up | Remove Smoke/Moved/Activated/Reorg markers; test Assault Reorg; flip [[task-groups\|Task Group (TGp)]] markers; return [[electronic-warfare\|EW]] Chits/Targets; advance Turn die |
 
 ## Turn 1 Special Rules
 
-- In the Command Phase on Turn 1, **only step 2.3 ([[electronic-warfare|EW]] Activity)** applies — and only step 3 of [[electronic-warfare|EW]] Activity (drawing [[electronic-warfare|EW]] Chits), since no [[electronic-warfare|ETX]] has been generated yet
+- In the Command Phase on Turn 1, **only step 2.3 ([[electronic-warfare|Electronic Warfare (EW) Activity]])** applies — and only step 3 of [[electronic-warfare|EW]] Activity (drawing [[electronic-warfare|EW]] Chits), since no [[electronic-warfare|Electronic Transmission (ETX)]] has been generated yet
 - [[initiative|Initiative]] for Turn 1 is set by the scenario (not rolled)

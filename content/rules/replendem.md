@@ -13,18 +13,18 @@ REPLENDEM (Replenishment Demand) allows an **A1 Echelon [[force-elements|Force E
 
 ## Requirements
 
-- Only **A1 Echelon FEs** can take this Action
-- Receiving FEs must be within **250m** of the A1 Echelon
+- Only **A1 Echelon [[force-elements|FEs]]** can take this Action
+- Receiving [[force-elements|FEs]] must be within **250m** of the A1 Echelon
 
 ## Effects
 
-- The A1 Echelon transfers some or all of its carried Ammo/ATGMs to receiving FEs
+- The A1 Echelon transfers some or all of its carried Ammo/[[atgm|ATGMs]] to receiving [[force-elements|FEs]]
 - Both the A1 Echelon and any receiving [[force-elements|FE]] receive a **Reorg marker** (the receiving [[force-elements|FE]] cannot activate this turn if it hasn't already)
 - Opponent draws **1 [[electronic-warfare|Electronic Transmission (ETX)]] marker**
 
 ## Ammo Limits
 
-| [[force-elements|FE]] Type | Max Ammo |
+| Force Element (FE) Type | Max Ammo |
 |---------|----------|
 | Foot [[force-elements|Platoon (PL)]] | 4 |
 | Tracked [[force-elements|PL]] | 5 |
@@ -35,9 +35,9 @@ REPLENDEM (Replenishment Demand) allows an **A1 Echelon [[force-elements|Force E
 - Russian A1 Echelons are called **"Sect"** (distinct from [[force-elements|Section (SECT)]] size)
 - A **[[force-elements|SECT]]** (the size, not Russian "Sect") may only carry a **Depleted [[atgm|ATGM]]**
 - A1 Echelons are **targetable** like any other [[force-elements|FE]] — if Eliminated, all carried supplies are **lost**
-- Starting Ammo/ATGMs carried by A1 Echelons are set by the scenario
+- Starting Ammo/[[atgm|ATGMs]] carried by A1 Echelons are set by the scenario
 
 ## Tactical Considerations
 
 > [!tip]
-> Position A1 Echelons well in advance so they can use their Action for the turn to REPLENDEM without needing to Move first. The Reorg marker on receiving FEs means they lose their activation — plan resupply during turns where those FEs don't need to be active.
+> Position A1 Echelons well in advance so they can use their Action for the turn to REPLENDEM without needing to Move first. The Reorg marker on receiving [[force-elements|FEs]] means they lose their activation — plan resupply during turns where those [[force-elements|FEs]] don't need to be active.

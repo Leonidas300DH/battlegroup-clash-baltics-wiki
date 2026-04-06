@@ -19,13 +19,13 @@ A **Force Element** is a military unit in the game. Its position on the map is r
 | **Troop Quality (TQ)** | White number in black circle | Training, cohesion, will to fight (3-6). [[glossary|Dice Roll Modifier (DRM)]] for fires and assaults |
 | **[[glossary|Command & Control (C2)]] Rating** | Black number in yellow circle | C2 rating ([[force-elements|HQ]] counters only) |
 | **[[force-elements|Intelligence, Surveillance, Target Acquisition & Reconnaissance (ISTAR)]] Asset** | Red/blue star | Marks FE as an ISTAR Asset for [[line-of-sight|Line of Sight (LoS)]] |
-| **Apers Value** | Green box, top-left | Anti-personnel Firepower Value — targets Foot FEs |
-| **Atk Value** | Purple or gold box, top-middle | Anti-tank Firepower Value — targets vehicles |
+| **Anti-Personnel (Apers) Value** | Green box, top-left | Anti-Personnel Firepower Value — targets Foot [[force-elements|FEs]] |
+| **Anti-Tank (Atk) Value** | Purple or gold box, top-middle | Anti-Tank Firepower Value — targets vehicles |
 | **Assault Value** | White box, top-right | Value used in [[assault|Assault]] ratio calculations |
-| **FE Size** | Dots | 3 dots = Platoon (PL), 1 dot = Section (SECT) |
-| **FE Type** | Shape + color | Foot (F/diamond), Wheeled (W/circle), Tracked (T/square) |
-| **FE ID** | Text | Identifies the unit, typically Platoon-Company-Battalion |
-| **NATO symbol** | Icon | Unit identification; also shows which Tracked FEs can carry Mounted Foot |
+| **Force Element (FE) Size** | Dots | 3 dots = Platoon (PL), 1 dot = Section (SECT) |
+| **[[force-elements|FE]] Type** | Shape + color | Foot (F/diamond), Wheeled (W/circle), Tracked (T/square) |
+| **[[force-elements|FE]] ID** | Text | Identifies the unit, typically Platoon-Company-Battalion |
+| **NATO symbol** | Icon | Unit identification; also shows which Tracked [[force-elements|FEs]] can carry Mounted Foot |
 
 ## FE Types
 

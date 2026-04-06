@@ -26,7 +26,7 @@ BC:B maps are based on **Estonian satellite imagery** with overlaid borders iden
 
 Movement Allowances are on the **Movement Table (Player Aid 2)**. Key values from the rulebook:
 
-| FE Type | Open | Light Wood | Dense Wood | Minor Road in Dense Wood | Major Road |
+| Force Element (FE) Type | Open | Light Wood | Dense Wood | Minor Road in Dense Wood | Major Road |
 |---------|------|------------|------------|--------------------------|------------|
 | **Foot ([[force-elements|F]])** | 500m | 500m | Can enter | — | 1,000m |
 | **Wheeled (W)** | — | — | No-Go* | 1,000m* | 2,000m+ |
@@ -37,30 +37,30 @@ Movement Allowances are on the **Movement Table (Player Aid 2)**. Key values fro
 ### Mixed Terrain Movement
 When crossing multiple terrain types, calculate what **percentage** of the Movement Allowance each segment uses:
 
-> Example: A Foot FE moves 250m through Light Woods (50% of its 500m Light Woods allowance used). It can then move 500m on a Minor Road (50% of its 1,000m road allowance), using its remaining 50%.
+> Example: A Foot [[force-elements|FE]] moves 250m through Light Woods (50% of its 500m Light Woods allowance used). It can then move 500m on a Minor Road (50% of its 1,000m road allowance), using its remaining 50%.
 
 ### Column Move
 A Wheeled or Tracked [[force-elements|FE]] on a **Major Road** throughout its Move, with **no enemy [[force-elements|FE]] in [[line-of-sight|LoS]]** at any point, may move up to **3,000m**.
 
 ## No-Go Terrain
 
-**Dense Wood** is No-Go for Tracked and Wheeled FEs:
+**Dense Wood** is No-Go for Tracked and Wheeled [[force-elements|FEs]]:
 - May only fully enter (50%+ of counter inside) if **on a Road**
 - May **partially** enter (less than 50% of counter inside) even without a Road — useful for blocking [[line-of-sight|LoS]]
 - Can move through visible gaps between No-Go sections that are smaller than the counter
 
 ## Rivers and Bridges
 
-- Rivers are **No-Go** for all FE types
+- Rivers are **No-Go** for all [[force-elements|FE]] types
 - Cannot have more than 50% of counter across a River unless crossing at a **Bridge**
 - Bridges count as Roads for Movement Allowance
-- Scenario rules may restrict how many Tracked PLs can cross a Bridge per turn
-- FEs on opposite sides of a River can be within 250m of each other (exception to normal 250m restriction)
+- Scenario rules may restrict how many Tracked [[force-elements|Platoons (PLs)]] can cross a Bridge per turn
+- [[force-elements|FEs]] on opposite sides of a River can be within 250m of each other (exception to normal 250m restriction)
 
 ## Roads
 
-- Roads only count for **movement purposes** — in all other cases (LoS, Cover), the surrounding Terrain applies
-- **Minor Roads** are ignored by Wheeled and Tracked FEs in Light Wood, Light Urban, and Urban Terrain
+- Roads only count for **movement purposes** — in all other cases ([[line-of-sight|Line of Sight (LoS)]], Cover), the surrounding Terrain applies
+- **Minor Roads** are ignored by Wheeled and Tracked [[force-elements|FEs]] in Light Wood, Light Urban, and Urban Terrain
 - Only a **part** of the counter needs to be on the Road to count as using it
 
 ## Terrain Borders

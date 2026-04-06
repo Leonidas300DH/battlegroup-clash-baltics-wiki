@@ -9,7 +9,7 @@ updated: 2026-04-06
 
 # Game Turn
 
-A game of BC:B lasts **5 or 6 Turns** (set by the scenario). Each Turn represents **15-30 minutes** of real-time combat. A Turn follows the same structure every time: Command Phase, then Execution Phase.
+A game of Battlegroup Clash: Baltics (BC:B) lasts **5 or 6 Turns** (set by the scenario). Each Turn represents **15-30 minutes** of real-time combat. A Turn follows the same structure every time: Command Phase, then Execution Phase.
 
 ## Turn Structure
 
@@ -46,17 +46,17 @@ Happens at the **start** of each Turn. Both sides act simultaneously.
 | Step | Mode Required | What Happens |
 |------|--------------|--------------|
 | **2.1 Rally** | Standard/Advanced | Each Suppressed/Disrupted [[force-elements|Force Element (FE)]] rolls 1D6 against its [[force-elements|Troop Quality (TQ)]]. Pass = improve [[morale|Morale]] one level. [[force-elements|Headquarters (HQ)]] within 250m gives +[[glossary|Command & Control (C2)]] bonus. See [[morale#Rally Tests]]. |
-| **2.2 New Orders** | Standard/Advanced | Either side may change [[orders|Orders]] or [[fire-plans|Fire Plans]] on the [[sync-matrix|Sync Matrix]]. Cost: Reorg marker (lose activation for the Turn) + 1 [[electronic-warfare|Electronic Transmission (ETX)]] per [[task-groups|Task Group (TGp)]]/[[support-assets|Support Asset (SA)]]. [[mission-command|Mission Command]] (NATO) avoids this cost for 1 TGp. [[red-doctrine|Red Doctrine]] (Russia) forbids this entirely. |
-| **2.3 EW Activity** | All modes | Flip [[electronic-warfare|ETX]] markers → exchange for Target markers → draw [[electronic-warfare|Electronic Warfare (EW)]] Chits. Side with more [[electronic-warfare|ETX]] draws an extra Chit. See [[electronic-warfare]]. |
+| **2.2 New Orders** | Standard/Advanced | Either side may change [[orders|Orders]] or [[fire-plans|Fire Plans]] on the [[sync-matrix|Sync Matrix]]. Cost: Reorg marker (lose activation for the Turn) + 1 [[electronic-warfare|Electronic Transmission (ETX)]] per [[task-groups|Task Group (TGp)]]/[[support-assets|Support Asset (SA)]]. [[mission-command|Mission Command]] (NATO) avoids this cost for 1 [[task-groups|TGp]]. [[red-doctrine|Red Doctrine]] (Russia) forbids this entirely. |
+| **2.3 Electronic Warfare (EW) Activity** | All modes | Flip [[electronic-warfare|ETX]] markers → exchange for Target markers → draw [[electronic-warfare|Electronic Warfare (EW)]] Chits. Side with more [[electronic-warfare|ETX]] draws an extra Chit. See [[electronic-warfare]]. |
 
 > [!note] Turn 1
-> On Turn 1, only step 2.3 applies, and within it only EW Chit drawing (no ETX to reveal yet). [[initiative|Initiative]] is set by the scenario, not rolled.
+> On Turn 1, only step 2.3 applies, and within it only [[electronic-warfare|EW]] Chit drawing (no [[electronic-warfare|ETX]] to reveal yet). [[initiative|Initiative]] is set by the scenario, not rolled.
 
 ### Execution Phase
 
 The **heart of the game**. This is where forces move and fight.
 
-**3.1 Determine [[initiative|Initiative]]:** Both sides roll 1D6 + modifiers (including [[force-elements|HQ]] [[glossary|C2]] Rating). Highest wins. The Initiative side chooses **who activates first**.
+**3.1 Determine [[initiative|Initiative]]:** Both sides roll 1D6 + modifiers (including [[force-elements|HQ]] [[glossary|Command & Control (C2)]] Rating). Highest wins. The Initiative side chooses **who activates first**.
 
 **3.2 Action Round:** Sides alternate activating one [[task-groups|TGp]] or [[support-assets|SA]] at a time.
 
@@ -70,7 +70,7 @@ When a [[task-groups|TGp]] activates:
 
 **Passing:** A side may pass instead of activating, but then makes **no more activations** that Turn (can still Reactive Fire).
 
-**[[command-activation|Command Activation]]:** An [[force-elements|HQ]] can activate additional [[task-groups|TGps]] simultaneously (C2 Rating - 1 extra TGps). Costs 1 [[electronic-warfare|ETX]] per additional [[task-groups|TGp]].
+**[[command-activation|Command Activation]]:** An [[force-elements|HQ]] can activate additional [[task-groups|TGps]] simultaneously ([[glossary|C2]] Rating - 1 extra [[task-groups|TGps]]). Costs 1 [[electronic-warfare|ETX]] per additional [[task-groups|TGp]].
 
 **3.3 Clean-up:** Reset the board for the next Turn.
 

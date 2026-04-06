@@ -40,7 +40,7 @@ The introductory scenario for BC:B. A Russian mechanised force pushes southwest 
 
 All NATO [[force-elements|Force Elements (FEs)]] begin at **Resilience 3** (representing under-manned platoons). All non-Mounted Foot [[force-elements|FEs]] may begin with **Shell Scrape** and **Overwatch** markers.
 
-| [[task-groups|Task Group (TGp)]] | [[force-elements|FE]] ID | Type | Size | [[atgm|Anti-Tank Guided Missiles (ATGMs)]] | Ammo | Starting Position / Notes |
+| [[task-groups|Task Group (TGp)]] | [[force-elements|FE]] ID | Type | Size | [[atgm|Anti-Tank Guided Missiles (ATGMs)]] | Ammo / Fire Missions (FM) | Starting Position / Notes |
 |-----|-------|------|------|-------|------|--------------------------|
 | **[[task-groups|TGp]] 1** | 1-A-1 F | Foot | [[force-elements|PL]] | 1× NLAW | 4 | GS E229/N216. Overwatch + Shell Scrape |
 | | 2-A-1 F | Foot | [[force-elements|PL]] | 1× NLAW | 4 | GS E233/N220. Overwatch + Shell Scrape |
@@ -69,7 +69,7 @@ All NATO [[force-elements|Force Elements (FEs)]] begin at **Resilience 3** (repr
 
 ## Russia [[glossary|ORBAT]]
 
-| [[task-groups|TGp]] | [[force-elements|FE]] ID | Type | Size | [[atgm|ATGMs]] | Ammo | Notes |
+| [[task-groups|TGp]] | [[force-elements|FE]] ID | Type | Size | [[atgm|ATGMs]] | Ammo / FM | Notes |
 |-----|-------|------|------|-------|------|-------|
 | **[[task-groups|TGp]] 1** | 1-A-1 T | Tracked | [[force-elements|PL]] | 1× Stabber (depl.) | 5 | Enters E272/N249 |
 | | 1-A-1 F | Foot | [[force-elements|PL]] | 1× RPG | 4 | Begins [[stacking\|Mounted]] in 1-A-1 T |
@@ -84,13 +84,13 @@ All NATO [[force-elements|Force Elements (FEs)]] begin at **Resilience 3** (repr
 | | 3-A-1 F | Foot | [[force-elements|PL]] | 1× RPG | 4 | Mounted in 3-A-1 T |
 | | 3-B-1 T | Tracked | [[force-elements|PL]] | 1× Stabber (depl.) | 5 | |
 | | 3-B-1 F | Foot | [[force-elements|PL]] | 1× RPG | 4 | Mounted in 3-B-1 T |
-| **[[task-groups|TGp]] 4** | 1-Recce | Recce | [[force-elements|SECT]] | — | — | Enters E272/N220 |
+| **[[task-groups|TGp]] 4** | 1-Recce | Reconnaissance (Recce) | [[force-elements|SECT]] | — | — | Enters E272/N220 |
 | **[[support-assets|SA]]** | 152mm | Artillery | — | — | 5 FM | Off-map (+1 bonus FM) |
 | **[[support-assets|SA]]** | FPV A | [[support-assets|FPV]] | — | — | 6 FM | Off-map (+2 bonus FM) |
 | **[[support-assets|SA]]** | UAS A | [[support-assets|UAS]] | — | — | — | Off-map |
 
 **Russian strengths:**
-- 6 Tracked [[force-elements|PLs]] + 6 Foot [[force-elements|PLs]] (12 [[force-elements|PLs]] total vs NATO's 7)
+- 6 Tracked [[force-elements|PLs]] + 6 Foot [[force-elements|PLs]] (12 [[force-elements|PLs]] total vs NATO's 6)
 - 152mm Artillery with 5 Fire Missions — NATO has no artillery at all
 - [[support-assets|FPV]] with 6 Fire Missions (vs NATO's 4)
 - Recce [[force-elements|SECT]] for long-range [[force-elements|Intelligence, Surveillance, Target Acquisition & Reconnaissance (ISTAR)]] (4,000m [[line-of-sight|Line of Sight (LoS)]])
@@ -109,7 +109,7 @@ All NATO [[force-elements|Force Elements (FEs)]] begin at **Resilience 3** (repr
 | | NATO Primary | NATO Secondary | Russia Primary | Russia Secondary |
 |---|---|---|---|---|
 | **Objective** | Deny the bridge | Evacuate forces OR Hold Sindi | Seize the bridge | Secure Sindi OR Attrit NATO |
-| **Win condition** | No Russian [[force-elements|PL]] at bridge (end T5) | ≤2 NATO [[force-elements|PLs]] lost/south of bridge OR 1 Foot [[force-elements|PL]] in Sindi | ≥1 Russian [[force-elements|PL]] at bridge (end T5) | 1 Foot [[force-elements|PL]] in Sindi OR ≥3 NATO [[force-elements|PLs]] destroyed/crippled |
+| **Win condition** | No Russian [[force-elements|PL]] at bridge (end T5) | ≤2 NATO [[force-elements|PLs]] lost/south of bridge OR 1 Foot [[force-elements|PL]] in Sindi | ≥1 Russian [[force-elements|PL]] at bridge (end T5) | 1 Foot [[force-elements|PL]] in Sindi OR ≥3 NATO [[force-elements|PLs]] destroyed/crippled (at least 1 must be Tracked) |
 
 > [!note]
 > Both sides can achieve victory. NATO can deny the bridge while Russia secures Sindi, for example. But only one side can achieve a Decisive Victory.

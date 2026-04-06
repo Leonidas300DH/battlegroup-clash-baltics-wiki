@@ -13,7 +13,7 @@ Indirect Fire allows mortars, artillery, and [[support-assets|First Person View 
 
 ## Types of Indirect Fire
 
-| Type | Unit | On Map? | Range | ISTAR Required? | Danger Close |
+| Type | Unit | On Map? | Range | Intelligence, Surveillance, Target Acquisition & Reconnaissance (ISTAR) Required? | Danger Close |
 |------|------|---------|-------|-----------------|--------------|
 | **Mortar** | Mortar [[force-elements|Force Element (FE)]] | Yes | 8,000m max | Own [[line-of-sight|Line of Sight (LoS)]] or [[force-elements|ISTAR]] | 250m |
 | **Artillery** | 155mm/152mm [[support-assets|Support Asset (SA)]] | No | Unlimited | Always | 500m (250m for Recce) |
@@ -23,11 +23,11 @@ Indirect Fire allows mortars, artillery, and [[support-assets|First Person View 
 
 1. **Declare target** — must be within [[line-of-sight|LoS]] of the firing Mortar or a friendly [[force-elements|ISTAR]] Asset; within Range (if Mortar); no Danger Close violation
 2. **Play** [[electronic-warfare#Target Markers|Target marker]] (if available/desired)
-3. **Play** [[electronic-warfare#EW Chits|EW Chit]] effect (if relevant/desired)
-4. **Roll 2D6**, apply DRMs from the Indirect Fire DRM Table (Player Aid 4)
+3. **Play** [[electronic-warfare#EW Chits|Electronic Warfare (EW) Chit]] effect (if relevant/desired)
+4. **Roll 2D6**, apply [[glossary|Dice Roll Modifiers (DRMs)]] from the Indirect Fire DRM Table (Player Aid 4)
 5. **Apply result** from the Indirect Fire Results Table (Player Aid 4)
 6. **Reduce Fire Missions** by 1
-7. **Opponent draws ETX** markers (see [[electronic-warfare]])
+7. **Opponent draws [[electronic-warfare|Electronic Transmission (ETX)]]** markers (see [[electronic-warfare]])
 
 ## ISTAR Assets
 
@@ -40,13 +40,13 @@ Indirect Fire (except Mortar using own [[line-of-sight|LoS]]) requires an [[forc
 
 ## Danger Close
 
-Prevents targeting enemies too close to friendly FEs:
+Prevents targeting enemies too close to friendly [[force-elements|FEs]]:
 
 | Fire Type | Danger Close Distance | Exception |
 |-----------|----------------------|-----------|
 | Mortar | 250m | — |
-| Artillery | 500m | 250m for friendly Recce FEs |
-| FPV | None | — |
+| Artillery | 500m | 250m for friendly Recce [[force-elements\|FEs]] |
+| [[support-assets\|FPV]] | None | — |
 
 Danger Close does **not** apply when firing [[#Smoke|Smoke]].
 
@@ -54,30 +54,30 @@ Danger Close does **not** apply when firing [[#Smoke|Smoke]].
 
 **Regardless of whether the Indirect Fire scores Hits**, it applies a Suppression marker to qualifying [[force-elements|FE]] types within range of the target:
 
-| Fire Type | Affected [[force-elements|FE]] Types | Suppression Range |
+| Fire Type | Affected Force Element (FE) Types | Suppression Range |
 |-----------|-------------------|-------------------|
 | Artillery | **All** [[force-elements|FE]] types | 250m of target |
 | Mortar | Dismounted Foot [[force-elements|FEs]] only | 250m of target |
 | [[support-assets|FPV]] | Dismounted Foot [[force-elements|FEs]] only | 250m of target |
 
-If the FE already has a Suppression marker, there is no additional effect.
+If the [[force-elements|FE]] already has a Suppression marker, there is no additional effect.
 
 ## FPV Double-Tap Strike
 
-The FPV can fire a **second time immediately** after the first Fire is resolved:
-- Must target the **same** enemy FE
+The [[support-assets|FPV]] can fire a **second time immediately** after the first Fire is resolved:
+- Must target the **same** enemy [[force-elements|FE]]
 - Uses an **additional Fire Mission**
 - Resolved as a separate Action but part of the same Activation
-- **No additional ETX** generated
-- Any DRM effects from EW Chits continue to apply
+- **No additional [[electronic-warfare|ETX]]** generated
+- Any [[glossary|DRM]] effects from [[electronic-warfare|EW]] Chits continue to apply
 
 ## Smoke
 
 Artillery and Mortar can use a Fire Mission to place a **Smoke marker** on a target location:
 - Requires [[force-elements|ISTAR]] [[line-of-sight|LoS]] (or Mortar's own [[line-of-sight|LoS]]) to the target location
-- Target can be **any location** with LoS (including on top of an FE/Stack)
-- Smoke is a **Partial Obstruction** (-3 DRM for LoS through it)
-- Provides a DRM bonus for the Attacker in [[assault|Assaults]]
+- Target can be **any location** with [[line-of-sight|LoS]] (including on top of an [[force-elements|FE]]/Stack)
+- Smoke is a **Partial Obstruction** (-3 [[glossary|DRM]] for [[line-of-sight|LoS]] through it)
+- Provides a [[glossary|DRM]] bonus for the Attacker in [[assault|Assaults]]
 - **No roll required** — Smoke is automatically placed
 - **No Danger Close** restriction
 - **No Automatic Suppression**
@@ -86,13 +86,13 @@ Artillery and Mortar can use a Fire Mission to place a **Smoke marker** on a tar
 
 ## Key DRMs (from rulebook examples)
 
-| Modifier | DRM |
+| Modifier | Dice Roll Modifier (DRM) |
 |----------|-----|
-| UAS has LoS to target | +2 |
-| Firing at Tracked FE with Moved marker | -5 (varies by fire type) |
-| Cover (Foot FE in terrain) | Varies |
+| [[support-assets\|UAS]] has [[line-of-sight\|LoS]] to target | +2 |
+| Firing at Tracked [[force-elements\|FE]] with Moved marker | -5 (varies by fire type) |
+| Cover (Foot [[force-elements\|FE]] in terrain) | Varies |
 | Shell Scrape | -2 |
-| EW Chit effects | Varies |
+| [[electronic-warfare\|EW]] Chit effects | Varies |
 
 ## ETX Generation
 

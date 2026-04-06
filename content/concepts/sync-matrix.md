@@ -22,14 +22,14 @@ The Sync Matrix is a grid with:
 
 Each cell contains:
 - **For Task Groups**: an [[orders|Order]] (e.g. "Seize Hill 55", "Screen the bridge")
-- **For Artillery/FPV SAs**: a [[fire-plans|Fire Plan]] (a Grid Intersection reference)
+- **For Artillery/[[support-assets|First Person View drone (FPV)]] [[support-assets|SAs]]**: a [[fire-plans|Fire Plan]] (a Grid Intersection reference)
 - **For Mortar Task Groups**: both an Order and a Fire Plan
-- **For UAS**: no entry needed (UAS is a flexible asset)
+- **For [[support-assets|Unmanned Aerial Support drone (UAS)]]**: no entry needed ([[support-assets|UAS]] is a flexible asset)
 
 ## How to Fill It
 
 1. Read the scenario's [[glossary|Order of Battle (ORBAT)]] — identify your Task Groups and [[support-assets|SAs]]
-2. Write each [[task-groups|TGp]] and [[support-assets|SA]] name in the left column
+2. Write each [[task-groups|Task Group (TGp)]] and [[support-assets|SA]] name in the left column
 3. For each Turn, assign:
    - **Orders** for Task Groups: choose Order Verbs from the Orders Table (Player Aid 6)
    - **Fire Plans** for Artillery/[[support-assets|First Person View drone (FPV)]]/Mortar: write a Grid Intersection (e.g. "GI E32/N50")
@@ -60,12 +60,12 @@ Both sides refer to their Sync Matrix during the [[execution-phase#Action Round|
 Orders and Fire Plans can be changed via **New Orders** (see [[orders#New Orders]]):
 - Strike through existing Orders/Fire Plans
 - Write new ones
-- FEs receive Reorg markers (cannot activate that turn)
+- [[force-elements|Force Elements (FEs)]] receive Reorg markers (cannot activate that turn)
 - Opponent draws 1 [[electronic-warfare|ETX]] per Task Group/[[support-assets|SA]] receiving New Orders
 
-**Exception — [[mission-command|Mission Command]] (Advanced, NATO only):** one Task Group per turn can receive New Orders without Reorg or ETX penalty.
+**Exception — [[mission-command|Mission Command]] (Advanced, NATO only):** one Task Group per turn can receive New Orders without Reorg or [[electronic-warfare|ETX]] penalty.
 
-**Exception — [[red-doctrine|Red Doctrine]] (Advanced, Russia):** Russian Task Groups and SAs **cannot** issue New Orders or modify Fire Plans at all.
+**Exception — [[red-doctrine|Red Doctrine]] (Advanced, Russia):** Russian Task Groups and [[support-assets|SAs]] **cannot** issue New Orders or modify Fire Plans at all.
 
 ## Laminated Components
 

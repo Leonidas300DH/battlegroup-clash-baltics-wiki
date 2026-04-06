@@ -32,7 +32,7 @@ Write them in the Boundary Line section of the Advanced [[sync-matrix|Sync Matri
 
 ## When Crossing Generates ETX
 
-| Situation | [[electronic-warfare|ETX]] Generated |
+| Situation | Electronic Transmission (ETX) Generated |
 |-----------|-----|
 | **Overlapping Boundary Lines**: Two or more [[task-groups|TGps]] deliberately share the same area | 1 [[electronic-warfare|ETX]] per [[task-groups|TGp]] per Turn, when Activated |
 | **Crossing during action**: An [[force-elements|FE]] or [[stacking|Stack]] crosses its [[task-groups|TGp]]'s Boundary Line via Move, [[assault|Assault]], or Pull Back | 1 [[electronic-warfare|ETX]] per [[force-elements|FE]]/[[stacking|Stack]] at the moment of crossing |

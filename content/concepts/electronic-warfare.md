@@ -9,7 +9,7 @@ updated: 2026-04-05
 
 # Electronic Warfare (EW)
 
-Electronic warfare is a **critical feature** of BC:B. It creates a sub-game around radio emissions: certain actions generate electronic transmissions (ETX), which the opponent can exploit for targeting bonuses and EW effects.
+Electronic warfare is a **critical feature** of Battlegroup Clash: Baltics (BC:B). It creates a sub-game around radio emissions: certain actions generate electronic transmissions (ETX), which the opponent can exploit for targeting bonuses and EW effects.
 
 ## The EW Cycle
 
@@ -46,13 +46,13 @@ Actions generate ETX → Opponent draws ETX markers
 
 Uses different rules based on [[fire-plans|Fire Plans]]:
 
-| [[support-assets|SA]]/[[force-elements|FE]] Type | In Fire Plan area | Not in Fire Plan area |
+| Support Asset (SA)/Force Element (FE) Type | In Fire Plan area | Not in Fire Plan area |
 |------------|------------------|----------------------|
 | Mortar | 1 [[electronic-warfare|ETX]] | 3 [[electronic-warfare|ETX]] |
 | Artillery | 1 [[electronic-warfare|ETX]] | 3 [[electronic-warfare|ETX]] |
-| [[support-assets|FPV]] | 0 [[electronic-warfare|ETX]] | 3 [[electronic-warfare|ETX]]* |
+| [[support-assets|First Person View drone (FPV)]] | 0 [[electronic-warfare|ETX]] | 3 [[electronic-warfare|ETX]]* |
 
-*If FPV takes a [[indirect-fire#FPV Double-Tap|Double-Tap]] outside the Fire Plan, the ETX is not drawn twice.
+*If [[support-assets|FPV]] takes a [[indirect-fire#FPV Double-Tap|Double-Tap]] outside the Fire Plan, the ETX is not drawn twice.
 
 **Additional ETX sources (Standard/Advanced):**
 - Issuing [[orders#New Orders|New Orders]]: opponent draws 1 [[electronic-warfare|ETX]] per Task Group/[[support-assets|SA]]
@@ -95,7 +95,7 @@ Resolved each turn in the [[command-phase|Command Phase]]:
 
 | Chit | Effect (example from text) |
 |------|---------------------------|
-| 3A/B | +2 [[glossary|DRM]] on artillery, or -2 [[glossary|DRM]] against enemy artillery |
+| 3A/B | +2 [[glossary|Dice Roll Modifier (DRM)]] on artillery, or -2 [[glossary|DRM]] against enemy artillery |
 | 4A ([[support-assets|FPV]] signal boost) | Immediate: your [[support-assets|FPV]] gains 1 extra Fire Mission |
 | 4B ([[support-assets|FPV]] jamming) | Hold: opponent's [[support-assets|FPV]] attack rolls 1D6 as a negative [[glossary|DRM]] |
 | 6A/B | Indirect Fire outside Fire Plan for only 1 [[electronic-warfare|ETX]], or prevent opponent from doing so |

@@ -21,12 +21,12 @@ The Preparation Phase occurs **once** before the game begins. It covers setup an
 4. **Determine Secondary Objective** — roll secretly on the Commander's Intent table
 5. **Set-up the board**:
    - Place map(s)
-   - Shuffle [[electronic-warfare|ETX markers]] face-down within reach
-   - Place EW Chits in draw pool (remove 6A/B and 7A/B in Basic mode)
+   - Shuffle [[electronic-warfare|Electronic Transmission (ETX)]] markers face-down within reach
+   - Place [[electronic-warfare|Electronic Warfare (EW)]] Chits in draw pool (remove 6A/B and 7A/B in Basic mode)
    - Set aside Information markers, Target markers, dice
    - Place Turn Tracker Die on '1'
-   - Set up FE and SA counters per scenario instructions
-   - Optionally [[stacking|Mount/Embed]] FEs during setup
+   - Set up [[force-elements|Force Element (FE)]] and [[support-assets|Support Asset (SA)]] counters per scenario instructions
+   - Optionally [[stacking|Mount/Embed]] [[force-elements|FEs]] during setup
    - Place [[support-assets|Artillery]], [[support-assets|First Person View drone (FPV)]] off-map; set Fire Mission markers
    - [[support-assets|Unmanned Aerial Support drone (UAS)]] begins off-map (placed on first Move Action)
 

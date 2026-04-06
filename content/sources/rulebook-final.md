@@ -22,7 +22,7 @@ updated: 2026-04-05
 - Unique among commercial wargames for requiring pre-game **planning via a Sync Matrix**
 - Uses bespoke maps based on Estonian satellite imagery — no hex grid, free-flowing movement
 - Three play modes: [[game-modes|Basic, Standard, Advanced]] — each builds on the previous
-- 2-6 players, 5-6 turns per scenario, each turn = 15-30 minutes of game time
+- 1-6 players (solo play supported), 5-6 turns per scenario, each turn = 15-30 minutes of game time
 - Designed as both a hobby game and a **professional military education (PME)** tool
 - Licensed under **Creative Commons BY-NC-SA**
 
@@ -62,7 +62,7 @@ The game covers NATO vs Russia engagements in the Baltic states (specifically Es
 - **[[line-of-sight|Line of Sight (LoS)]]**: max 3,000m (4,000m for Recce), blocked by Dense Woods/Urban/elevation/[[force-elements|FEs]]
 - **[[terrain|Terrain]]**: Open, Light Wood, Dense Wood, Light Urban, Urban, Hills, Rivers, Roads
 - **[[combat-effectiveness|Hits & Resilience]]**: [[force-elements|FEs]] have Resilience (1-4); each hit reduces by 1; at 0 = Eliminated
-- **[[direct-fire|Firepower]]**: Apers (green) vs Atk (purple/gold) — color-coded targeting system
+- **[[direct-fire|Firepower]]**: Anti-Personnel (Apers) (green) vs Anti-Tank (Atk) (purple/gold) — color-coded targeting system
 - **[[morale|Morale]]**: Good → Suppressed → Disrupted → Broken (= Eliminated)
 - **[[electronic-warfare|Electronic Warfare (EW)]]**: actions generate [[electronic-warfare|Electronic Transmission (ETX)]] markers; these become Target markers and [[electronic-warfare|EW]] Chits
 

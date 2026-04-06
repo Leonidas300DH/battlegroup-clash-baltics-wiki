@@ -14,7 +14,7 @@ A **Task Group** is a group of [[force-elements|Force Elements]] organised toget
 ## Key Rules
 
 - Every [[force-elements|Force Element (FE)]] is **always** part of a Task Group
-- A Task Group comprises **one or more** [[force-elements|FEs]]
+- A Task Group comprises **one or more** [[force-elements|Force Elements (FEs)]]
 - Task Group composition is **fixed by the scenario** [[glossary|Order of Battle (ORBAT)]] (unless using the [[optional-rules|Flexible Task Groups]] optional rule)
 - There is **no distance requirement** between [[force-elements|FEs]] in the same Task Group — they typically operate within 1-2 Grid Squares, but this is not enforced
 - Task Groups are numbered ([[task-groups|TGp]] 1, [[task-groups|TGp]] 2, etc.) — the number has **no effect** on activation order
@@ -24,10 +24,10 @@ A **Task Group** is a group of [[force-elements|Force Elements]] organised toget
 When a Task Group is activated in the [[execution-phase#Action Round|Action Round]]:
 
 1. The Task Group is selected for activation
-2. All FEs in the Task Group activate **one after another**
-3. The activating side chooses the **order** in which FEs activate
-4. FEs in the same Task Group do **not** need to take the same Action
-5. Once all FEs have activated, the Task Group's activation is complete
+2. All [[force-elements|FEs]] in the Task Group activate **one after another**
+3. The activating side chooses the **order** in which [[force-elements|FEs]] activate
+4. [[force-elements|FEs]] in the same Task Group do **not** need to take the same Action
+5. Once all [[force-elements|FEs]] have activated, the Task Group's activation is complete
 6. The [[task-groups|TGp]] marker is flipped to its **Activated (striped)** side
 
 > [!note]
@@ -49,7 +49,7 @@ Double-sided tokens:
 Markers are flipped back to the unactivated side during the [[execution-phase#Clean-up|Clean-up]] step.
 
 > [!tip]
-> Place the [[task-groups|TGp]] marker near the majority of [[force-elements|FEs]] in that Task Group. Use the [[glossary|ORBAT]] to cross-reference which [[force-elements|FEs]] belong to which Task Group.
+> Place the [[task-groups|TGp]] marker near the majority of [[force-elements|FEs]] in that Task Group. Use the [[glossary|Order of Battle (ORBAT)]] to cross-reference which [[force-elements|FEs]] belong to which Task Group.
 
 ## Special Task Groups
 
@@ -60,7 +60,7 @@ Mortar [[force-elements|FEs]] always have their own Task Group. Since they are [
 Each side gets 1-2 A1 Echelon Task Groups containing logistical [[force-elements|FEs]]. Their only Order should be "Support Task Group(s)...". Their [[force-elements|FEs]] can take Move, Hold, or [[replendem|REPLENDEM]] Actions.
 
 ## On/Off Map
-Task Groups not on the map may only be selected to activate if they are being **Moved onto the map** that turn. FEs entering the map do so from their designated entry area as specified by the scenario.
+Task Groups not on the map may only be selected to activate if they are being **Moved onto the map** that turn. [[force-elements|FEs]] entering the map do so from their designated entry area as specified by the scenario.
 
 ## Passing
 A side may **pass** instead of activating a Task Group/[[support-assets|Support Asset (SA)]]. However, if a side passes, it may not make any more activations that turn (its turn is over, except to [[overwatch#Reactive Fire|Reactive Fire]]).

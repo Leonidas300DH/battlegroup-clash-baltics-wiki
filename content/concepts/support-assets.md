@@ -57,7 +57,7 @@ A **Support Asset** represents artillery and drone assets. SAs **cannot be targe
 
 ## Fire Missions
 
-Each SA/Mortar [[force-elements|FE]] starts with a number of Fire Missions set by the scenario [[glossary|ORBAT]]. Each Indirect Fire action reduces available Fire Missions by 1. At 0 Fire Missions, the SA/[[force-elements|FE]] cannot Indirect Fire.
+Each [[support-assets|SA]]/Mortar [[force-elements|FE]] starts with a number of Fire Missions set by the scenario [[glossary|Order of Battle (ORBAT)]]. Each Indirect Fire action reduces available Fire Missions by 1. At 0 Fire Missions, the SA/[[force-elements|FE]] cannot Indirect Fire.
 
 **Tracking:**
 - **Basic/Standard mode**: Fire Mission markers (double-sided tokens) placed next to the SA

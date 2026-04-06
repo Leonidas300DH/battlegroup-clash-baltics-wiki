@@ -13,18 +13,18 @@ Move-Fire combines movement and [[direct-fire|Direct Fire]] in a single Action. 
 
 ## Resolution
 
-1. **State** where the FE will end its movement and the route
-2. **State** which enemy FE will be targeted
+1. **State** where the [[force-elements|FE]] will end its movement and the route
+2. **State** which enemy [[force-elements|FE]] will be targeted
 3. Non-activating side **declares** if it will [[overwatch#Reactive Fire|Reactive Fire]] and at which point
 4. **Resolve** the Move-Fire and any Reactive Fire
-5. Place a **Moved marker** above the moving FE
+5. Place a **Moved marker** above the moving [[force-elements|FE]]
 
 ## Key Differences from Move
 
 | Aspect | Move | Move-Fire |
 |--------|------|-----------|
 | May end at starting position | No (250m minimum) | **Yes** (allows hit-and-run) |
-| Direct Fire included | No | Yes (with DRM penalty) |
+| Direct Fire included | No | Yes (with [[glossary\|Dice Roll Modifier (DRM)]] penalty) |
 | Marker placed | Moved | Moved |
 
 ## Move-Fire DRM Penalty
@@ -34,7 +34,7 @@ Move-Fire combines movement and [[direct-fire|Direct Fire]] in a single Action. 
 | **NATO** | **-1** |
 | **Russia** | **-2** |
 
-> NATO FEs have better platforms and training for firing on the move.
+> NATO [[force-elements|FEs]] have better platforms and training for firing on the move.
 
 ## Tactical Uses
 
@@ -44,6 +44,6 @@ Move-Fire combines movement and [[direct-fire|Direct Fire]] in a single Action. 
 
 ## Interaction with Reactive Fire
 
-An enemy with an [[overwatch|Overwatch]] marker can declare at which point during the Move-Fire Action the Reactive Fire occurs. This effectively means the Reactive Fire can happen **before** the activating FE fires, if the reacting side desires.
+An enemy with an [[overwatch|Overwatch]] marker can declare at which point during the Move-Fire Action the Reactive Fire occurs. This effectively means the Reactive Fire can happen **before** the activating [[force-elements|FE]] fires, if the reacting side desires.
 
 If the moving [[force-elements|FE]] becomes [[morale|Suppressed or Disrupted]] from Reactive Fire, the "Fire" part of the Move-Fire Action may be **cancelled**.

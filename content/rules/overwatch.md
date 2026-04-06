@@ -9,18 +9,18 @@ updated: 2026-04-05
 
 # Overwatch Action (4.7)
 
-Overwatch is the same as a [[hold|Hold]] Action (including the option to Reposition up to 250m), but the FE receives an **Overwatch marker**. This marker enables [[#Reactive Fire]].
+Overwatch is the same as a [[hold|Hold]] Action (including the option to Reposition up to 250m), but the [[force-elements|Force Element (FE)]] receives an **Overwatch marker**. This marker enables [[#Reactive Fire]].
 
 ## Overwatch Marker
 
 - **Persists between turns** — not removed in Clean-up (unlike Moved/Activated markers)
-- An FE with an Overwatch marker from a previous turn can be given another Overwatch Action — the marker stays, and the FE may Reposition
+- An [[force-elements|FE]] with an Overwatch marker from a previous turn can be given another Overwatch Action — the marker stays, and the [[force-elements|FE]] may Reposition
 
 ### Marker Removal
 The Overwatch marker is removed when:
-- The FE **Reactive Fires** → marker is flipped to **Activated** side (removed in Clean-up)
-- The FE is given an **Action other than Overwatch** (on a subsequent turn)
-- The FE receives a **Reorg marker**
+- The [[force-elements|FE]] **Reactive Fires** → marker is flipped to **Activated** side (removed in Clean-up)
+- The [[force-elements|FE]] is given an **Action other than Overwatch** (on a subsequent turn)
+- The [[force-elements|FE]] receives a **Reorg marker**
 
 ## Reactive Fire
 
@@ -28,13 +28,13 @@ A [[force-elements|Force Element (FE)]] on the **non-activating side** with an O
 
 ### Rules
 - Can be triggered at **any point** during the enemy's movement/assault — the reacting side chooses when
-- The FE taking Reactive Fire **may not [[move-fire|Move-Fire]]** — it fires from its current position
-- After Reactive Fire, the Overwatch marker is **flipped to Activated** — the FE cannot be activated again that turn
+- The [[force-elements|FE]] taking Reactive Fire **may not [[move-fire|Move-Fire]]** — it fires from its current position
+- After Reactive Fire, the Overwatch marker is **flipped to Activated** — the [[force-elements|FE]] cannot be activated again that turn
 - A +2 [[glossary|Dice Roll Modifier (DRM)]] bonus applies for having an Overwatch marker (already factored into the Direct Fire resolution)
 
-### Effects on the Moving FE
+### Effects on the Moving Force Element (FE)
 
-| Result | Effect on Moving FE |
+| Result | Effect on Moving Force Element (FE) |
 |--------|-------------------|
 | **Suppressed** | Immediately reduces remaining Movement Allowance by **50%** |
 | **Disrupted** | Movement **ceases immediately**; activating side may optionally Pull Back |
@@ -45,11 +45,11 @@ In either case, the "Fire" part of a [[move-fire|Move-Fire]] Action may be **can
 
 - Occurs in step 2 of the [[assault|Assault]] sequence (after Attackers are placed at the Assault Location)
 - For [[glossary|DRM]] calculation, the reacting side can declare the Reactive Fire occurred at **any point** between the Assault Location and where the Attacker began
-- If Reactive Fire Disrupts or Eliminates the **only attacking Foot PL**, the Assault ends
+- If Reactive Fire Disrupts or Eliminates the **only attacking Foot [[force-elements|Platoon (PL)]]**, the Assault ends
 
 ### Double Activation
 
-An FE with an Overwatch marker **can Reactive Fire on the same turn** it received the Overwatch Action. In this sense, it can effectively "activate" twice in one Action Round:
+An [[force-elements|FE]] with an Overwatch marker **can Reactive Fire on the same turn** it received the Overwatch Action. In this sense, it can effectively "activate" twice in one Action Round:
 1. Given Overwatch Action during its Task Group's activation
 2. Reactive Fire against an enemy moving/assaulting later in the same turn
 

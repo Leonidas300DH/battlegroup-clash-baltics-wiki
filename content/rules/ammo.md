@@ -31,7 +31,7 @@ In Advanced mode, **[[force-elements|Platoon (PL)]]-sized [[force-elements|Force
 
 ## Ammo Limits
 
-| [[force-elements|FE]] Type | Maximum Ammo |
+| Force Element (FE) Type | Maximum Ammo |
 |---------|-------------|
 | Foot [[force-elements|PL]] | 4 |
 | Tracked [[force-elements|PL]] (Vehicle) | 5 |
@@ -39,9 +39,9 @@ In Advanced mode, **[[force-elements|Platoon (PL)]]-sized [[force-elements|Force
 ## Tracking
 
 Ammo is tracked using the **Fire Mission / Ammo Card**:
-- Each PL-sized FE has a dedicated **Ammo Tracker** marker
+- Each [[force-elements|PL]]-sized [[force-elements|FE]] has a dedicated **Ammo Tracker** marker
 - Placed on the Card in the box corresponding to its Task Group
-- Starting Ammo is set by the scenario ORBAT
+- Starting Ammo is set by the scenario [[glossary|Order of Battle (ORBAT)]]
 - Each time Ammo is used, the marker moves leftward toward '0'
 
 > [!note]
@@ -53,7 +53,7 @@ Ammo can be resupplied via the [[replendem|REPLENDEM]] Action by A1 Echelon [[fo
 
 ## No Ammo Type Distinction
 
-BC:B does **not** distinguish between Ammo types — whether firing Apers or Atk, it costs 1 Ammo either way.
+BC:B does **not** distinguish between Ammo types — whether firing Anti-Personnel (Apers) or Anti-Tank (Atk), it costs 1 Ammo either way.
 
 ## Strategic Implications
 

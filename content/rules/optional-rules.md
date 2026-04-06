@@ -52,6 +52,6 @@ Both markers count as a **single Partial Obstruction** and are removed in Clean-
 
 In the standard rules, [[line-of-sight|Line of Sight (LoS)]] can be drawn through a single [[line-of-sight#Partial Obstructions|Partial Obstruction]] without limit. This optional rule adds:
 
-**LoS cannot be drawn more than 250m through a single Partial Obstruction.**
+**[[line-of-sight|LoS]] cannot be drawn more than 250m through a single Partial Obstruction.**
 
 Use if large single-piece Partial Obstructions feel unrealistically transparent.

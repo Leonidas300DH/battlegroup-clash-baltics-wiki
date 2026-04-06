@@ -33,7 +33,7 @@ An Order will be in one of three states:
 ## Moving to Safety
 
 If following the Order would leave [[force-elements|FEs]] in extreme danger (e.g., in the open with many enemies in [[line-of-sight|Line of Sight (LoS)]]), the Task Group may:
-- **Ignore its Order** and Pull Back all FEs (see [[assault#Pull Back|Pull Back]])
+- **Ignore its Order** and Pull Back all [[force-elements|FEs]] (see [[assault#Pull Back|Pull Back]])
 - On the **next Turn**, they must receive New Orders
 
 > [!warning]
