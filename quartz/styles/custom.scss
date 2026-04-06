@@ -337,7 +337,7 @@ blockquote {
   flex: 1 1 auto !important;
 
   .fold { display: none !important; }
-  .explorer-content { overflow: visible !important; max-height: none !important; }
+  .explorer-content { overflow-y: auto !important; max-height: calc(100vh - 200px) !important; }
   .explorer-ul { overflow: visible !important; max-height: none !important; }
   li.overflow-end { display: none !important; }
 
