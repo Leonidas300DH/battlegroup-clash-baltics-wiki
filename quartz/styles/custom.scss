@@ -2,50 +2,51 @@
 @use "./variables.scss" as *;
 
 // ============================================================================
-// BATTLEGROUP CLASH: BALTICS — TACTICAL OPERATIONS CENTER THEME
-// Military C2 interface aesthetic: dark, precise, functional
+// BC:B WIKI — OPERATIONAL COMMAND INTERFACE
+// Design system: "The Tactical Intelligence Feed"
+// Ref: vanguard_tactical_hud/DESIGN.md
 // ============================================================================
 
-// --- Variables ---
+// --- Design Tokens (from Stitch mockup) ---
 :root {
-  --tactical-green: #30D158;
-  --tactical-green-dim: rgba(48, 209, 88, 0.4);
-  --tactical-green-bright: #4FE171;
-  --amber: #FFB800;
-  --amber-dim: rgba(255, 184, 0, 0.4);
+  --surface: #131313;
+  --surface-container-lowest: #0e0e0e;
+  --surface-container-low: #1b1b1b;
+  --surface-container: #1f1f1f;
+  --surface-container-high: #2a2a2a;
+  --surface-container-highest: #353535;
+  --surface-tint: #ffba20;
+
+  --primary: #FFB800;
+  --primary-dim: rgba(255, 184, 0, 0.4);
+  --primary-container: #ffb800;
+  --on-primary: #412d00;
+
+  --tertiary: #30D158;
+  --tertiary-dim: rgba(48, 209, 88, 0.4);
+
   --threat-red: #FF3B30;
-  --threat-red-dim: rgba(255, 59, 48, 0.4);
-  --grid-line: rgba(255, 184, 0, 0.05);
-  --grid-line-strong: rgba(255, 184, 0, 0.1);
-  --scanline: rgba(255, 184, 0, 0.02);
-  --surface-0: #080A0C;
-  --surface-1: rgba(26, 29, 33, 0.6);
-  --surface-2: rgba(36, 40, 46, 0.65);
-  --surface-3: rgba(46, 52, 60, 0.7);
-  --border-tactical: rgba(255, 184, 0, 0.2);
-  --border-tactical-strong: rgba(255, 184, 0, 0.4);
+
+  --outline: #9e8f78;
+  --outline-variant: rgba(81, 69, 50, 0.15);
+  --ghost-border: rgba(255, 184, 0, 0.12);
+
   --text-primary: #E6EDF3;
-  --text-secondary: #A1A9B3;
+  --text-secondary: #d5c4ab;
   --text-dim: #525964;
+  --text-on-surface: #e2e2e2;
 }
 
-// --- Background grid pattern (topographic) ---
+// --- Base: absolute darkness with subtle grid ---
 body {
-  background-color: var(--surface-0) !important;
+  background-color: var(--surface) !important;
   background-image:
-    linear-gradient(var(--grid-line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px),
-    linear-gradient(var(--grid-line-strong) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-line-strong) 1px, transparent 1px);
-  background-size:
-    20px 20px,
-    20px 20px,
-    100px 100px,
-    100px 100px;
-  background-position: center center;
+    linear-gradient(rgba(255, 184, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 184, 0, 0.03) 1px, transparent 1px);
+  background-size: 80px 80px;
 }
 
-// --- Typography refinements ---
+// --- Typography: Space Grotesk (precision) + Inter (clarity) ---
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--headerFont) !important;
   font-weight: 700 !important;
@@ -54,57 +55,49 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.2rem !important;
-  border-bottom: 2px solid var(--amber) !important;
-  padding-bottom: 0.5rem !important;
+  font-size: 2rem !important;
+  border-bottom: 2px solid var(--primary) !important;
+  padding-bottom: 0.6rem !important;
   margin-bottom: 1.2rem !important;
-  position: relative;
-
-  &::before {
-    content: "▍";
-    color: var(--tactical-green);
-    margin-right: 0.4rem;
-    font-size: 1.2em;
-  }
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 h2 {
-  font-size: 1.4rem !important;
-  color: var(--tactical-green-bright) !important;
-  border-bottom: 1px solid var(--border-tactical) !important;
-  padding-bottom: 0.35rem !important;
-  margin-top: 2rem !important;
+  font-size: 1.3rem !important;
+  color: var(--primary) !important;
+  border: none !important;
+  margin-top: 2.5rem !important;
+  margin-bottom: 0.6rem !important;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 
   &::before {
     content: "// ";
-    color: var(--tactical-green-dim);
+    color: var(--primary-dim);
     font-weight: 400;
   }
 }
 
 h3 {
-  font-size: 1.15rem !important;
-  color: var(--amber) !important;
-  border-bottom: none !important;
-
-  &::before {
-    content: "› ";
-    color: var(--amber-dim);
-  }
+  font-size: 1.1rem !important;
+  color: var(--tertiary) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 h4, h5, h6 {
-  font-size: 1rem !important;
+  font-size: 0.9rem !important;
   color: var(--text-secondary) !important;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
 }
 
-p, li, td, th, .callout-content p {
-  font-family: "Barlow", sans-serif;
+p, li, td, .callout-content p {
+  font-family: var(--bodyFont) !important;
   font-size: 0.95rem;
-  line-height: 1.7;
-  color: var(--text-secondary) !important;
+  line-height: 1.75;
+  color: var(--text-on-surface) !important;
 }
 
 strong {
@@ -113,386 +106,296 @@ strong {
 }
 
 code {
-  font-family: "JetBrains Mono", monospace !important;
-  background: var(--surface-3) !important;
-  border: 1px solid var(--border-tactical) !important;
-  padding: 0.15em 0.4em !important;
-  border-radius: 2px !important;
+  font-family: var(--codeFont) !important;
+  background: var(--surface-container-high) !important;
+  border: none !important;
+  padding: 0.15em 0.45em !important;
+  border-radius: 0 !important;
   font-size: 0.85em !important;
-  color: var(--tactical-green-bright) !important;
+  color: var(--tertiary) !important;
 }
 
 pre {
-  background: var(--surface-1) !important;
-  border: 1px solid var(--border-tactical-strong) !important;
-  border-left: 3px solid var(--tactical-green) !important;
+  background: var(--surface-container-low) !important;
+  border: none !important;
+  border-left: 2px solid var(--primary) !important;
   border-radius: 0 !important;
-  position: relative;
-
-  &::before {
-    content: "TERMINAL";
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: var(--tactical-green-dim);
-    color: var(--surface-0);
-    font-family: "Rajdhani", sans-serif;
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 0.15em;
-    padding: 0.15rem 0.6rem;
-    text-transform: uppercase;
-  }
 
   code {
     border: none !important;
     background: transparent !important;
-    color: var(--tactical-green-bright) !important;
+    color: var(--tertiary) !important;
   }
 }
 
-// --- Links: tactical amber with bright hover ---
+// --- Links: amber with glow hover ---
 a {
-  color: var(--amber) !important;
+  color: var(--primary) !important;
   text-decoration: none !important;
-  border-bottom: 1px solid rgba(255, 184, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 184, 0, 0.2);
   transition: all 0.15s ease;
 
   &:hover {
-    color: var(--amber) !important;
-    border-bottom-color: var(--amber) !important;
-    text-shadow: 0 0 8px rgba(255, 184, 0, 0.5);
+    color: var(--primary) !important;
+    border-bottom-color: var(--primary) !important;
+    text-shadow: 0 0 12px rgba(255, 184, 0, 0.5);
   }
 }
 
-// --- Page title (site header) ---
+// --- Page title ---
 .page-title {
   font-family: var(--headerFont) !important;
   font-weight: 700 !important;
-  font-size: 1.5rem !important;
-  letter-spacing: 0.05em !important;
+  font-size: 1.4rem !important;
+  letter-spacing: 0.08em !important;
   text-transform: uppercase !important;
-  color: var(--amber) !important;
-  padding: 0.8rem 0 !important;
-  border-bottom: 2px solid var(--amber-dim) !important;
-  position: relative;
-  text-shadow: 0 0 20px rgba(255, 184, 0, 0.4);
+  color: var(--primary) !important;
+  padding: 0.4rem 0 0.6rem 0 !important;
+  margin-top: 0 !important;
+  border-bottom: 2px solid var(--primary-dim) !important;
+  text-shadow: 0 0 24px rgba(255, 184, 0, 0.35);
 
   &::after {
     content: "BATTLEGROUP CLASH: BALTICS";
     display: block;
-    font-size: 0.65rem;
-    letter-spacing: 0.1em;
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
     color: var(--text-dim);
-    margin-top: 0.3rem;
+    margin-top: 0.25rem;
     font-weight: 400;
   }
 }
 
-// --- Tables: military data display ---
+// --- Tables: glass panels ---
 table {
   border-collapse: collapse !important;
   width: 100% !important;
-  font-size: 0.9rem !important;
-  border: 1px solid var(--border-tactical-strong) !important;
-  background: var(--surface-1) !important;
-  backdrop-filter: blur(8px);
+  font-size: 0.88rem !important;
+  background: var(--surface-container-low) !important;
+  backdrop-filter: blur(12px);
+  border: none !important;
 }
 
 thead {
-  background: var(--surface-3) !important;
-  border-bottom: 2px solid var(--amber-dim) !important;
+  background: var(--surface-container-high) !important;
+  border-bottom: 2px solid var(--primary-dim) !important;
 }
 
 th {
   font-family: var(--headerFont) !important;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
   text-transform: uppercase !important;
-  letter-spacing: 0.05em !important;
-  font-size: 0.85rem !important;
-  color: var(--amber) !important;
-  padding: 0.8rem !important;
+  letter-spacing: 0.06em !important;
+  font-size: 0.8rem !important;
+  color: var(--primary) !important;
+  padding: 0.7rem 0.8rem !important;
   text-align: left !important;
-  border-right: 1px solid var(--border-tactical) !important;
+  border-right: 1px solid var(--ghost-border) !important;
 
-  &:last-child {
-    border-right: none !important;
-  }
+  &:last-child { border-right: none !important; }
 }
 
 td {
-  padding: 0.6rem 0.8rem !important;
-  border-bottom: 1px solid var(--grid-line-strong) !important;
-  border-right: 1px solid var(--grid-line) !important;
-  font-size: 0.9rem !important;
+  padding: 0.55rem 0.8rem !important;
+  border-bottom: 1px solid var(--ghost-border) !important;
+  border-right: 1px solid var(--outline-variant) !important;
 
-  &:last-child {
-    border-right: none !important;
-  }
+  &:last-child { border-right: none !important; }
 }
 
 tr:hover {
-  background: rgba(255, 184, 0, 0.05) !important;
+  background: rgba(255, 184, 0, 0.04) !important;
 }
 
-// --- Blockquotes ---
+// --- Blockquotes: recessed glass ---
 blockquote {
-  border-left: 3px solid var(--amber-dim) !important;
-  background: var(--surface-2) !important;
-  backdrop-filter: blur(4px);
+  border-left: 2px solid var(--primary-dim) !important;
+  background: var(--surface-container-low) !important;
+  backdrop-filter: blur(8px);
   padding: 1rem 1.2rem !important;
   margin: 1.2rem 0 !important;
-  border-radius: 4px !important;
-  position: relative;
+  border-radius: 0 !important;
 
-  p {
-    color: var(--text-secondary) !important;
-    font-style: italic;
-  }
+  p { color: var(--text-secondary) !important; font-style: italic; }
 }
 
-// --- Callouts: military alert style ---
+// --- Callouts: intel modules ---
 .callout {
   border-radius: 0 !important;
-  border: 1px solid var(--border-tactical-strong) !important;
-  border-left: 4px solid var(--tactical-green) !important;
-  background: var(--surface-2) !important;
+  border: none !important;
+  border-left: 3px solid var(--primary) !important;
+  background: var(--surface-container-low) !important;
+  backdrop-filter: blur(8px);
 
-  &[data-callout="tip"] {
-    border-left-color: var(--tactical-green) !important;
-  }
-
-  &[data-callout="note"] {
-    border-left-color: var(--amber) !important;
-  }
-
+  &[data-callout="tip"] { border-left-color: var(--tertiary) !important; }
+  &[data-callout="note"] { border-left-color: var(--primary) !important; }
   &[data-callout="warning"] {
     border-left-color: var(--threat-red) !important;
-    background: rgba(196, 64, 48, 0.06) !important;
+    background: rgba(255, 59, 48, 0.05) !important;
   }
-
-  &[data-callout="important"] {
-    border-left-color: var(--threat-red) !important;
-  }
+  &[data-callout="important"] { border-left-color: var(--threat-red) !important; }
 
   .callout-title {
     font-family: var(--headerFont);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-weight: 700;
-    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+    font-weight: 600;
+    font-size: 0.85rem;
   }
 }
 
-// --- Explorer / Sidebar ---
+// --- Explorer: glass docked panel ---
 .explorer {
-  border: 1px solid var(--border-tactical) !important;
-  background: var(--surface-1) !important;
+  background: var(--surface-container-low) !important;
   backdrop-filter: blur(12px) !important;
-  border-radius: 8px !important;
+  border: 1px solid var(--ghost-border) !important;
+  border-radius: 0 !important;
   padding: 0.8rem !important;
   overflow: visible !important;
   flex: 1 1 auto !important;
 
-  // No fold arrow, no collapse
-  .fold {
-    display: none !important;
-  }
-
-  .explorer-content {
-    overflow: visible !important;
-    max-height: none !important;
-  }
-
-  .explorer-ul {
-    overflow: visible !important;
-    max-height: none !important;
-  }
+  .fold { display: none !important; }
+  .explorer-content { overflow: visible !important; max-height: none !important; }
+  .explorer-ul { overflow: visible !important; max-height: none !important; }
+  li.overflow-end { display: none !important; }
 
   button, .folder-title {
     font-family: var(--headerFont) !important;
     text-transform: uppercase !important;
-    letter-spacing: 0.02em !important;
+    letter-spacing: 0.04em !important;
     font-weight: 600 !important;
-    font-size: 0.9rem !important;
+    font-size: 0.85rem !important;
   }
-}
-
-// Hide empty explorer entries
-.explorer li.overflow-end {
-  display: none !important;
 }
 
 // --- Search ---
 button#search-button {
-  border: 1px solid var(--border-tactical) !important;
-  border-radius: 4px !important;
-  background: var(--surface-2) !important;
-  transition: border-color 0.15s ease, background 0.15s ease;
+  border: 1px solid var(--ghost-border) !important;
+  border-radius: 0 !important;
+  background: var(--surface-container-low) !important;
+  transition: all 0.15s ease;
 
   &:hover {
-    border-color: var(--amber) !important;
-    background: var(--surface-3) !important;
+    border-color: var(--primary) !important;
+    box-shadow: 0 0 8px rgba(255, 184, 0, 0.15);
   }
 }
 
-#search-container {
-  #search-space {
-    border-radius: 0 !important;
-    border: 1px solid var(--tactical-green-dim) !important;
-    background: var(--surface-0) !important;
-    box-shadow: 0 0 40px rgba(111, 168, 92, 0.1) !important;
-  }
+#search-container #search-space {
+  border-radius: 0 !important;
+  border: 1px solid var(--primary-dim) !important;
+  background: var(--surface) !important;
+  box-shadow: 0 0 40px rgba(255, 184, 0, 0.08) !important;
 
   input {
-    font-family: "JetBrains Mono", monospace !important;
+    font-family: var(--codeFont) !important;
     border-radius: 0 !important;
-    color: var(--tactical-green-bright) !important;
+    color: var(--primary) !important;
   }
 }
 
-// --- Graph ---
-.graph {
-  border: 1px solid var(--border-tactical) !important;
+// --- Tags: tactical chips ---
+a.tag-link {
+  font-family: var(--headerFont) !important;
+  font-size: 0.7rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.06em;
+  border: 1px solid var(--ghost-border) !important;
+  border-bottom: 1px solid var(--ghost-border) !important;
   border-radius: 0 !important;
-  background: var(--surface-1) !important;
+  padding: 0.2rem 0.5rem !important;
+  background: var(--surface-container) !important;
+  color: var(--text-dim) !important;
+
+  &:hover {
+    border-color: var(--primary) !important;
+    color: var(--primary) !important;
+    text-shadow: none !important;
+    box-shadow: 0 0 6px rgba(255, 184, 0, 0.2);
+  }
 }
 
-// --- Table of Contents ---
-.toc {
-  border: 1px solid var(--border-tactical) !important;
-  border-radius: 0 !important;
-  background: var(--surface-1) !important;
-  padding: 0.8rem !important;
-
-  & > h3 {
-    font-family: "Rajdhani", sans-serif !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.15em !important;
-    font-size: 0.75rem !important;
-    color: var(--tactical-green-dim) !important;
-
-    &::before {
-      content: none !important;
-    }
-  }
+// --- Content meta: label style ---
+.content-meta {
+  font-family: var(--headerFont) !important;
+  font-size: 0.72rem !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-dim) !important;
+  border-bottom: 1px solid var(--outline-variant);
+  padding-bottom: 0.5rem;
 }
 
 // --- Breadcrumbs ---
 .breadcrumb-container {
-  font-family: "JetBrains Mono", monospace !important;
+  font-family: var(--headerFont) !important;
   font-size: 0.7rem !important;
   text-transform: uppercase !important;
-  letter-spacing: 0.1em;
-  opacity: 0.6;
-}
-
-// --- Tags ---
-a.tag-link {
-  font-family: "JetBrains Mono", monospace !important;
-  font-size: 0.7rem !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.05em;
-  border: 1px solid var(--border-tactical) !important;
-  border-bottom: 1px solid var(--border-tactical) !important;
-  border-radius: 0 !important;
-  padding: 0.15rem 0.5rem !important;
-  background: var(--surface-2) !important;
-  color: var(--text-dim) !important;
-
-  &:hover {
-    border-color: var(--amber) !important;
-    color: var(--amber) !important;
-    text-shadow: none !important;
-  }
-}
-
-// --- Content meta ---
-.content-meta {
-  font-family: "JetBrains Mono", monospace !important;
-  font-size: 0.72rem !important;
-  text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--text-dim) !important;
-  border-bottom: 1px solid var(--grid-line-strong);
-  padding-bottom: 0.5rem;
+  opacity: 0.5;
+}
+
+// --- Article title ---
+article > h1.article-title {
+  font-size: 2.2rem !important;
+  letter-spacing: 0.06em !important;
+  color: var(--text-primary) !important;
+  border-bottom: 3px solid var(--primary) !important;
+  padding-bottom: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+  text-transform: uppercase;
+
+  &::before { content: none !important; }
 }
 
 // --- Footer ---
 footer {
-  border-top: 1px solid var(--border-tactical) !important;
+  border-top: 1px solid var(--ghost-border) !important;
   margin-top: 3rem !important;
   padding-top: 1rem !important;
 
   p, a {
-    font-family: "JetBrains Mono", monospace !important;
+    font-family: var(--headerFont) !important;
     font-size: 0.7rem !important;
     text-transform: uppercase !important;
     letter-spacing: 0.08em;
   }
 }
 
-// --- Article title ---
-article > h1.article-title {
-  font-size: 2.2rem !important;
-  letter-spacing: 0.08em !important;
-  color: var(--text-primary) !important;
-  border-bottom: 3px solid var(--tactical-green) !important;
-  padding-bottom: 0.6rem !important;
-  margin-bottom: 0.5rem !important;
-  text-shadow: 0 0 30px rgba(111, 168, 92, 0.15);
-
-  &::before {
-    content: none !important;
-  }
-}
-
-// --- Backlinks ---
+// --- Backlinks (afterBody) ---
 .backlinks {
-  border: 1px solid var(--border-tactical) !important;
+  margin-top: 2rem !important;
+  border-top: 1px solid var(--ghost-border) !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+  background: transparent !important;
+  padding: 1rem 0 !important;
   border-radius: 0 !important;
-  background: var(--surface-1) !important;
-  padding: 0.8rem !important;
 
   & > h3 {
-    font-family: "Rajdhani", sans-serif !important;
+    font-family: var(--headerFont) !important;
     text-transform: uppercase !important;
-    letter-spacing: 0.15em !important;
+    letter-spacing: 0.1em !important;
     font-size: 0.75rem !important;
-    color: var(--tactical-green-dim) !important;
-
-    &::before {
-      content: none !important;
-    }
+    color: var(--text-dim) !important;
+    &::before { content: none !important; }
   }
 }
 
 // --- Popover ---
 .popover {
   border-radius: 0 !important;
-  border: 1px solid var(--tactical-green-dim) !important;
-  background: var(--surface-0) !important;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(111, 168, 92, 0.08) !important;
+  border: 1px solid var(--primary-dim) !important;
+  background: var(--surface) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 184, 0, 0.06) !important;
 }
 
-// --- Horizontal rules ---
+// --- HR: ghost divider ---
 hr {
   border: none !important;
-  border-top: 1px solid var(--border-tactical) !important;
+  border-top: 1px solid var(--outline-variant) !important;
   margin: 2rem 0 !important;
-  position: relative;
-
-  &::after {
-    content: "◆";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: var(--surface-0);
-    padding: 0 0.8rem;
-    color: var(--tactical-green-dim);
-    font-size: 0.6rem;
-  }
 }
 
 // --- Lists ---
@@ -508,7 +411,7 @@ ul {
       content: "▸";
       position: absolute;
       left: -0.6rem;
-      color: var(--tactical-green-dim);
+      color: var(--primary-dim);
       font-size: 0.8em;
     }
   }
@@ -519,80 +422,32 @@ ol {
 
   li {
     padding-left: 0.3rem;
-
     &::marker {
-      color: var(--tactical-green-dim);
-      font-family: "JetBrains Mono", monospace;
+      color: var(--primary-dim);
+      font-family: var(--codeFont);
       font-size: 0.85em;
     }
   }
 }
 
-// --- Selection color ---
+// --- Selection ---
 ::selection {
-  background: rgba(111, 168, 92, 0.35) !important;
+  background: rgba(255, 184, 0, 0.3) !important;
   color: var(--text-primary) !important;
 }
 
 // --- Scrollbar ---
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: var(--surface); }
+::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 0; }
 
-::-webkit-scrollbar-track {
-  background: var(--surface-0);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--tactical-green-dim);
-  border-radius: 0;
-
-  &:hover {
-    background: var(--tactical-green);
-  }
-}
-
-// --- Subtle scan-line overlay on the whole page ---
-body::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 9999;
-  background: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 2px,
-    var(--scanline) 2px,
-    var(--scanline) 4px
-  );
-  opacity: 0.4;
-}
-
-// --- Dark mode toggle button ---
-.darkmode svg {
-  color: var(--tactical-green-dim) !important;
-}
-
-// Hide empty explorer entries (ghost arrows with no text)
-.explorer li:not(:has(a, .folder-title span:not(:empty))) {
-  display: none !important;
-}
-
-// Hide the overflow-end marker
-.explorer li.overflow-end {
-  display: none !important;
-}
+// --- Dark mode toggle ---
+.darkmode svg { color: var(--text-dim) !important; }
 
 // ============================================================================
-// LAYOUT: No right column, full-width content, compact header
+// LAYOUT
 // ============================================================================
 
-// Kill the right sidebar entirely — content takes full remaining width
 .page > #quartz-body {
   grid-template-columns: #{$sidePanelWidth} 1fr !important;
   grid-template-areas:
@@ -610,63 +465,23 @@ body::after {
   }
 }
 
-.sidebar.right {
-  display: none !important;
-}
+.sidebar.right { display: none !important; }
 
-// Reduce excessive top spacing on the left sidebar
 .page > #quartz-body > .sidebar.left {
   padding-top: 1rem !important;
 }
 
-// Page title: compact, no wasted space
-.page-title {
-  margin-top: 0 !important;
-  padding-top: 0.4rem !important;
-  padding-bottom: 0.6rem !important;
-  font-size: 1.3rem !important;
+// Graph: only on /graph page
+.sidebar .graph { display: none !important; }
 
-  &::before {
-    content: "// ";
-    color: var(--tactical-green-dim);
-  }
-}
-
-// Graph: hidden from sidebar, shown full-width only on /graph page (afterBody)
-.sidebar .graph {
-  display: none !important;
-}
-
-// Graph page: sidebar stays, graph fills the content area
 body[data-slug="graph"] {
-  // Hide article text and chrome — only the graph remains in page-footer
-  .page-header,
-  .popover-hint,
-  article.popover-hint,
-  hr,
-  .backlinks {
+  .page-header, .popover-hint, article.popover-hint, hr, .backlinks {
     display: none !important;
   }
-
-  .page-footer {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
-
+  .page-footer { margin-top: 0 !important; padding-top: 0 !important; }
   .page-footer > .graph > .graph-outer {
-    border: 1px solid var(--border-tactical-strong) !important;
+    border: 1px solid var(--ghost-border) !important;
     border-radius: 0 !important;
-    background: var(--surface-1) !important;
+    background: var(--surface-container-low) !important;
   }
-}
-
-// Backlinks at bottom of article (afterBody), styled as section
-.backlinks {
-  margin-top: 2rem !important;
-  border-top: 2px solid var(--tactical-green-dim) !important;
-  border-left: none !important;
-  border-right: none !important;
-  border-bottom: none !important;
-  background: transparent !important;
-  padding: 1rem 0 !important;
 }
