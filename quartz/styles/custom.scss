@@ -552,6 +552,16 @@ body::after {
   color: var(--tactical-green-dim) !important;
 }
 
+// Hide empty explorer entries (ghost arrows with no text)
+.explorer li:not(:has(a, .folder-title span:not(:empty))) {
+  display: none !important;
+}
+
+// Hide the overflow-end marker
+.explorer li.overflow-end {
+  display: none !important;
+}
+
 // ============================================================================
 // LAYOUT: No right column, full-width content, compact header
 // ============================================================================
