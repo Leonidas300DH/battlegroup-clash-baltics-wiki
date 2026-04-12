@@ -4,7 +4,6 @@ type: index
 updated: 2026-04-06
 ---
 
-# Battlegroup Clash: Baltics — Wiki Index
 
 **Pages**: 52 | **Sources ingested**: 6
 

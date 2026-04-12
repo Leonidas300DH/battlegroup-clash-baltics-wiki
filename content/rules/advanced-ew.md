@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Advanced Electronic Warfare (replaces rule 2.3)
 
 From the [[ew-adv-supp-rules|Advanced Rules Supplement]]. This **completely replaces** the base game's [[electronic-warfare|Electronic Warfare (EW) Chit]] system. There are no [[electronic-warfare|EW]] Chits. Instead, each side allocates **Electronic Warfare Points (EWP)** across 4 [[electronic-warfare|EW]] Types in a strategic plan decided during the [[preparation-phase|Preparation Phase]].
 

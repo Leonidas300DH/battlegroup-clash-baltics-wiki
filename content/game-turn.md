@@ -7,7 +7,6 @@ created: 2026-04-06
 updated: 2026-04-06
 ---
 
-# Game Turn
 
 A game of Battlegroup Clash: Baltics (BC:B) lasts **5 or 6 Turns** (set by the scenario). Each Turn represents **15-30 minutes** of real-time combat. A Turn follows the same structure every time: Command Phase, then Execution Phase.
 

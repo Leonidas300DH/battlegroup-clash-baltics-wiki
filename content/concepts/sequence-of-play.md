@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Sequence of Play
 
 Battlegroup Clash: Baltics (BC:B) takes place over **three Phases**. The Preparation Phase occurs once; the Command and Execution Phases repeat each turn until the game ends (5 or 6 turns).
 

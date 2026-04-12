@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Force Elements (FEs)
 
 A **Force Element** is a military unit in the game. Its position on the map is represented by a counter. Grey counters = [[nato|NATO]], red counters = [[russia|Russia]].
 

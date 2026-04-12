@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# ATGMs
 
 Anti-Tank Guided Missiles provide [[force-elements|Force Elements (FEs)]] with enhanced anti-armour capability, particularly against gold-type ([[force-elements|Main Battle Tank (MBT)]]) [[force-elements|Tracked FEs]] that most Firepower Values cannot target.
 

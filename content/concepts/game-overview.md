@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Game Overview
 
 **Battlegroup Clash: Baltics (BC:B)** is a two- to six-player tactical combat game simulating hypothetical near-future land battles in **Estonia** between [[nato|NATO]] and [[russia|Russia]].
 

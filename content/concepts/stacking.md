@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Stacking
 
 A **Stack** combines multiple [[force-elements|Force Element (FE)]] counters into a single unit on the map. Stacking represents infantry riding in armoured vehicles or smaller vehicle sections operating as part of a larger vehicle platoon.
 

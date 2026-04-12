@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# NATO
 
 NATO represents a generic **European NATO force** in BC:B — not any single nation's army. The force structure is based on British/European NATO battalion battlegroup organization, adapted for the game.
 

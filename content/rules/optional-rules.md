@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Optional Rules
 
 BC:B includes four optional rules that can be used with any scenario and any [[game-modes|game mode]].
 

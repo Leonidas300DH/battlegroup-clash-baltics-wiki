@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Move-Fire Action (4.2)
 
 Move-Fire combines movement and [[direct-fire|Direct Fire]] in a single Action. The [[force-elements|Force Element (FE)]] moves as per [[move|Move]] rules and fires at an enemy [[force-elements|FE]] at any point during the movement (before, during, or at the end).
 

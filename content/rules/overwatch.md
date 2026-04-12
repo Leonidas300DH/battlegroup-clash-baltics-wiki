@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Overwatch Action (4.7)
 
 Overwatch is the same as a [[hold|Hold]] Action (including the option to Reposition up to 250m), but the [[force-elements|Force Element (FE)]] receives an **Overwatch marker**. This marker enables [[#Reactive Fire]].
 

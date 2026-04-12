@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Command Phase (Phase 2)
 
 The Command Phase occurs at the **start of each turn**. It handles [[morale|Rally]] tests, [[orders|Order]] changes, and [[electronic-warfare|Electronic Warfare (EW) Activity]].
 

@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Actions Overview
 
 There are **8 Actions** in Basic/Standard mode and a **9th in Advanced mode**. When a [[task-groups|Task Group]] is activated, each [[force-elements|Force Element (FE)]] in it takes one Action. [[force-elements|FEs]] in the same Task Group can take different Actions.
 

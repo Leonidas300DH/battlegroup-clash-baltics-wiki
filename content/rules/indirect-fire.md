@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Indirect Fire Action (4.4)
 
 Indirect Fire allows mortars, artillery, and [[support-assets|First Person View drone (FPV)]] drones to attack targets they cannot directly see, using [[force-elements#ISTAR Assets|Intelligence, Surveillance, Target Acquisition & Reconnaissance (ISTAR) Assets]] for targeting.
 

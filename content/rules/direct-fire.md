@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Direct Fire Action (4.3)
 
 Direct Fire represents a [[force-elements|Force Element (FE)]] shooting at a visible enemy within range using its inherent weapons or [[atgm|Anti-Tank Guided Missiles (ATGMs)]].
 

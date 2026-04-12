@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Support Assets (SAs)
 
 A **Support Asset** represents artillery and drone assets. SAs **cannot be targeted** and have no Stats. They are activated instead of a [[task-groups|Task Group]].
 

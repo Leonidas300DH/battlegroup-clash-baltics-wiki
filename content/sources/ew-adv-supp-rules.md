@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Advanced Rules Supplement: Orders & Electronic Warfare
 
 **File:** `raw/EWAdvSupp_Rules.pdf`
 **Pages:** 6

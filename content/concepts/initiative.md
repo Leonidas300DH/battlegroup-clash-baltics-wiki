@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Initiative
 
 Initiative determines **which side gets to choose who activates first** in each turn's [[execution-phase#Action Round|Action Round]]. It is critically important — the Initiative side controls the tempo of the turn.
 

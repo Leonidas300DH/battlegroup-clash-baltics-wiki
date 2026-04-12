@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Russia
 
 In BC:B, Russia represents the **Russian armed forces** operating in the Baltic states in a hypothetical near-future invasion of Estonia. Russian forces field mechanised infantry, main battle tanks, reconnaissance, artillery, and drones — typically organised around Motorised Rifle structures at battalion level (the largest scenario pits a Russian Motorised Rifle Battalion against a NATO Battlegroup).
 

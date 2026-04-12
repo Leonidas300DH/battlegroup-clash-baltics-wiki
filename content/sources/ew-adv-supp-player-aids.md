@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Player Aids 7 & 8
 
 **File:** `raw/EWAdvSupp_PlayerAids7&8.pdf`
 **Pages:** 2

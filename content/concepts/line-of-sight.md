@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Line of Sight (LoS)
 
 Line of Sight is drawn between **any part** of the sighting FE's counter to **any part** of the target FE's counter. BC:B uses a liberal approach to LoS, balanced by DRMs for Cover and partial obstructions.
 

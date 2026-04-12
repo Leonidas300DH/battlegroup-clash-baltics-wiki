@@ -7,7 +7,6 @@ created: 2026-04-06
 updated: 2026-04-06
 ---
 
-# Units
 
 Every military unit on the map in BC:B is a **[[force-elements|Force Element (FE)]]** — a counter representing a platoon or section of soldiers, vehicles, or both. This page explains the universal mechanics that apply to all units regardless of faction. For faction-specific details, see:
 

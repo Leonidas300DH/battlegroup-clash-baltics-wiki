@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Ammo (Advanced Mode)
 
 In Advanced mode, **[[force-elements|Platoon (PL)]]-sized [[force-elements|Force Elements (FEs)]]** have a limited Ammo supply that is consumed by combat actions and tracked on the Fire Mission / Ammo Card.
 

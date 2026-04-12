@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Errata & FAQ 1.2
 
 **File:** `raw/Errata_FAQ 1.2 - Battlegroup Clash_ Baltics.pdf`
 **Pages:** 4

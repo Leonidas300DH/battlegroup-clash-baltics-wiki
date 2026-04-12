@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Execution Phase (Phase 3)
 
 The Execution Phase is the **heart of the game** — where forces activate and fight.
 

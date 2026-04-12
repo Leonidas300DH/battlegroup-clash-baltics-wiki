@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Dig Shell Scrape Action (4.8)
 
 Only a **Foot [[force-elements|Force Element (FE)]]** may take this Action. It creates a temporary defensive earthwork providing negative [[glossary|Dice Roll Modifiers (DRMs)]] against incoming fire and [[assault|Assaults]].
 

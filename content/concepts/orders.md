@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Orders (Standard/Advanced Mode)
 
 Orders are short instructions based on **verbs from the Orders Table** (Player Aid 6), taken from the British Army UK Staff Officers' Handbook. An Order applies to a [[task-groups|Task Group]] for a Turn.
 

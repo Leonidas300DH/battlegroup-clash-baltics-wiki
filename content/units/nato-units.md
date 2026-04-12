@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# NATO Unit Catalog
 
 This page is the comprehensive reference for every [[nato|NATO]] unit type in Battlegroup Clash: Baltics (BC:B), covering specific stats, real-world equipment, and tactical advice.
 

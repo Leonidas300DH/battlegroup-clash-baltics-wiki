@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Fire Plans (Standard/Advanced Mode)
 
 A **Fire Plan** is a Grid Intersection reference written on the [[sync-matrix|Sync Matrix]] for each [[support-assets|Artillery Support Asset (SA)]], [[support-assets|First Person View drone (FPV)]] [[support-assets|SA]], and Mortar [[force-elements|Force Element (FE)]]. It defines a **pre-planned target area** for that turn — the four Grid Squares adjacent to the Grid Intersection.
 

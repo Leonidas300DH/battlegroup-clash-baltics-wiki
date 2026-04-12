@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Preparation Phase (Phase 1)
 
 The Preparation Phase occurs **once** before the game begins. It covers setup and planning.
 

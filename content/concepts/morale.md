@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Morale (Standard/Advanced Mode)
 
 Morale represents a [[force-elements|Force Element (FE)]]'s psychological state under fire. It is a **Standard/Advanced mode** mechanic — ignored in Basic mode.
 

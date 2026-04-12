@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Scenario 1 — A Bump In The Road
 
 The introductory scenario for BC:B. A Russian mechanised force pushes southwest to seize the bridge at Sindi before NATO engineers can demolish it. NATO fights a delaying action with under-strength forces.
 

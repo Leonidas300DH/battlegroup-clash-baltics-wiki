@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Move Action (4.1)
 
 An activating [[force-elements|Force Element (FE)]]/Stack moves up to its **Movement Allowance**, which varies by [[force-elements|FE]] Type (Foot, Wheeled, Tracked) and [[terrain|Terrain]]. The [[force-elements|FE]] receives a **Moved marker** after completing movement.
 

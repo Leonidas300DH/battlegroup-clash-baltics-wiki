@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Glossary & Acronyms
 
 Every acronym and key term used in BC:B, with plain-English definitions and links to the relevant wiki pages.
 

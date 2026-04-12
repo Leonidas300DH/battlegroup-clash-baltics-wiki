@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# NATO Scenario 1 — A Bump In The Road
 
 **File:** `raw/NATO SCENARIO 1.pdf`
 **Pages:** 3

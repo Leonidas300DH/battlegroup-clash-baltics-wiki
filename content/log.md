@@ -3,7 +3,6 @@ title: Wiki Log
 type: log
 ---
 
-# Activity Log
 
 ## [2026-04-05] ingest | Advanced Rules Supplement (Orders & EW) + Player Aids 7&8
 Ingested 2 new sources (EWAdvSupp_Rules.pdf, EWAdvSupp_PlayerAids7&8.pdf). Created 5 new wiki pages: 2 source summaries + 3 rule pages (advanced-orders, boundary-lines, advanced-ew).

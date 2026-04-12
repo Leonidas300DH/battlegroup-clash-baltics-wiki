@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Electronic Warfare (EW)
 
 Electronic warfare is a **critical feature** of Battlegroup Clash: Baltics (BC:B). It creates a sub-game around radio emissions: certain actions generate electronic transmissions (ETX), which the opponent can exploit for targeting bonuses and EW effects.
 

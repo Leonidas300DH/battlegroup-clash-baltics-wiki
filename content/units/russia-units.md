@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Russia Unit Catalog
 
 This page is the comprehensive reference for all [[russia|Russian]] [[force-elements|Force Element (FE)]] and [[support-assets|Support Asset (SA)]] types in Battlegroup Clash: Baltics (BC:B). Russian counters are **red/salmon** in colour.
 

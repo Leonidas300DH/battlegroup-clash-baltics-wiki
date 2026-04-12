@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Game Modes
 
 Battlegroup Clash: Baltics (BC:B) has three play modes, each building on the previous. You must know Basic mode to play Standard, and Standard to play Advanced. In the rulebook, Standard mode rules are in **red shaded boxes**, Advanced mode in **blue shaded boxes**.
 

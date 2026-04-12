@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# [[force-elements|Headquarters (HQ)]] Command Activation (Standard/Advanced Mode)
 
 When a [[task-groups|Task Group]] containing an **[[force-elements|HQ]] [[force-elements|Force Element (FE)]]** is activated, the activating side may optionally activate **additional Task Groups** simultaneously.
 

@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Advanced Orders — Battlefield Effects (1.2.1.3)
 
 From the [[ew-adv-supp-rules|Advanced Rules Supplement]]. This rule gives **mechanical game effects** to [[orders|Order]] verbs. In the base game, Orders have no mechanical consequence — this changes that.
 

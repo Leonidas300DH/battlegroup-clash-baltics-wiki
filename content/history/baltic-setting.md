@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# The Baltic Setting
 
 Battlegroup Clash: Baltics (BC:B) is set in **Estonia** — a NATO member state on the eastern flank of the alliance, sharing a land border with Russia and a maritime border with Finland. Understanding why Estonia is a plausible flashpoint, and what makes it militarily distinctive, is essential context for every scenario in this game.
 

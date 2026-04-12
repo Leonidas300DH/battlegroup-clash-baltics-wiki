@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Hold Action (4.6)
 
 A [[force-elements|Force Element (FE)]] given a Hold Action stays in place. It receives an **Activated marker** (not a Moved marker).
 

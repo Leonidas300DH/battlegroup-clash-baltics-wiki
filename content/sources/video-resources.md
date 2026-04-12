@@ -7,7 +7,6 @@ created: 2026-04-06
 updated: 2026-04-06
 ---
 
-# Video Resources
 
 Community videos about BC:B — reviews, unboxings, playthroughs, and interviews. All credit to the original creators.
 

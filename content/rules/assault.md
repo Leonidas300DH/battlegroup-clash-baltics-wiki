@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Assault Action (4.5)
 
 An Assault is close-quarters combat between infantry, potentially supported by vehicles. It is **decisive** — one side will always be forced to [[#Pull Back|Pull Back]].
 

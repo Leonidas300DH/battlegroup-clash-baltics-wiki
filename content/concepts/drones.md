@@ -7,7 +7,6 @@ created: 2026-04-06
 updated: 2026-04-06
 ---
 
-# Drones
 
 > "Drones, drones, everywhere: Particularly for line of sight, but also for fires, drones have a massive impact on the modern battlefield, and they are front and centre of the game."
 > — James Buckley, BC:B Design Notes

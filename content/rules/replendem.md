@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# REPLENDEM Action (4.9) — Advanced Mode Only
 
 REPLENDEM (Replenishment Demand) allows an **A1 Echelon [[force-elements|Force Element (FE)]]** to transfer [[ammo|Ammo]] and/or [[atgm|Anti-Tank Guided Missiles (ATGMs)]] to friendly [[force-elements|FEs]] within range.
 

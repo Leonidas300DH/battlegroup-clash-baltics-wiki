@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Boundary Lines (1.2.1.4)
 
 From the [[ew-adv-supp-rules|Advanced Rules Supplement]]. Each [[task-groups|Task Group (TGp)]] must be assigned a geographic area — a **Boundary Line** — on the [[sync-matrix|Sync Matrix]] for each Turn. [[force-elements|Force Elements (FEs)]] that leave this area generate [[electronic-warfare|Electronic Transmission (ETX)]].
 

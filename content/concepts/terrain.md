@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Terrain
 
 BC:B maps are based on **Estonian satellite imagery** with overlaid borders identifying terrain types. Each 1cm = 100m. Grid Squares are 10cm × 10cm (1,000m × 1,000m).
 

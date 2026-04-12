@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Mission Command (Advanced Mode — NATO Only)
 
 Mission Command is [[nato|NATO's]] doctrinal advantage in Advanced mode. It allows one [[task-groups|Task Group]] per turn to receive [[orders#New Orders|New Orders]] **without** the usual penalties.
 

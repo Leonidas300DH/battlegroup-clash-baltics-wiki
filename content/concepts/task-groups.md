@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Task Groups (TGps)
 
 A **Task Group** is a group of [[force-elements|Force Elements]] organised together prior to battle to meet specific objectives. Task Groups are the primary unit of activation in BC:B.
 

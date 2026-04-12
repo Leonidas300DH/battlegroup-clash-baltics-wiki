@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Sync Matrix
 
 The **Sync Matrix** is the planning document that defines each side's plan for the entire game. It is produced during the [[preparation-phase|Preparation Phase]] (Standard/Advanced mode) and represents the pre-battle plan that forces are expected to follow.
 

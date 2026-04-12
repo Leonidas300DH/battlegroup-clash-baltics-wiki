@@ -7,7 +7,6 @@ created: 2026-04-05
 updated: 2026-04-05
 ---
 
-# Red Doctrine (Advanced Mode — Russia Only)
 
 Red Doctrine reflects [[russia|Russia's]] doctrinal rigidity. Once the [[sync-matrix|Sync Matrix]] is written, Russian forces **cannot deviate** from it in any way.
 
