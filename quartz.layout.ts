@@ -34,6 +34,11 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Explorer({ folderDefaultState: "collapsed", useSavedState: false }),
+    Component.ExternalLinks({
+      links: [
+        { label: "Game Turn Flow", href: "/static/game-turn-flow/" },
+      ],
+    }),
   ],
   right: [],
 }
@@ -45,6 +50,11 @@ export const defaultListPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Explorer({ folderDefaultState: "collapsed", useSavedState: false }),
+    Component.ExternalLinks({
+      links: [
+        { label: "Game Turn Flow", href: "/static/game-turn-flow/" },
+      ],
+    }),
   ],
   right: [],
 }
