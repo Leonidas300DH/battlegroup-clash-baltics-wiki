@@ -7,8 +7,8 @@ created: 2026-04-12
 updated: 2026-04-12
 ---
 
-# Game Turn Flow
+<meta http-equiv="refresh" content="0; url=/static/game-turn-flow/">
 
-Interactive diagram showing the complete [[game-turn|Game Turn]] structure — phases, decision points, and stakes at each step.
+Redirecting to the interactive [[game-turn|Game Turn]] flow diagram...
 
-<iframe src="/static/game-turn-flow/" style="width:100%;height:85vh;border:1px solid rgba(255,184,0,0.2);border-radius:0;background:#090A0C;"></iframe>
+[Click here if not redirected automatically.](/static/game-turn-flow/)
